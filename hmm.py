@@ -22,6 +22,10 @@ class HMM:
         self._ptrans = ptrans  # nested dict(): ptrans[tag] = { t1: logprob, t2: logprob, ... }
         self._pemit = pemit  # nested dict(): pemit[tag] = { word1: logprob, word2: logprob, ... }
         self._states = [state for state in ptrans]
+        self.words = set()
+
+        for key in pemit:
+            self.words |= pemit[key].keys()
 
     def states(self):
         return self._states
@@ -43,10 +47,18 @@ class HMM:
         return State(col[prev].prob + self.ptrans(prev, state) + self.pemit(state, obs), prev, obs)
 
     def decode(self, observations):
+        new_obsv = []
+
+        for word in observations:
+            if word not in self.words:
+                new_obsv.append("OVV")
+            else:
+                new_obsv.append(word)
+
         # trellis: Liste von Wörterbüchern (dict)
         viterbi = [{'START': State(0.0, False, '')}]
 
-        for obs in observations:
+        for obs in new_obsv:
             viterbi.append({state: self.maxprob(viterbi[-1], state, obs) for state in self.states()})
 
         # Zustand mit der hächsten Wahrscheinlichkeit
@@ -61,4 +73,10 @@ class HMM:
             path.append((col[state].out, state))
             state = col[state].prev
 
-        return prob, path[::-1]  # reversed(path)
+        word_tag_result = []
+        reversed_path = path[::-1]
+        for i in range(0, len(reversed_path)):
+            word_tag = reversed_path[i]
+            word_tag_result.append((observations[i], word_tag[1]))
+
+        return prob, word_tag_result  # reversed(path)

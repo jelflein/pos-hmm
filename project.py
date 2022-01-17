@@ -23,7 +23,7 @@ def validate_file_and_open(file_name: str, mode: str):
 
 
 def compute_trans_and_emission(train_fd):
-    lines = []
+    word_and_tag = []
     bi_grams = []
     tags = []
 
@@ -51,11 +51,21 @@ def compute_trans_and_emission(train_fd):
                 bi_grams.append((tag_before, tag))
                 tag_before = tag
 
-                lines.append(word + "\t" + tag)
+                word_and_tag.append((word, tag))
             else:
                 tag_before = start_tag
 
-    word_and_tags = Counter(lines)
+    word_and_tags = Counter(word_and_tag)
+
+    words_to_delete = []
+    for word_and_tag in word_and_tags:
+        if word_and_tags[word_and_tag] == 1:
+            words_to_delete.append(word_and_tag)
+
+    for to_delete in words_to_delete:
+        del word_and_tags[to_delete]
+        word_and_tags[("OVV", to_delete[1])] += 1
+
     uni_gram_tags = Counter(tags)
 
     bi_grams = Counter(bi_grams)
@@ -67,14 +77,6 @@ def compute_trans_and_emission(train_fd):
 def optimize_word_and_tag(word: str, tag: str, start: bool) -> (str, str):
     return word, tag
 
-    word = replace_sharp_s.sub("ss", word)
-
-    if start:
-        if tag != "NN":
-            return word.lower(), tag
-
-    return word, tag
-
 
 def compute_emission(word_and_tags: Counter) -> defaultdict:
     emission = defaultdict(dict)
@@ -82,9 +84,8 @@ def compute_emission(word_and_tags: Counter) -> defaultdict:
     total = word_and_tags.total()
 
     for word_and_tag in word_and_tags:
-        split = word_and_tag.split("\t")
-        word = split[0]
-        tag = split[1]
+        word = word_and_tag[0]
+        tag = word_and_tag[1]
 
         emission[tag][word] = math.log(word_and_tags[word_and_tag] / total)
 
