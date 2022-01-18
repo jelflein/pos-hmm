@@ -9,8 +9,13 @@ from difflib import Differ
 from hmm import HMM
 
 start_tag = "START"
-replace_sharp_s = re.compile(r"ß")
 
+# Erkennt Zahlen mit Komma auch solche wie 200.000.000
+number = re.compile("(-)?\d+((,|.)\d)?")
+
+ovv3_start = re.compile("^\^.{1,3}")
+ovv3_low = re.compile("^([a-z]|[ßäöü]){1,3}")
+ovv3_capital = re.compile("^([A-Z]|[ÄÖÜ]){1}([a-z]|[ßäöü]){1,2}")
 
 def validate_file_and_open(file_name: str, mode: str):
     try:
@@ -23,9 +28,9 @@ def validate_file_and_open(file_name: str, mode: str):
 
 
 def compute_trans_and_emission(train_fd):
-    word_and_tag = []
-    bi_grams = []
-    tags = []
+    word_and_tags = {}
+    bi_grams = {}
+    uni_gram_tags = {}
 
     with train_fd:
         tag_before = start_tag
@@ -34,51 +39,46 @@ def compute_trans_and_emission(train_fd):
             if line != "\n":
                 start = tag_before == start_tag
                 if start:
-                    tags.append(start_tag)
+                    uni_gram_tags[start_tag] += 1
 
                 line = line.strip()
                 split = line.split("\t")
 
                 word = split[0]
                 tag = split[1]
-                tags.append(tag)
+                uni_gram_tags[tag] += 1
 
-                o_word_tag = optimize_word_and_tag(word, tag, start)
-
-                word = o_word_tag[0]
-                tag = o_word_tag[1]
-
-                bi_grams.append((tag_before, tag))
+                bi_grams[(tag_before, tag)] += 1
                 tag_before = tag
 
-                word_and_tag.append((word, tag))
+                word_and_tags[(word, tag)] += 1
             else:
                 tag_before = start_tag
 
-    word_and_tags = Counter(word_and_tag)
-
-    words_to_delete = []
-    for word_and_tag in word_and_tags:
+    for word_and_tag in list(word_and_tags.keys()):
         if word_and_tags[word_and_tag] == 1:
-            words_to_delete.append(word_and_tag)
-
-    for to_delete in words_to_delete:
-        del word_and_tags[to_delete]
-        word_and_tags[("OVV", to_delete[1])] += 1
-
-    uni_gram_tags = Counter(tags)
-
-    bi_grams = Counter(bi_grams)
+            del word_and_tags[word_and_tag]
+            word_and_tags[("OVV", word_and_tag[1])] += 1
 
     return compute_trans(bi_grams, uni_gram_tags), compute_emission(word_and_tags)
 
 
-@lru_cache(maxsize=256)
-def optimize_word_and_tag(word: str, tag: str, start: bool) -> (str, str):
-    return word, tag
+def classify_word(word, total):
+    if number.fullmatch(word) is not None:
+        return "NUMBER"
+
+    if total > 1:
+        return word
+
+    if ovv3_capital.fullmatch(word) is not None:
+        return "OVV3-CAPITAL"
+    elif ovv3_low.fullmatch(word) is not None:
+        return "OVV3-LOW"
+    elif ovv3_start.fullmatch(word) is not None:
+        return "OVV3-START"
 
 
-def compute_emission(word_and_tags: Counter) -> defaultdict:
+def compute_emission(word_and_tags: dict) -> defaultdict:
     emission = defaultdict(dict)
 
     total = word_and_tags.total()
