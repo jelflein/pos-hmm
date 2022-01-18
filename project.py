@@ -204,6 +204,27 @@ def print_help():
     print("\ttrain <training corpus> <bi gramm output> <emission output>")
     print("\ttag <bi gramm input> <emission input> <corpus> <tagged corpus out>")
     print("\teval <vergleichsdatei> <eval-datei> <diff output>")
+    print("\ttrain-tag-eval <training corpus> <bi gramm output> <emission output> <bi gramm input> <emission input> "
+          "<corpus> <tagged corpus out> <vergleichsdatei> <eval-datei> <diff output>")
+
+
+def train(training_corpus_file_name, bi_gram_out_file_name, emission_out_file_name):
+    training_corpus_descriptor = validate_file_and_open(training_corpus_file_name, 'r')
+
+    trans_and_emission = compute_trans_and_emission(training_corpus_descriptor)
+
+    trans = trans_and_emission[0]
+    emissions = trans_and_emission[1]
+
+    save_nested_dict(trans, bi_gram_out_file_name)
+    save_nested_dict(emissions, emission_out_file_name)
+
+
+def tag(bi_gramm_file_name, emission_file_name, untagged_text, tagged_out_file_name):
+    bi_grams = read_nested_dict(bi_gramm_file_name)
+    emissions = read_nested_dict(emission_file_name)
+
+    tag_file(validate_file_and_open(untagged_text, 'r'), tagged_out_file_name, bi_grams, emissions)
 
 
 if __name__ == "__main__":
@@ -220,18 +241,10 @@ if __name__ == "__main__":
             sys.exit(-1)
 
         training_corpus_file_name = sys.argv[2]
-        training_corpus_descriptor = validate_file_and_open(training_corpus_file_name, 'r')
-
-        trans_and_emission = compute_trans_and_emission(training_corpus_descriptor)
-
-        trans = trans_and_emission[0]
-        emissions = trans_and_emission[1]
-
         bi_gram_out_file_name = sys.argv[3]
         emission_out_file_name = sys.argv[4]
 
-        save_nested_dict(trans, bi_gram_out_file_name)
-        save_nested_dict(emissions, emission_out_file_name)
+        train(training_corpus_file_name, bi_gram_out_file_name, emission_out_file_name)
     elif mode == "tag":
         if (len(sys.argv) - 1) != 5 and mode == "tag":
             print("Die Anzahl der Argumente stimmt nicht!")
@@ -239,14 +252,10 @@ if __name__ == "__main__":
 
         bi_gramm_file_name = sys.argv[2]
         emission_file_name = sys.argv[3]
-
-        bi_grams = read_nested_dict(bi_gramm_file_name)
-        emissions = read_nested_dict(emission_file_name)
-
-        open_input_descriptor = validate_file_and_open(sys.argv[4], 'r')
+        untagged_text = sys.argv[4]
         tagged_out_file_name = sys.argv[5]
 
-        tag_file(open_input_descriptor, tagged_out_file_name, bi_grams, emissions)
+        tag(bi_gramm_file_name, emission_file_name, untagged_text, tagged_out_file_name)
     elif mode == "eval":
         if (len(sys.argv) - 1) != 4:
             print("Die Anzahl der Argumente stimmt nicht!")
@@ -255,6 +264,29 @@ if __name__ == "__main__":
         compare_descriptor = validate_file_and_open(sys.argv[2], 'r')
         eval_descriptor = validate_file_and_open(sys.argv[3], 'r')
         diff_results_descriptor = validate_file_and_open(sys.argv[4], 'w')
+
+        eval_files(compare_descriptor, eval_descriptor, diff_results_descriptor)
+    elif mode == "train-tag-eval":
+        if (len(sys.argv) - 1) != 11:
+            print("Die Anzahl der Argumente stimmt nicht!")
+            sys.exit(-1)
+
+        training_corpus_file_name = sys.argv[2]
+        bi_gram_out_file_name = sys.argv[3]
+        emission_out_file_name = sys.argv[4]
+
+        train(training_corpus_file_name, bi_gram_out_file_name, emission_out_file_name)
+
+        bi_gramm_file_name = sys.argv[5]
+        emission_file_name = sys.argv[6]
+        untagged_text = sys.argv[7]
+        tagged_out_file_name = sys.argv[8]
+
+        tag(bi_gramm_file_name, emission_file_name, untagged_text, tagged_out_file_name)
+
+        compare_descriptor = validate_file_and_open(sys.argv[9], 'r')
+        eval_descriptor = validate_file_and_open(sys.argv[10], 'r')
+        diff_results_descriptor = validate_file_and_open(sys.argv[11], 'w')
 
         eval_files(compare_descriptor, eval_descriptor, diff_results_descriptor)
     else:
