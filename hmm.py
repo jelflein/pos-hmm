@@ -4,6 +4,8 @@ Beispiel-Implementierung des Viterbi-Algorithmus für Hidden Markov Modelle.
 
 from math import log
 
+from classify import classify_word
+
 neginf = float("-inf")  # log-Wahrscheinlchkeit von 0 (minus unendlich)
 
 
@@ -49,11 +51,26 @@ class HMM:
     def decode(self, observations):
         new_obsv = []
 
-        for word in observations:
+        for i in range(0, len(observations)):
+            word = observations[i]
+
+            if i == 0:
+                word = "^" + word
+
             if word not in self.words:
-                new_obsv.append("OVV")
+                classified_word = classify_word(word, 0)
+
+                if classified_word is None:
+                    print(word)
+
+                new_obsv.append(classify_word(word, 0))
             else:
-                new_obsv.append(word)
+                classified_word = classify_word(word, 2)
+
+                if classified_word is not None:
+                    new_obsv.append(classified_word)
+                else:
+                    new_obsv.append(word)
 
         # trellis: Liste von Wörterbüchern (dict)
         viterbi = [{'START': State(0.0, False, '')}]
