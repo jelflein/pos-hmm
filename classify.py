@@ -2,7 +2,7 @@ import re
 
 # Erkennt Zahlen mit Komma auch solche wie 200.000.000
 number = re.compile("(-)?\d+((,|.)\d)?")
-trunc = re.compile("(\w|[äöüß])+\-")
+trunc = re.compile("(\w|[äöüß]|[ÄÖÜ])+\-")
 # https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url
 link = re.compile(
     "(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})")
@@ -39,51 +39,62 @@ blocking_list = [
 ]
 
 
-def classify_word(word, total):
+def classify_word(word, total, tag=None, denoising=False):
     if number.fullmatch(word) is not None:
-        return "NUMBER"
+        if denoising:
+            return "NUMBER", "CARD"
+        else:
+            return "NUMBER", tag
+
     elif trunc.fullmatch(word) is not None:
-        return "TRUNC"
-    elif link.fullmatch(word) is not None:
-        return "LINK"
+        if denoising:
+            return "TRUNC", "TRUNC"
+        else:
+            return "TRUNC", tag
+
+    if link.fullmatch(word) is not None:
+        if denoising:
+            return "LINK", "XY"
+        else:
+            return "LINK", tag
 
     if total > 1:
         return None
 
     if ovv3_capital.fullmatch(word) is not None:
-        return "OVV3-CAPITAL"
+        return "OVV3-CAPITAL", tag
     elif ovv3_low.fullmatch(word) is not None:
-        return "OVV3-LOW"
+        return "OVV3-LOW", tag
     elif ovv3_start.fullmatch(word) is not None:
-        return "OVV3-START"
+        return "OVV3-START", tag
     elif ovv3.fullmatch(word) is not None:
-        return "OVV3"
+        return "OVV3", tag
 
     elif ovv6_capital.fullmatch(word) is not None:
-        return "OVV6-CAPITAL"
+        return "OVV6-CAPITAL", tag
     elif ovv6_low.fullmatch(word) is not None:
-        return "OVV6-LOW"
+        return "OVV6-LOW", tag
     elif ovv6_start.fullmatch(word) is not None:
-        return "OVV6-START"
+        return "OVV6-START", tag
     elif ovv6.fullmatch(word) is not None:
-        return "OVV3"
+        return "OVV3", tag
 
     elif ovv9_capital.fullmatch(word) is not None:
-        return "OVV9-CAPITAL"
+        return "OVV9-CAPITAL", tag
     elif ovv9_low.fullmatch(word) is not None:
-        return "OVV9-LOW"
+        return "OVV9-LOW", tag
     elif ovv9_start.fullmatch(word) is not None:
-        return "OVV9-START"
+        return "OVV9-START", tag
     elif ovv9.fullmatch(word) is not None:
-        return "OVV3"
+        return "OVV3", tag
 
     elif ovv_huge_capital.fullmatch(word) is not None:
-        return "OVV-HUGE-CAPITAL"
+        return "OVV-HUGE-CAPITAL", tag
     elif ovv_huge_low.fullmatch(word) is not None:
-        return "OVV-HUGE-LOW"
+        return "OVV-HUGE-LOW", tag
     elif ovv_huge_start.fullmatch(word) is not None:
-        return "OVV-HUGE-START"
+        return "OVV-HUGE-START", tag
     elif ovv_huge.fullmatch(word) is not None:
-        return "OVV3"
+        return "OVV3", tag
 
     return None

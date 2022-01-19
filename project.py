@@ -22,7 +22,7 @@ def validate_file_and_open(file_name: str, mode: str):
     return fd
 
 
-def compute_trans_and_emission(train_fd):
+def compute_trans_and_emission(train_fd, denoising=False):
     word_and_tags = defaultdict(int)
     bi_grams = defaultdict(int)
     uni_gram_tags = defaultdict(int)
@@ -54,10 +54,16 @@ def compute_trans_and_emission(train_fd):
                 tag_before = start_tag
 
     for word_and_tag in list(word_and_tags.keys()):
-        classified_word = classify_word(word_and_tag[0], word_and_tags[word_and_tag])
+        word = word_and_tag[0]
+        tag = word_and_tag[1]
 
-        if classified_word is not None:
-            word_and_tags[(classified_word, word_and_tag[1])] += word_and_tags[word_and_tag] + 1
+        classified_word_and_tag = classify_word(word, word_and_tags[word_and_tag], tag, denoising)
+
+        if classified_word_and_tag is not None:
+            word = classified_word_and_tag[0]
+            tag = classified_word_and_tag[1]
+
+            word_and_tags[(word, tag)] += word_and_tags[word_and_tag] + 1
             del word_and_tags[word_and_tag]
 
     return compute_trans(bi_grams, uni_gram_tags), compute_emission(word_and_tags)
@@ -214,6 +220,9 @@ def eval_files(compare_descriptor, eval_descriptor, diff_results_descriptor):
     with eval_descriptor:
         eval = eval_descriptor.readlines()
 
+    if len(compare) > len(eval):
+        print("Die Vergleichsdatei hat mehr Zeilen als die Eval-Datei")
+
     diffs = unified_diff(eval, compare, tofile=compare_descriptor.name, fromfile=eval_descriptor.name, lineterm="")
     with diff_results_descriptor:
         for line in diffs:
@@ -245,10 +254,10 @@ def print_help():
           "<corpus> <tagged corpus out> <vergleichsdatei> <eval-datei> <diff output>")
 
 
-def train(training_corpus_file_name, bi_gram_out_file_name, emission_out_file_name):
+def train(training_corpus_file_name, bi_gram_out_file_name, emission_out_file_name, denoising):
     training_corpus_descriptor = validate_file_and_open(training_corpus_file_name, 'r')
 
-    trans_and_emission = compute_trans_and_emission(training_corpus_descriptor)
+    trans_and_emission = compute_trans_and_emission(training_corpus_descriptor, denoising)
 
     trans = trans_and_emission[0]
     emissions = trans_and_emission[1]
@@ -273,7 +282,7 @@ if __name__ == "__main__":
 
     mode = sys.argv[1]
 
-    if mode == "train":
+    if mode == "train" or mode == "train-denoising":
         if (len(sys.argv) - 1) != 4:
             print("Die Anzahl der Argumente stimmt nicht!")
             sys.exit(-1)
@@ -282,7 +291,7 @@ if __name__ == "__main__":
         bi_gram_out_file_name = sys.argv[3]
         emission_out_file_name = sys.argv[4]
 
-        train(training_corpus_file_name, bi_gram_out_file_name, emission_out_file_name)
+        train(training_corpus_file_name, bi_gram_out_file_name, emission_out_file_name, mode == "train-denoising")
     elif mode == "tag":
         if (len(sys.argv) - 1) != 5 and mode == "tag":
             print("Die Anzahl der Argumente stimmt nicht!")
@@ -304,7 +313,7 @@ if __name__ == "__main__":
         diff_results_descriptor = validate_file_and_open(sys.argv[4], 'w')
 
         eval_files(compare_descriptor, eval_descriptor, diff_results_descriptor)
-    elif mode == "train-tag-eval":
+    elif mode == "train-tag-eval" or mode == "train-denoising-tag-eval":
         if (len(sys.argv) - 1) != 11:
             print("Die Anzahl der Argumente stimmt nicht!")
             sys.exit(-1)
@@ -313,7 +322,7 @@ if __name__ == "__main__":
         bi_gram_out_file_name = sys.argv[3]
         emission_out_file_name = sys.argv[4]
 
-        train(training_corpus_file_name, bi_gram_out_file_name, emission_out_file_name)
+        train(training_corpus_file_name, bi_gram_out_file_name, emission_out_file_name, mode == "train-denoising-tag-eval")
 
         bi_gramm_file_name = sys.argv[5]
         emission_file_name = sys.argv[6]

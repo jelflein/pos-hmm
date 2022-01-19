@@ -1,3 +1,28 @@
+Nur OVV
 Akkuratheit: 92.31067190688535%
 Total: 105848
 Korrekte Wörter: 97709
+
+Akkuratheit: 94.37967651727006%
+Total: 105848
+Korrekte Wörter: 99899
+
+Ohne Number
+Akkuratheit: 94.29464893054191%
+Total: 105848
+Korrekte Wörter: 99809
+
+Ohne Link, Number
+Akkuratheit: 94.29464893054191%
+Total: 105848
+Korrekte Wörter: 99809
+
+Ohne Link, Number, Trunc
+Akkuratheit: 94.22568211019575%
+Total: 105848
+Korrekte Wörter: 99736
+
+Denosing
+Akkuratheit: 94.38534502305193%
+Total: 105848
+Korrekte Wörter: 99905

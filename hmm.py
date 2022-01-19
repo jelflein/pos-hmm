@@ -63,12 +63,12 @@ class HMM:
                 if classified_word is None:
                     print(word)
 
-                new_obsv.append(classify_word(word, 0))
+                new_obsv.append(classified_word[0])
             else:
                 classified_word = classify_word(word, 2)
 
                 if classified_word is not None:
-                    new_obsv.append(classified_word)
+                    new_obsv.append(classified_word[0])
                 else:
                     new_obsv.append(word)
 
