@@ -27,6 +27,15 @@ ovv_huge_start = re.compile("^\^.{9,}")
 ovv_huge_low = re.compile("^([a-z]|[ßäöü]){9,}")
 ovv_huge_capital = re.compile("^([A-Z]|[ÄÖÜ]){1}([a-z]|[ßäöü]|\-([A-Z]|[ÄÖÜ])){8,}")
 
+"""
+Das Namens Schema:
+
+-CAPITAL Wörter dernen erster Buchstabe großgeschrieben ist, der rest klein
+-LOW durchgehen kleingeschrieben
+-START Wörter die am Anfang des Satzes stehen
+OVV-N ale anderen Wörter
+"""
+
 classifyers = [
     "OVV3-CAPITAL", "OVV3-LOW", "OVV3-START", "OVV3",
     "OVV6-CAPITAL", "OVV6-LOW", "OVV6-START", "OVV6",
@@ -40,6 +49,16 @@ blocking_list = [
 
 
 def classify_word(word, total, tag=None, denoising=False):
+    """
+    Ermittelt mithilfe von regulären Ausdrücken die jeweilige Klasse, die Anzahl im Korpus ist für bestimmte
+    Klassen relevant, der Schwellwert beträgt <= 1, wenn dies gegeben ist, werden diese Klasse berücksichtigt.
+
+    :param word:
+    :param total:
+    :param tag:
+    :param denoising: siehe compute_tran_and_emission in project.py
+    :return:
+    """
     if number.fullmatch(word) is not None:
         if denoising:
             return "NUMBER", "CARD"
