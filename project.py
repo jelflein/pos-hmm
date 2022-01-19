@@ -1,16 +1,11 @@
 import math
 import sys
-import re
 from collections import Counter, defaultdict
-from functools import lru_cache
 from difflib import unified_diff
-from difflib import Differ
 
 from hmm import HMM
 
 start_tag = "START"
-replace_sharp_s = re.compile(r"ß")
-
 
 def validate_file_and_open(file_name: str, mode: str):
     try:
@@ -43,11 +38,6 @@ def compute_trans_and_emission(train_fd):
                 tag = split[1]
                 tags.append(tag)
 
-                o_word_tag = optimize_word_and_tag(word, tag, start)
-
-                word = o_word_tag[0]
-                tag = o_word_tag[1]
-
                 bi_grams.append((tag_before, tag))
                 tag_before = tag
 
@@ -71,11 +61,6 @@ def compute_trans_and_emission(train_fd):
     bi_grams = Counter(bi_grams)
 
     return compute_trans(bi_grams, uni_gram_tags), compute_emission(word_and_tags)
-
-
-@lru_cache(maxsize=256)
-def optimize_word_and_tag(word: str, tag: str, start: bool) -> (str, str):
-    return word, tag
 
 
 def compute_emission(word_and_tags: Counter) -> defaultdict:
