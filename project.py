@@ -8,6 +8,14 @@ from hmm import HMM
 start_tag = "START"
 
 def validate_file_and_open(file_name: str, mode: str):
+    """
+    Diese Funktion öffnet einen File-Descriptor und fängt Fehler. Bei einem Fehler wird
+    das Programm mit -1 beendet.
+
+    :param file_name: Der Dateiname
+    :param mode: der Modus, in welchem die Datei gelesen werden soll
+    :return:
+    """
     try:
         fd = open(file_name, mode)
     except OSError:
@@ -17,11 +25,34 @@ def validate_file_and_open(file_name: str, mode: str):
     return fd
 
 
-def compute_trans_and_emission(train_fd):
-    word_and_tag = []
-    bi_grams = []
-    tags = []
+def compute_trans_and_emission(train_fd) -> tuple:
+    """
+    Diese Funktion berechnet die Trans- und Emissionswahrscheinlichkeit für das HMM.
 
+    Die Zeilen werden mit .strip() bereinigt.
+
+    Es wird erwartet dass das Datei-Formart eingehalten wird, dieses lautet:
+
+    <Wahrscheinlichkeit>\t<Tag>\t<Wort>\n
+
+    Sätze werden mit einer leeren Zeile getrennt.
+
+    Der Rückgabe Wert ist ein Tupel aus nested dict (bi-gramme, emissions). Das Format ist
+    jeweils sehr ähnlich:
+
+    bi_gramme[wort 1][wort 2] = log Wahrscheinlichkeit
+    emissions[tag][wort] = log Wahrscheinlichkeit
+
+    siehe auch compute_emissoin und compute_trans für mehr Informationen.
+
+    :param train_fd: ein File Descriptor des Trainingskorpus
+    :return: ein Tupel aus nested dict (bi-gramme, emissions) siehe letzen Absatz
+    """
+    word_and_tags = defaultdict(int)
+    bi_grams = defaultdict(int)
+    uni_gram_tags = defaultdict(int)
+
+    # einlesen des Korpus und ermittlung der Bi- und Uni-Gramme
     with train_fd:
         tag_before = start_tag
 
@@ -29,23 +60,22 @@ def compute_trans_and_emission(train_fd):
             if line != "\n":
                 start = tag_before == start_tag
                 if start:
-                    tags.append(start_tag)
+                    uni_gram_tags[start_tag] += 1
 
                 line = line.strip()
                 split = line.split("\t")
 
                 word = split[0]
                 tag = split[1]
-                tags.append(tag)
 
-                bi_grams.append((tag_before, tag))
+                uni_gram_tags[tag] += 1
+
+                bi_grams[(tag_before, tag)] += 1
                 tag_before = tag
 
-                word_and_tag.append((word, tag))
+                word_and_tags[(word, tag)] += 1
             else:
                 tag_before = start_tag
-
-    word_and_tags = Counter(word_and_tag)
 
     words_to_delete = []
     for word_and_tag in word_and_tags:
@@ -56,17 +86,23 @@ def compute_trans_and_emission(train_fd):
         del word_and_tags[to_delete]
         word_and_tags[("OVV", to_delete[1])] += 1
 
-    uni_gram_tags = Counter(tags)
-
-    bi_grams = Counter(bi_grams)
-
     return compute_trans(bi_grams, uni_gram_tags), compute_emission(word_and_tags)
 
 
-def compute_emission(word_and_tags: Counter) -> defaultdict:
+def compute_emission(word_and_tags: dict) -> defaultdict:
+    """
+    Diese Function ermittelt mithilfe von relativen Wahrscheinlichkeiten,
+    die Emissionen für das HMM.
+
+    :param word_and_tags: Ein dict welches als Key ein Tupel im Format (wort, tag) hat,
+    der Value ist das Vorkommen im Korpus.
+
+    :return: Ein nested dict im Format emission[tag][word] = log Wahrscheinlichkeit
+    """
     emission = defaultdict(dict)
 
-    total = word_and_tags.total()
+    # Anzahl aller Wörter im Korpus
+    total = sum(word_and_tags.values())
 
     for word_and_tag in word_and_tags:
         word = word_and_tag[0]
@@ -78,18 +114,44 @@ def compute_emission(word_and_tags: Counter) -> defaultdict:
 
 
 def compute_trans(bi_tuples: dict, uni_gram_tags: dict) -> defaultdict:
+    """
+    Diese Funktion berechnet die Wahrscheinlichkeit der schon vorher ermittelten Bi-Gramme (tag 1, tag 2).
+
+    :param bi_tuples: ein dict welches als Key ein Bi-Gramm Tupel der Tags hat (tag 1, tag 2),
+    der Value ist die Anzahl wie oft dieses Bi-Gramm im Korpus vorkommt.
+
+    :param uni_gram_tags: Anzahl wie oft das Tag im Korpus vorkommt im Format  uni_gram_tags[tag] = Anzahl im Korpus
+
+    :return: bi_gramme[tag1][tag2] = log Wahrscheinlichkeit
+    """
     trans = defaultdict(dict)
 
     for bi_tuple in bi_tuples:
-        w1 = bi_tuple[0]
-        w2 = bi_tuple[1]
+        tag1 = bi_tuple[0]
+        tag2 = bi_tuple[1]
 
-        trans[w1][w2] = math.log(bi_tuples[bi_tuple] / uni_gram_tags[w1])
+        trans[tag1][tag2] = math.log(bi_tuples[bi_tuple] / uni_gram_tags[tag1])
 
     return trans
 
 
 def save_nested_dict(input_dict: dict, output: str):
+    """
+    Speichert ein zweifach nested dict im folgenden Format:
+
+    Die Leerzeichen dienen nur der Lesbarkeit.
+
+    input_dict[key_1][nested_key] \t key_1 \t nested_key \n
+
+    Die Datei wird überschrieben.
+
+    Das Programm wird beendet mit -1, falls die Datei nicht geöffnet werden kann.
+
+    Diese funktion ist das Gegenstück zur: read_nested_dict
+
+    :param input_dict: ein zweifach verschachteltes Dict.
+    :param output: ein Dateiname
+    """
     try:
         fd = open(output, 'w')
     except OSError:
@@ -106,6 +168,20 @@ def save_nested_dict(input_dict: dict, output: str):
 
 
 def read_nested_dict(input_file_name: str):
+    """
+    Liest ein zweifach nested dict im folgenden Format:
+
+    Die Leerzeichen dienen nur der Lesbarkeit.
+
+    input_dict[key_1][nested_key] \t key_1 \t nested_key \n
+
+    Das Programm wird beendet mit -1, falls die Datei nicht geöffnet werden kann.
+
+    Diese funktion ist das Gegenstück zur: save_nested_dict
+
+    :param input_file_name: ein Dateiname
+    :return: ein zweifach verschachteltes Dict.
+    """
     try:
         fd = open(input_file_name, 'r')
     except OSError:
@@ -185,6 +261,9 @@ def eval_files(compare_descriptor, eval_descriptor, diff_results_descriptor):
 
 
 def print_help():
+    """
+    Gibt eine einfache Hilfe aus.
+    """
     print("Alle parameter sind Dateien!")
     print("\ttrain <training corpus> <bi gramm output> <emission output>")
     print("\ttag <bi gramm input> <emission input> <corpus> <tagged corpus out>")
@@ -194,8 +273,15 @@ def print_help():
 
 
 def train(training_corpus_file_name, bi_gram_out_file_name, emission_out_file_name):
-    training_corpus_descriptor = validate_file_and_open(training_corpus_file_name, 'r')
+    """
+    Dies ist eine Hilfs-Funktion welche mit compute_trans_and_emission die Bi-Gramme und Emissions berechnet
+    und diese dann in die jeweilige Dateischreibt. Die Dateien werden überschrieben (siehe save_nested_dict).
 
+    :param training_corpus_file_name:
+    :param bi_gram_out_file_name:
+    :param emission_out_file_name:
+    """
+    training_corpus_descriptor = validate_file_and_open(training_corpus_file_name, 'r')
     trans_and_emission = compute_trans_and_emission(training_corpus_descriptor)
 
     trans = trans_and_emission[0]
@@ -206,6 +292,11 @@ def train(training_corpus_file_name, bi_gram_out_file_name, emission_out_file_na
 
 
 def tag(bi_gramm_file_name, emission_file_name, untagged_text, tagged_out_file_name):
+    """
+    Hilfsfunktion welche die Bi-Gramme und Emissionen mithilfe von read_nested_dict liest
+    und draus folgend die Funktion tag_file mit diesen Parametern aufruft.
+    """
+
     bi_grams = read_nested_dict(bi_gramm_file_name)
     emissions = read_nested_dict(emission_file_name)
 
@@ -213,6 +304,29 @@ def tag(bi_gramm_file_name, emission_file_name, untagged_text, tagged_out_file_n
 
 
 if __name__ == "__main__":
+    """
+    Die Main-Funktion erwartet das Arguemnte übergeben werden, wenn keine übergeben werden, wird
+    eine Hilfe ausgegeben.
+
+    Es gibt verschiedene Modi, diese prüfen immer dass die richtige Anzahl an Argumenten übergeben wird,
+    es gibt keine Default-Werte.
+
+    Ein Modus ist immer der erste Argument nach pyhton3 project.py <Modus> <Args…>
+
+    Die Argumente der verschiedenen Modi, kann man aus print_help() entnehmen.
+
+    Der Modus train ruft schlussendlich die Funktion compute_trans_and_emission und speichert das Ergebnis
+    in die jeweilige Text Datei. Dieser Modus ist zum trainieren des HMM Models gedacht.
+
+    Der Modus tag taggt den Text siehe tag and tag_file für mehr.
+
+    Der Modus eval siehe eval_files
+
+    Der Modus train-tag-eval ist das hintereinander ausführen der Modi: 
+    train, tag und eval.
+
+    Falls ein falscher Modus angeben wird, wird die Hilfe ausgegeben.
+    """
     if (len(sys.argv) - 1) <= 1:
         print("Es wurden keine oder zu wenige Argumente übergeben!")
         print_help()
