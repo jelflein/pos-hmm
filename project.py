@@ -1,10 +1,7 @@
 import math
 import sys
-import re
 from collections import Counter, defaultdict
-from functools import lru_cache
 from difflib import unified_diff
-from difflib import Differ
 
 from classify import classify_word, classifyers, blocking_list
 from hmm import HMM
@@ -13,6 +10,14 @@ start_tag = "START"
 
 
 def validate_file_and_open(file_name: str, mode: str):
+    """
+    Diese Funktion öffnet einen File-Descriptor und fängt Fehler. Bei einem Fehler wird
+    das Programm mit -1 beendet.
+
+    :param file_name: Der Dateiname
+    :param mode: der Modus, in welchem die Datei gelesen werden soll
+    :return:
+    """
     try:
         fd = open(file_name, mode)
     except OSError:
@@ -22,11 +27,46 @@ def validate_file_and_open(file_name: str, mode: str):
     return fd
 
 
-def compute_trans_and_emission(train_fd, denoising=False):
+def compute_trans_and_emission(train_fd, denoising: bool = False) -> tuple:
+    """
+    Diese Funktion berechnet die Trans- und Emissionswahrscheinlichkeit für das HMM.
+
+    Die Wörter werden verändert, wenn es an einem Satz Anfang steht wird ein '^' an den
+    Anfang geheftet. Wenn es eine Zahl, Link oder ein geteiltes Wort ist, wird dies mit
+    einem Hilfs-Tag ersetzt (NUMBER, LINK, TRUNC). Die entsprechenden regulären Ausdrücke
+    findet man in classify.py
+
+    Wenn ein Wort nur einmal im Korpus vorkommt, wird dies mithilfe von classify_word
+    aus classify.py ein passendes Hilfswort ermittelt.
+
+    Wenn denoising aktiviert ist, wird erzwungen, dass Zahlen, Links und geteilte Wörter,
+    die Tags: CARD, XY und TRUNC zugewiesen bekommen.
+
+    Die Zeilen werden mit .strip() bereinigt.
+
+    Es wird erwartet dass das Datei-Formart eingehalten wird, dieses lautet:
+
+    <Wahrscheinlichkeit>\t<Tag>\t<Wort>\n
+
+    Sätze werden mit einer leeren Zeile getrennt.
+
+    Der Rückgabe Wert ist ein Tupel aus nested dict (bi-gramme, emissions). Das Format ist
+    jeweils sehr ähnlich:
+
+    bi_gramme[wort 1][wort 2] = log Wahrscheinlichkeit
+    emissions[tag][wort] = log Wahrscheinlichkeit
+
+    siehe auch compute_emissoin und compute_trans für mehr Informationen.
+
+    :param train_fd: ein File Descriptor des Trainingskorpus
+    :param denoising: siehe 4 Absatz
+    :return: ein Tupel aus nested dict (bi-gramme, emissions) siehe letzen Absatz
+    """
     word_and_tags = defaultdict(int)
     bi_grams = defaultdict(int)
     uni_gram_tags = defaultdict(int)
 
+    # einlesen des Korpus und ermittlung der Bi- und Uni-Gramme
     with train_fd:
         tag_before = start_tag
 
@@ -42,6 +82,7 @@ def compute_trans_and_emission(train_fd, denoising=False):
 
                 uni_gram_tags[tag] += 1
 
+                # Wenn Anfang ^
                 if start:
                     word = "^" + word
                     uni_gram_tags[start_tag] += 1
@@ -53,6 +94,7 @@ def compute_trans_and_emission(train_fd, denoising=False):
             else:
                 tag_before = start_tag
 
+    # Klassifizieren der Wörter mithilfe von RegEx (Zahlen, Links etc.)
     for word_and_tag in list(word_and_tags.keys()):
         word = word_and_tag[0]
         tag = word_and_tag[1]
@@ -70,8 +112,18 @@ def compute_trans_and_emission(train_fd, denoising=False):
 
 
 def compute_emission(word_and_tags: dict) -> defaultdict:
+    """
+    Diese Function ermittelt mithilfe von relativen Wahrscheinlichkeiten,
+    die Emissionen für das HMM.
+
+    :param word_and_tags: Ein dict welches als Key ein Tupel im Format (wort, tag) hat,
+    der Value ist das Vorkommen im Korpus.
+
+    :return: Ein nested dict im Format emission[tag][word] = log Wahrscheinlichkeit
+    """
     emission = defaultdict(dict)
 
+    # Anzahl aller Wörter im Korpus
     total = sum(word_and_tags.values())
 
     for word_and_tag in word_and_tags:
@@ -84,18 +136,44 @@ def compute_emission(word_and_tags: dict) -> defaultdict:
 
 
 def compute_trans(bi_tuples: dict, uni_gram_tags: dict) -> defaultdict:
+    """
+    Diese Funktion berechnet die Wahrscheinlichkeit der schon vorher ermittelten Bi-Gramme (tag 1, tag 2).
+
+    :param bi_tuples: ein dict welches als Key ein Bi-Gramm Tupel der Tags hat (tag 1, tag 2),
+    der Value ist die Anzahl wie oft dieses Bi-Gramm im Korpus vorkommt.
+
+    :param uni_gram_tags: Anzahl wie oft das Tag im Korpus vorkommt im Format  uni_gram_tags[tag] = Anzahl im Korpus
+
+    :return: bi_gramme[tag1][tag2] = log Wahrscheinlichkeit
+    """
     trans = defaultdict(dict)
 
     for bi_tuple in bi_tuples:
-        w1 = bi_tuple[0]
-        w2 = bi_tuple[1]
+        tag1 = bi_tuple[0]
+        tag2 = bi_tuple[1]
 
-        trans[w1][w2] = math.log(bi_tuples[bi_tuple] / uni_gram_tags[w1])
+        trans[tag1][tag2] = math.log(bi_tuples[bi_tuple] / uni_gram_tags[tag1])
 
     return trans
 
 
 def save_nested_dict(input_dict: dict, output: str):
+    """
+    Speichert ein zweifach nested dict im folgenden Format:
+
+    Die Leerzeichen dienen nur der Lesbarkeit.
+
+    input_dict[key_1][nested_key] \t key_1 \t nested_key \n
+
+    Die Datei wird überschrieben.
+
+    Das Programm wird beendet mit -1, falls die Datei nicht geöffnet werden kann.
+
+    Diese funktion ist das Gegenstück zur: read_nested_dict
+
+    :param input_dict: ein zweifach verschachteltes Dict.
+    :param output: ein Dateiname
+    """
     try:
         fd = open(output, 'w')
     except OSError:
@@ -112,6 +190,20 @@ def save_nested_dict(input_dict: dict, output: str):
 
 
 def read_nested_dict(input_file_name: str):
+    """
+    Liest ein zweifach nested dict im folgenden Format:
+
+    Die Leerzeichen dienen nur der Lesbarkeit.
+
+    input_dict[key_1][nested_key] \t key_1 \t nested_key \n
+
+    Das Programm wird beendet mit -1, falls die Datei nicht geöffnet werden kann.
+
+    Diese funktion ist das Gegenstück zur: save_nested_dict
+
+    :param input_file_name: ein Dateiname
+    :return: ein zweifach verschachteltes Dict.
+    """
     try:
         fd = open(input_file_name, 'r')
     except OSError:
@@ -135,6 +227,26 @@ def read_nested_dict(input_file_name: str):
 
 
 def smooth_emissions(emissions: dict):
+    """
+    Diese Function hat den Hintergrund, falls in classify.py mit classify_word ein Wort klassifiziert wird
+    und diese Klasse ist nicht in den Emissionen (Hidden States) vom HMM enthalten, das immer ein Wert für
+    jede Klasse aus classify vorhanden ist.
+
+    Dafür sucht man sich den nächsten Wert raus. Man kann sich dies als Array vorstellen:
+
+    OVV-3 OVV-3-LOW OVV-3-CAPITAL OVV3-START … OVV-9-START …OVV-HUGE-START
+
+    Falls alle Werte der Klasse OVV-3-* bekannt sind außer die Klasse OVV-3-LOW,
+    werden alle Werte von OVV3-* Klassen ermitellt und der Durchschschnitt ermittelt,
+    falls alle Werte von OVV-3-* leer sein sollten, wird zur nächst höhren Klasse gegangen usw.
+    Falls alles leer sein sollte, sind die Trainingsdaten nicht optimal gewählt und es sollt ein andere gewählt werden.
+
+    Es werden bestimmte Klasse ausgeschlossen, da es dort keine unbekannte Wörter gibt wie z.B. Artikel usw.
+    Diese stehen in classify.py in blocking_list.
+
+    :param emissions: emissions[tag][wort] = log Wahrscheinlichkeit
+    :return: smoothed emissons
+    """
     for key in list(emissions.keys()):
         if key in blocking_list:
             continue
@@ -142,20 +254,33 @@ def smooth_emissions(emissions: dict):
         nested_dict = emissions[key]
 
         ovv = [0, 0, 0, 0]
+        div = [0, 0, 0, 0]
 
+        #Zusammen zählen der Werte
         for i in range(0, len(classifyers)):
             classifyer = classifyers[i]
 
             if classifyer in nested_dict:
                 if i < 4:
                     ovv[0] += nested_dict[classifyer]
+                    div[0] += 1
                 elif i < 8:
                     ovv[1] += nested_dict[classifyer]
+                    div[1] += 1
                 elif i < 12:
                     ovv[2] += nested_dict[classifyer]
+                    div[2] += 1
                 elif i < 16:
                     ovv[3] += nested_dict[classifyer]
+                    div[3] += 1
 
+        #durchschnitt berechen
+        for i in range(0, len(ovv)):
+            if div[i] != 0:
+                ovv[i] = ovv[i] / div[i]
+
+        #Falls die Klasse OVV-N-* immer noch 0
+        #wird die nächst nähre gesucht
         for i in range(0, len(ovv)):
             j = i
             k = i
@@ -187,6 +312,40 @@ def smooth_emissions(emissions: dict):
 
 
 def tag_file(input_descriptor, output: str, trans: dict, emissions: dict):
+    """
+    Die Methode liest die zu taggende Datei ein und ermittelt mithilfe des HMM die wahrscheinlichsten Tags.
+    Das Format der zu taggende Datei ist:
+
+    Wort\n
+    Wort\n
+    \n
+
+    Sätze werden mit einer leeren Zeile getrennt. Die Datei endet mit \n\n
+
+    Nachdem die Tags mithilfe des HMM ermittelt worden sind, für mehr Information siehe hmm.py,
+    wird das Ergebnis im Format in die Datei geschrieben:
+
+    Wort\tTag\n
+    Wort\tTag\n
+    \n
+
+    Sätze werden mit einer leeren Zeile getrennt. Die Datei endet mit \n\n
+
+    Auf Fehlerfälle des HMM wird nicht eingegangen, diese äußern sich darin dass die Wahrscheinlichkeit
+    -inf und jedes Wort das Tag "Start" hat. Die Wahrscheinlichkeit die vom Viterbi-Alog. berechnet wird,
+    wird auch fallen gelasssen.
+
+    :param input_descriptor: zu taggende Datei
+    :param output: Das Ergebnis des HMM
+
+    :param trans: aka Bi-Gramme bi-gramme[wort1][wort2] = log Wahrscheinlichkeit
+    siehe auch hmm.py
+
+    :param emissions: emissions[tag][wort] = log Wahrscheinlichkeit
+    siehe auch hmm.py
+    """
+
+    #einlesen der Datei
     with input_descriptor:
         sentence = []
         sentences = []
@@ -214,6 +373,17 @@ def tag_file(input_descriptor, output: str, trans: dict, emissions: dict):
 
 
 def eval_files(compare_descriptor, eval_descriptor, diff_results_descriptor):
+    """
+    Ermittelt wie viele Zeilen in % übereinstimmten und gibt diese aus, sowie auch die Anzahl der Zeilen und Korrekter
+    Zeilen.
+
+    Es wird auch das Delta beider Dateien ermittelt, das Ergebnis wird in eine Datei geschrieben, es wird das diff-Format
+    verwendet (siehe UNIX Standard oder Wikipedia).
+
+    :param compare_descriptor: Vergleichsdatei 1
+    :param eval_descriptor: Vergleichsdatei 2 oder Eval-Datei
+    :param diff_results_descriptor: Datei wo das Ergebnis gepspeichert werden soll, wird überschrieben.
+    """
     with compare_descriptor:
         compare = compare_descriptor.readlines()
 
@@ -246,6 +416,9 @@ def eval_files(compare_descriptor, eval_descriptor, diff_results_descriptor):
 
 
 def print_help():
+    """
+    Gibt eine einfache Hilfe aus.
+    """
     print("Alle parameter sind Dateien!")
     print("\ttrain <training corpus> <bi gramm output> <emission output>")
     print("\ttag <bi gramm input> <emission input> <corpus> <tagged corpus out>")
@@ -255,8 +428,16 @@ def print_help():
 
 
 def train(training_corpus_file_name, bi_gram_out_file_name, emission_out_file_name, denoising):
-    training_corpus_descriptor = validate_file_and_open(training_corpus_file_name, 'r')
+    """
+    Dies ist eine Hilfs-Funktion welche mit compute_trans_and_emission die Bi-Gramme und Emissions berechnet
+    und diese dann in die jeweilige Dateischreibt. Die Dateien werden überschrieben (siehe save_nested_dict).
 
+    :param training_corpus_file_name:
+    :param bi_gram_out_file_name:
+    :param emission_out_file_name:
+    :param denoising:
+    """
+    training_corpus_descriptor = validate_file_and_open(training_corpus_file_name, 'r')
     trans_and_emission = compute_trans_and_emission(training_corpus_descriptor, denoising)
 
     trans = trans_and_emission[0]
@@ -267,6 +448,11 @@ def train(training_corpus_file_name, bi_gram_out_file_name, emission_out_file_na
 
 
 def tag(bi_gramm_file_name, emission_file_name, untagged_text, tagged_out_file_name):
+    """
+    Hilfsfunktion welche die Bi-Gramme und Emissionen mithilfe von read_nested_dict liest
+    und draus folgend die Funktion tag_file mit diesen Parametern aufruft.
+    """
+
     bi_grams = read_nested_dict(bi_gramm_file_name)
     emissions = read_nested_dict(emission_file_name)
     emissions = smooth_emissions(emissions)
@@ -275,6 +461,30 @@ def tag(bi_gramm_file_name, emission_file_name, untagged_text, tagged_out_file_n
 
 
 if __name__ == "__main__":
+    """
+    Die Main-Funktion erwartet das Arguemnte übergeben werden, wenn keine übergeben werden, wird
+    eine Hilfe ausgegeben.
+    
+    Es gibt verschiedene Modi, diese prüfen immer dass die richtige Anzahl an Argumenten übergeben wird,
+    es gibt keine Default-Werte.
+    
+    Ein Modus ist immer der erste Argument nach pyhton3 project.py <Modus> <Args…>
+    
+    Die Argumente der verschiedenen Modi, kann man aus print_help() entnehmen.
+    
+    Der Modus train ruft schlussendlich die Funktion compute_trans_and_emission und speichert das Ergebnis
+    in die jeweilige Text Datei. Dieser Modus ist zum trainieren des HMM Models gedacht. train-denoising
+    setzt schlussendlich nur die denoising Flag siehe compute_trans_and_emission.
+    
+    Der Modus tag taggt den Text siehe tag and tag_file für mehr.
+    
+    Der Modus eval siehe eval_files
+    
+    Der Modus train-tag-eval oder train-denoising-tag-eval ist das hintereinander ausführen der Modi: 
+    train, tag und eval.
+    
+    Falls ein falscher Modus angeben wird, wird die Hilfe ausgegeben.
+    """
     if (len(sys.argv) - 1) <= 1:
         print("Es wurden keine oder zu wenige Argumente übergeben!")
         print_help()
@@ -322,7 +532,8 @@ if __name__ == "__main__":
         bi_gram_out_file_name = sys.argv[3]
         emission_out_file_name = sys.argv[4]
 
-        train(training_corpus_file_name, bi_gram_out_file_name, emission_out_file_name, mode == "train-denoising-tag-eval")
+        train(training_corpus_file_name, bi_gram_out_file_name, emission_out_file_name,
+              mode == "train-denoising-tag-eval")
 
         bi_gramm_file_name = sys.argv[5]
         emission_file_name = sys.argv[6]
