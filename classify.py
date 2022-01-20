@@ -59,13 +59,14 @@ def classify_word(word, total, tag=None, denoising=False):
     :param denoising: siehe compute_tran_and_emission in project.py
     :return:
     """
+
     if number.fullmatch(word) is not None:
         if denoising:
             return "NUMBER", "CARD"
         else:
-            return "NUMBER", tag
+            return "NUMBER", tag    
 
-    elif trunc.fullmatch(word) is not None:
+    if trunc.fullmatch(word) is not None:
         if denoising:
             return "TRUNC", "TRUNC"
         else:

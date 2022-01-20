@@ -1,8 +1,7 @@
 '''
 Beispiel-Implementierung des Viterbi-Algorithmus für Hidden Markov Modelle.
 '''
-
-from math import log
+from functools import lru_cache
 
 from classify import classify_word
 
@@ -32,13 +31,15 @@ class HMM:
     def states(self):
         return self._states
 
+    @lru_cache(maxsize=64)
     def pemit(self, x, o):  # P(o | x)
         try:
             return self._pemit[x][o]
         except KeyError:
             return neginf
 
-    def ptrans(self, x, y):  # P(y | x)
+    @lru_cache(maxsize=64)
+    def ptrans(self, x, y): # P(y | x)
         try:
             return self._ptrans[x][y]
         except KeyError:
@@ -97,8 +98,8 @@ def classify_obs(observations: list, words: set) -> list:
     for i in range(0, len(observations)):
         word = observations[i]
 
-        if i == 0:
-            word = "^" + word
+        #if i == 0:
+            #word = "^" + word
 
         if word not in words:
             classified_word = classify_word(word, 0)

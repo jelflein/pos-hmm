@@ -455,7 +455,7 @@ def tag(bi_gramm_file_name, emission_file_name, untagged_text, tagged_out_file_n
 
     bi_grams = read_nested_dict(bi_gramm_file_name)
     emissions = read_nested_dict(emission_file_name)
-    emissions = smooth_emissions(emissions)
+    #emissions = smooth_emissions(emissions)
 
     tag_file(validate_file_and_open(untagged_text, 'r'), tagged_out_file_name, bi_grams, emissions)
 

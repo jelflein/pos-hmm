@@ -928,7 +928,7 @@ seiner	PPOSAT
 reimfreudigen	ADJA
 Übersetzung	NN
 von	APPR
-Molières	NN
+Molières	ADJA
 Komödie	NN
 noch	ADV
 ein	ART
@@ -6602,7 +6602,7 @@ Ehrenamtliche	NN
 hätten	VAFIN
 für	APPR
 die	ART
-freiheitlich-demokratische	NN
+freiheitlich-demokratische	ADJA
 Grundordnung	NN
 einzutreten	VVIZU
 ,	$,
@@ -7297,7 +7297,7 @@ Hoffnung	NN
 aus	PTKVZ
 ,	$,
 im	APPRART
-SPD-dominierten	NN
+SPD-dominierten	ADJA
 Bundesrat	NN
 doch	ADV
 eine	ART
@@ -11806,7 +11806,7 @@ einfallen	VVINF
 lassen	VVINF
 .	$.
 
-ULLA	NE
+ULLA	CARD
 SCHICKLING	NN
 
 Vergrünter	NN
@@ -18720,11 +18720,11 @@ drei	CARD
 Prozent	NN
 von	APPR
 364	CARD
-Mrd.	NN
+Mrd.	CARD
 DM	NN
 auf	APPR
 352	CARD
-Mrd.	NN
+Mrd.	CARD
 DM	NN
 .	$.
 
@@ -19925,8 +19925,8 @@ zu	PTKZU
 werden	VAINF
 .	$.
 
-KARL-HEINZ	NN
-KARISCH	NE
+KARL-HEINZ	ADJA
+KARISCH	NN
 
 Timmy	NE
 und	KON
@@ -20148,7 +20148,7 @@ finden	VVINF
 Das	PDS
 begründet	VVFIN
 der	ART
-TUI-Umweltexperte	NN
+TUI-Umweltexperte	ADJA
 Dr.	NN
 Wolf	NE
 Michael	NE
@@ -20251,7 +20251,7 @@ ist	VAFIN
 da	ADV
 schon	ADV
 die	ART
-ADAC-Reise	NN
+ADAC-Reise	ADJA
 GmbH	NN
 ,	$,
 der	ART
@@ -20617,7 +20617,7 @@ es	PPER
 zum	APPRART
 Preis	NN
 von	APPR
-6,50	NE
+6,50	CARD
 Mark	NN
 sowohl	KON
 im	APPRART
@@ -22296,7 +22296,7 @@ im	APPRART
 vergangenen	ADJA
 Jahr	NN
 dem	ART
-Musée	NN
+Musée	NE
 d	NE
 '	$(
 Orsay	NE
@@ -22665,8 +22665,8 @@ Die	ART
 Liebe	NN
 ebensowenig	ADV
 wie	KOKOM
-Sandro	CARD
-Botticellis	NN
+Sandro	NE
+Botticellis	NE
 Venus	NE
 und	KON
 Mars	NE
@@ -23518,7 +23518,7 @@ Einfluß	NN
 der	ART
 Kubisten	NN
 und	KON
-primitiv-archaischer	NN
+primitiv-archaischer	ADJA
 Kunst	NN
 .	$.
 
@@ -25615,7 +25615,7 @@ ist	VAFIN
 ,	$,
 wenn	KOUS
 auch	ADV
-Arturo	CARD
+Arturo	ADJA
 Ripstein	NN
 mit	APPR
 Profundo	NE
@@ -29158,8 +29158,8 @@ hin	PTKVZ
 und	KON
 genießt	VVFIN
 das	ART
-post-koloniale	NN
-Flair	NE
+post-koloniale	ADJA
+Flair	NN
 .	$.
 
 Über	APPR
@@ -33946,7 +33946,7 @@ mitreden	VVINF
 wollten	VMFIN
 .	$.
 
-Sucht	NE
+Sucht	NN
 man	PIS
 in	APPR
 der	ART
@@ -34449,7 +34449,7 @@ hat	VAFIN
 
 An	APPR
 dem	ART
-73jährigen	NN
+73jährigen	ADJA
 Herausgeber	NN
 kommt	VVFIN
 übrigens	ADV
@@ -36868,7 +36868,7 @@ den	ART
 Hauptrollen	NN
 erhält	VVFIN
 als	APPR
-deutsch-schweizerische	NN
+deutsch-schweizerische	ADJA
 Koproduktion	NN
 mit	APPR
 dem	ART
@@ -36914,8 +36914,8 @@ Film	NN
 ``	$(
 Knockin'	FM
 on	FM
-Heaven's	NE
-Door	NE
+Heaven's	FM
+Door	FM
 ''	$(
 .	$.
 
@@ -37935,7 +37935,7 @@ elektrorheologischen	ADJA
 Öle	NN
 schon	ADV
 nach	APPR
-0,01	NE
+0,01	CARD
 Sekunden	NN
 .	$.
 
@@ -40882,7 +40882,7 @@ nach	APPR
 viertägiger	ADJA
 Debatte	NN
 der	ART
-deutsch-tschechischen	NN
+deutsch-tschechischen	ADJA
 Versöhnungserklärung	NN
 zugestimmt	VVPP
 .	$.
@@ -42537,7 +42537,7 @@ nicht	PTKNEG
 der	ART
 Zustimmung	NN
 des	ART
-SPD-dominierten	NN
+SPD-dominierten	ADJA
 Bundesrates	NN
 bedarf	VVFIN
 -	$(
@@ -43843,8 +43843,8 @@ gesenkt	VVPP
 Dies	PDS
 gab	VVFIN
 Innenminister	NN
-César	NE
-Verduga	NE
+César	CARD
+Verduga	NN
 in	APPR
 Quito	NE
 bekannt	VVPP
@@ -44737,7 +44737,7 @@ seine	PPOSAT
 Debatte	NN
 über	APPR
 die	ART
-deutsch-tschechische	NN
+deutsch-tschechische	ADJA
 Versöhnungserklärung	NN
 fortgesetzt	VVPP
 .	$.
@@ -47575,7 +47575,7 @@ Bassa	NN
 .	$.
 
 Allein	ADV
-Verdis	CARD
+Verdis	ADJA
 Villa	NN
 Sant'	NE
 Agata	NE
@@ -47980,7 +47980,7 @@ erlegt	VVFIN
 natürlich	ADV
 trotzdem	PROAV
 gerne	ADV
-aß	VVPP
+aß	ADJD
 .	$.
 
 Eine	ART
@@ -47990,8 +47990,8 @@ hatte	VAFIN
 sich	PRF
 Verdi	NN
 in	APPR
-Sant'	NE
-Agata	NE
+Sant'	CARD
+Agata	NN
 geschaffen	VVPP
 :	$.
 die	ART
@@ -48131,8 +48131,8 @@ nur	ADV
 das	ART
 Heu	NN
 aus	APPR
-Sant'	NE
-Agata	NE
+Sant'	CARD
+Agata	NN
 fressen	VVINF
 .	$.
 
@@ -48262,11 +48262,11 @@ sein	VAINF
 .	$.
 
 AUSKUNFT	NN
-:	$.
-Ufficio	NN
-di	ADJA
+:	$(
+Ufficio	NE
+di	NE
 Informazione	NN
-e	ADJA
+e	APPR
 Assistenza	NN
 turistica	VVFIN
 ,	$,
@@ -48418,7 +48418,7 @@ Art	NN
 ,	$,
 die	ART
 Variationen	NN
-deutsch-französischer	NN
+deutsch-französischer	ADJA
 Freundschaft	NN
 am	APPRART
 eigenen	ADJA
@@ -49062,7 +49062,7 @@ B.	NN
 P.	NE
 71	CARD
 ,	$,
-F-681	NE
+F-681	CARD
 90	CARD
 Ungersheim	NN
 ,	$,
@@ -49078,9 +49078,9 @@ Tel.	NN
 geöffnet	VVPP
 täglich	ADJD
 von	APPR
-10.30	NN
+10.30	NE
 bis	APPR
-16.30	NE
+16.30	CARD
 Uhr	NN
 .	$.
 
@@ -49112,7 +49112,7 @@ TUI	NE
 
 Mit	APPR
 einem	ART
-50seitigen	NN
+50seitigen	ADJA
 Katalog	NN
 ,	$,
 der	PRELS
@@ -49891,7 +49891,7 @@ polnische	ADJA
 Kultur	NN
 sowie	KON
 die	ART
-deutsch-polnisch-jüdische	NN
+deutsch-polnisch-jüdische	ADJA
 Geschichte	NN
 vorzustellen	VVIZU
 .	$.
@@ -51339,7 +51339,7 @@ Network	NE
 PAN	NE
 )	$(
 des	ART
-IBM-Forschungszentrums	NN
+IBM-Forschungszentrums	ADJA
 Almaden	NN
 im	APPRART
 kalifornischen	ADJA
@@ -52843,7 +52843,7 @@ mit	APPR
 zahlreichen	ADJA
 Zeichnungen	NN
 ,	$,
-24,80	ADJA
+24,80	CARD
 Mark	NN
 .	$.
 
@@ -53498,7 +53498,7 @@ der	ART
 Völkerwanderung	NN
 auf	APPR
 eine	ART
-keltisch-römische	NN
+keltisch-römische	ADJA
 Urbevölkerung	NN
 gestoßenen	ADJA
 Bajuwaren	NN
@@ -54263,7 +54263,7 @@ Stadtkernen	NN
 
 Für	APPR
 den	ART
-60seitigen	NN
+60seitigen	ADJA
 Katalog	NN
 wird	VAFIN
 eine	ART
@@ -54844,7 +54844,7 @@ Plume	NN
 Pinguin	ADJA
 Verlag	NN
 für	APPR
-12,95	NE
+12,95	CARD
 Dollar	NN
 erschienen	VVPP
 .	$.
@@ -55281,7 +55281,7 @@ fast	ADV
 im	APPRART
 Stil	NN
 eines	ART
-bürgerlich-liberalen	NN
+bürgerlich-liberalen	ADJA
 West-Intellektuellen	NN
 verkündet	VVPP
 :	$.
@@ -57492,7 +57492,7 @@ können	VMFIN
 sich	PRF
 allerdings	ADV
 weder	KON
-DRS-Chef	NN
+DRS-Chef	ADJA
 Richter	NN
 noch	ADV
 Tour-Vers-Geschäftsführer	NN
@@ -57652,7 +57652,7 @@ Versicherungsschein	NN
 ''	$(
 ,	$,
 klagt	VVFIN
-DRV-Präsident	NN
+DRV-Präsident	ADJA
 Hesselmann	NN
 .	$.
 
@@ -59080,7 +59080,7 @@ Im	APPRART
 weißen	ADJA
 Dreieck	NN
 auf	APPR
-blau-rotem	NN
+blau-rotem	ADJA
 Grund	NN
 prangt	VVFIN
 eine	ART
@@ -60834,7 +60834,7 @@ bauen	VVINF
 ließen	VVFIN
 .	$.
 
-Chinesisch-stämmige	NN
+Chinesisch-stämmige	ADJA
 Händler	NN
 ,	$,
 seit	APPR
@@ -61489,7 +61489,7 @@ geschaffen	VVPP
 worden	VAPP
 :	$.
 
-We	NE
+We	FM
 are	FM
 the	FM
 champions	VVFIN
@@ -62368,7 +62368,7 @@ im	APPRART
 Jahr	NN
 2015	CARD
 einen	ART
-45jährigen	NN
+45jährigen	ADJA
 Mann	NN
 in	APPR
 der	ART
@@ -62521,7 +62521,7 @@ Handalpflanze	NN
 ,	$,
 einem	ART
 gegen	APPR
-Rheuma	NE
+Rheuma	NN
 wirksamen	ADJA
 ,	$,
 über	APPR
@@ -63796,8 +63796,8 @@ an	APPR
 der	ART
 zum	APPRART
 Touristenzentrum	NN
-aufgetakelten	ADJA
-Na'ama	NN
+aufgetakelten	VVFIN
+Na'ama	NE
 Bay	NE
 ein	ART
 Hotel	NN
@@ -63919,7 +63919,7 @@ starten	VVFIN
 zur	APPRART
 Safari	NN
 auf	APPR
-Moses'	NE
+Moses'	CARD
 Spuren	NN
 in	APPR
 paradiesische	ADJA
@@ -64043,7 +64043,7 @@ wurde	VAFIN
 
 Ihren	PPOSAT
 nach	APPR
-Myrrhe	NE
+Myrrhe	NN
 duftenden	ADJA
 Leichnam	NN
 sollen	VMFIN
@@ -64086,7 +64086,7 @@ Rummelplatz	NN
 ,	$,
 sondern	KON
 ganz	ADV
-Wilder	CARD
+Wilder	ADJA
 Westen	NN
 .	$.
 
@@ -64528,7 +64528,7 @@ Dichterin	NN
 gerade	ADV
 wegen	APPR
 ihrer	PPOSAT
-unterschied-lichen	NN
+unterschied-lichen	ADJA
 Optionen	NN
 gefesselt	VVPP
 .	$.
@@ -66737,7 +66737,7 @@ Schreibtafel	NN
 
 WISSEN	NN
 &	KON
-BUCH	NN
+BUCH	NE
 
 Keine	PIAT
 Lust	NN
@@ -67153,8 +67153,8 @@ geschafft	VVPP
 und	KON
 selbst	ADV
 das	ART
-MacUser	NN
-Handbook	NE
+MacUser	ADJA
+Handbook	NN
 hat	VAFIN
 auf	APPR
 der	ART
@@ -67739,7 +67739,7 @@ vermittelte	VVFIN
 .	$.
 
 Zur	APPRART
-500.	NN
+500.	ADJA
 Wiederkehr	NN
 seines	PPOSAT
 Geburtstages	NN
@@ -67758,7 +67758,7 @@ Der	ART
 Lehrer	NN
 Deutschlands	NE
 ,	$,
-hrsg.	NN
+hrsg.	NE
 von	APPR
 Hans-Rüdiger	NN
 Schwab	NE
@@ -73048,7 +73048,7 @@ ve	NE
 Gone	NE
 um	APPR
 das	ART
-ewig-aktuelle	NN
+ewig-aktuelle	ADJA
 Thema	NN
 des	ART
 individuellen	ADJA
@@ -73268,8 +73268,8 @@ Anteilnahme	NN
 verdienen	VVINF
 .	$.
 
-ESA-Satellit	NN
-Hipparcos	NE
+ESA-Satellit	ADJA
+Hipparcos	NN
 
 Universum	NN
 größer	ADJD
@@ -73883,7 +73883,7 @@ weltoffen	ADJD
 daherkommende	ADJA
 Stadt	NN
 am	APPRART
-deutsch-französisch-schweizerischen	NN
+deutsch-französisch-schweizerischen	ADJA
 Dreiländereck	NN
 nicht	PTKNEG
 etwa	ADV
@@ -73969,7 +73969,7 @@ Zugkomposition	NN
 mit	APPR
 Barwagen	NN
 um	APPR
-2.50	NE
+2.50	CARD
 Uhr	NN
 dort	ADV
 ein	PTKVZ
@@ -76702,11 +76702,11 @@ Royal	NE
 Academy	NE
 London	NE
 ,	$,
-tägl.	NN
+tägl.	NE
 von	APPR
-10.00	NN
+10.00	NE
 bis	APPR
-18.00	NE
+18.00	CARD
 Uhr	NN
 .	$.
 
@@ -78350,7 +78350,7 @@ hatte	VAFIN
 den	ART
 Brand	NN
 gegen	APPR
-8.30	NE
+8.30	CARD
 Uhr	NN
 gelöscht	VVPP
 .	$.
@@ -79315,7 +79315,7 @@ Verhöre	NN
 die	PRELS
 sie	PPER
 mit	APPR
-Marino	NE
+Marino	NN
 veranstalteten	ADJA
 ,	$,
 ehe	KOUS
@@ -80611,7 +80611,7 @@ angerechnet	VVPP
 .	$.
 
 Die	ART
-33tägige	NN
+33tägige	ADJA
 Entführung	NN
 ist	VAFIN
 damit	PROAV
@@ -81375,8 +81375,8 @@ die	ART
 Welt	NN
 der	ART
 Menschen	NN
-verirrter	VVFIN
-Bär	NE
+verirrter	ADJA
+Bär	NN
 ist	VAFIN
 oder	KON
 ein	ART
@@ -83350,7 +83350,7 @@ Essener	ADJA
 Schwurgericht	NN
 hatte	VAFIN
 der	ART
-28jährige	NN
+28jährige	ADJA
 Hauptangeklagte	NN
 sein	PPOSAT
 Gesicht	NN
@@ -84331,7 +84331,7 @@ beeinflussen	VVINF
 
 Für	APPR
 den	ART
-39jährigen	NN
+39jährigen	ADJA
 Iraner	NN
 Kazem	NE
 Dharabi	NE
@@ -84455,7 +84455,7 @@ das	ART
 Urteil	NN
 werde	VAFIN
 die	ART
-deutsch-iranischen	NN
+deutsch-iranischen	ADJA
 Beziehungen	NN
 belasten	VVFIN
 ,	$,
@@ -84832,7 +84832,7 @@ Nachteilsausgleich	NN
 in	APPR
 Form	NN
 einer	ART
-25prozentigen	NN
+25prozentigen	ADJA
 Beteiligung	NN
 an	APPR
 der	ART
@@ -85081,7 +85081,7 @@ vermeiden	VVINF
 Den	ART
 Verdacht	NN
 des	ART
-sachsen-anhaltinischen	NN
+sachsen-anhaltinischen	ADJA
 Umweltministeriums	NN
 ,	$,
 Bonn	NE
@@ -85992,7 +85992,7 @@ Srpska	NE
 ,	$,
 noch	ADV
 die	ART
-moslemisch-kroatische	NN
+moslemisch-kroatische	ADJA
 Föderation	NN
 oder	KON
 die	ART
@@ -86561,7 +86561,7 @@ nach	APPR
 weiterem	ADJA
 Hin	NN
 und	KON
-Her	NE
+Her	NN
 im	APPRART
 März	NN
 1996	CARD
@@ -86779,7 +86779,7 @@ bleibt	VVFIN
 
 Er	PPER
 muß	VMFIN
-78,26	NE
+78,26	CARD
 Prozent	NN
 zahlen	VVINF
 .	$.
@@ -87327,7 +87327,7 @@ mehrfach	ADJD
 zuvor	ADV
 während	APPR
 Kohls	NE
-14jähriger	NN
+14jähriger	ADJA
 Amtszeit	NN
 hat	VAFIN
 es	PPER
@@ -87853,7 +87853,7 @@ jedenfalls	ADV
 -	$(
 auch	ADV
 der	ART
-CDU-interne	NN
+CDU-interne	ADJA
 Unmut	NN
 über	APPR
 Kohls	NE
@@ -88151,7 +88151,7 @@ dpa	NE
 
 Wegen	APPR
 einer	ART
-70tägigen	NN
+70tägigen	ADJA
 Unterbrechung	NN
 seines	PPOSAT
 Fernsehempfangs	NN
@@ -88211,7 +88211,7 @@ mit	APPR
 der	ART
 Nutzungsgebühr	NN
 um	APPR
-7,42	NE
+7,42	CARD
 Mark	NN
 im	APPRART
 Rückstand	NN
@@ -88373,7 +88373,7 @@ vermutlich	ADV
 der	ART
 Tod	NN
 des	ART
-17jährigen	NN
+17jährigen	ADJA
 Punkers	NN
 .	$.
 
@@ -88817,7 +88817,7 @@ diesen	PDAT
 Zahlen	NN
 begründet	VVFIN
 die	ART
-moslemisch-kroatische	NN
+moslemisch-kroatische	ADJA
 Föderation	NN
 ihren	PPOSAT
 Anspruch	NN
@@ -89420,7 +89420,7 @@ einem	ART
 baldigen	ADJA
 Neubeginn	NN
 der	ART
-syrisch-israelischen	NN
+syrisch-israelischen	ADJA
 Verhandlungen	NN
 nicht	PTKNEG
 zu	PTKZU
@@ -90162,7 +90162,7 @@ Abgeordnetenhaus	NN
 in	APPR
 Prag	NE
 die	ART
-deutsch-tschechische	NN
+deutsch-tschechische	ADJA
 Versöhnungserklärung	NN
 verabschiedet	VVPP
 .	$.
@@ -90385,7 +90385,7 @@ Abgeordnetenhaus	NN
 in	APPR
 Prag	NE
 die	ART
-deutsch-tschechische	NN
+deutsch-tschechische	ADJA
 Deklaration	NN
 zur	APPRART
 Vergangenheitsbewältigung	NN
@@ -90552,7 +90552,7 @@ die	ART
 Passage	NN
 in	APPR
 der	ART
-deutsch-tschechischen	NN
+deutsch-tschechischen	ADJA
 Deklaration	NN
 besonders	ADV
 betont	VVFIN
@@ -90926,7 +90926,7 @@ auf	APPR
 die	ART
 Verabschiedung	NN
 der	ART
-deutsch-tschechischen	NN
+deutsch-tschechischen	ADJA
 Versöhnungserklärung	NN
 durch	APPR
 das	ART
@@ -91032,7 +91032,7 @@ ein	PTKVZ
 ,	$,
 daß	KOUS
 das	ART
-deutsch-tschechische	NN
+deutsch-tschechische	ADJA
 Verhältnis	NN
 durch	APPR
 die	ART
@@ -93164,7 +93164,7 @@ Massenkarambolage	NN
 ereignete	VVFIN
 sich	PRF
 gegen	APPR
-7.45	NE
+7.45	CARD
 Uhr	NN
 in	APPR
 Richtung	NN
@@ -93374,7 +93374,7 @@ Warnschüssen	NN
 gezielt	ADJD
 auf	APPR
 den	ART
-49jährigen	NN
+49jährigen	ADJA
 Journalisten	NN
 geschossen	VVPP
 haben	VAFIN
@@ -94178,7 +94178,7 @@ bieten	VVINF
 
 Kratzer	NN
 in	APPR
-deutsch-dänischer	NN
+deutsch-dänischer	ADJA
 Euro-Harmonie	NN
 
 Von	APPR
@@ -94330,7 +94330,7 @@ nationale	ADJA
 Einflüsse	NN
 erzeugten	ADJA
 die	ART
-deutsch-dänischen	NN
+deutsch-dänischen	ADJA
 Kriege	NN
 im	APPRART
 19.	ADJA
@@ -94559,7 +94559,7 @@ Gerade	ADV
 jetzt	ADV
 gerät	VVFIN
 im	APPRART
-deutsch-dänischen	NN
+deutsch-dänischen	ADJA
 Grenzland	NN
 viel	ADV
 in	APPR
@@ -94964,7 +94964,7 @@ Kredite	NN
 in	APPR
 Höhe	NN
 von	APPR
-1,532	NE
+1,532	CARD
 Milliarden	NN
 Yuan	NN
 (	$(
@@ -95073,7 +95073,7 @@ dpa	NE
 .	$.
 
 Der	ART
-rumänisch-orthodoxe	NN
+rumänisch-orthodoxe	ADJA
 Metropolit	NN
 des	ART
 Banats	NN
@@ -97142,7 +97142,7 @@ ihre	PPOSAT
 Ehe	NN
 mit	APPR
 dem	ART
-33jährigen	NN
+33jährigen	ADJA
 Englischlehrer	NN
 Arshad	NE
 Ahmed	NE
@@ -97757,8 +97757,8 @@ Barkeeper-Schule	NN
 in	APPR
 Frankfurt	NE
 ein	ART
-feucht-fröhliches	NN
-Gelage	NE
+feucht-fröhliches	ADJA
+Gelage	NN
 vorgestellt	VVPP
 hat	VAFIN
 ,	$,
@@ -99220,7 +99220,7 @@ Zentralwerkstatt	NN
 in	APPR
 Lünen	NN
 gegen	APPR
-6.30	NE
+6.30	CARD
 Uhr	NN
 zu	APPR
 den	ART
@@ -99730,7 +99730,7 @@ Prozent	NN
 der	ART
 16-	TRUNC
 bis	KON
-45jährigen	NN
+45jährigen	ADJA
 Alleinlebenden	NN
 angegeben	VVPP
 ,	$,
@@ -100556,7 +100556,7 @@ bei	APPR
 manchen	PIAT
 Teilnehmern	NN
 ein	ART
-religiös-spiritueller	NN
+religiös-spiritueller	ADJA
 Aspekt	NN
 :	$.
 Begleitung	NN
@@ -100753,7 +100753,7 @@ zu	APPR
 Polen	NE
 ,	$,
 dem	ART
-polnisch-deutschen	NN
+polnisch-deutschen	ADJA
 Zollterminal	NN
 Swiecko	NN
 II	CARD
@@ -100942,7 +100942,7 @@ zu	APPR
 geringe	ADJA
 Fahrzeugbreite	NN
 oder	KON
--höhe	NN
+-höhe	NE
 ,	$,
 unzureichende	ADJA
 Lüftung	NN
@@ -101042,7 +101042,7 @@ Rcepin	NE
 Januar	NN
 1996	CARD
 ,	$,
-8.00	ADJA
+8.00	CARD
 Uhr	NN
 morgens	ADV
 :	$.
@@ -101419,7 +101419,7 @@ Lauterbourg	NN
 August	NN
 1996	CARD
 ,	$,
-1.00	ADJA
+1.00	CARD
 Uhr	NN
 nachts	ADV
 :	$.
@@ -101463,7 +101463,7 @@ Futterraufen	NN
 und	KON
 Tränken	NN
 bereits	ADV
-Heu	NE
+Heu	NN
 und	KON
 Wasser	NN
 befindet	VVFIN
@@ -101495,7 +101495,7 @@ versorgt	VVPP
 .	$.
 
 Um	APPR
-13.00	NE
+13.00	CARD
 Uhr	NN
 kommen	VVFIN
 sie	PPER
@@ -101716,7 +101716,7 @@ nach	APPR
 Italien	NE
 über	APPR
 den	ART
-italienisch-slowenischen	NN
+italienisch-slowenischen	ADJA
 Grenzübergang	NN
 Gurizia	NN
 ;	$.
@@ -102145,7 +102145,7 @@ Salzburg	NE
 September	NN
 :	$.
 Der	ART
-deutsch-österreichische	NN
+deutsch-österreichische	ADJA
 Grenzübergang	NN
 Salzburg	NE
 /	$(
@@ -102541,8 +102541,8 @@ führt	VVFIN
 eine	ART
 enge	ADJA
 ,	$,
-steile	VVFIN
-Rampe	NE
+steile	ADJA
+Rampe	NN
 hinab	VVFIN
 .	$.
 
@@ -102627,7 +102627,7 @@ August	NN
 :	$(
 Über	APPR
 den	ART
-deutsch-holländischen	NN
+deutsch-holländischen	ADJA
 Grenzübergang	NN
 Venlo	NE
 fahren	VVFIN
@@ -104656,7 +104656,7 @@ Baden-Württemberg	NE
 )	$(
 und	KON
 Ottmar	NE
-Schrei-ner	NN
+Schrei-ner	NE
 (	$(
 Saarland	NE
 )	$(
@@ -105090,7 +105090,7 @@ anfing	VVFIN
 sich	PRF
 im	APPRART
 Tauwetter	NN
-ost-westlicher	NN
+ost-westlicher	ADJA
 Entspannung	NN
 aufzulösen	VVIZU
 .	$.
