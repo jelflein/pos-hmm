@@ -84,7 +84,7 @@ def compute_trans_and_emission(train_fd, denoising: bool = False) -> tuple:
 
                 # Wenn Anfang ^
                 if start:
-                    word = "^" + word
+                    #word = "^" + word
                     uni_gram_tags[start_tag] += 1
 
                 bi_grams[(tag_before, tag)] += 1

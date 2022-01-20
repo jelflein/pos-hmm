@@ -37,14 +37,14 @@ OVV-N ale anderen Wörter
 """
 
 classifyers = [
-    "OVV3-CAPITAL", "OVV3-LOW", "OVV3-START", "OVV3",
-    "OVV6-CAPITAL", "OVV6-LOW", "OVV6-START", "OVV6",
-    "OVV9-CAPITAL", "OVV9-LOW", "OVV9-START", "OVV9",
-    "OVV-HUGE-CAPITAL", "OVV-HUGE-LOW", "OVV-HUGE-START", "OVV-HUGE"
+    "OVV3-CAPITAL", "OVV3-LOW",  "OVV3",
+    "OVV6-CAPITAL", "OVV6-LOW",  "OVV6",
+    "OVV9-CAPITAL", "OVV9-LOW",  "OVV9",
+    "OVV-HUGE-CAPITAL", "OVV-HUGE-LOW", "OVV-HUGE"
 ]
 
 blocking_list = [
-    "$(", "ART", "$.", "APPRART", "$,", "PTKNEG", "KOKOM", "VAPP", "VMINF", "PRELAT", "VMPP"
+    "$(", "ART", "$.", "APPRART", "$,", "PTKNEG", "KOKOM", "VAPP", "VMINF", "PRELAT", "VMPP", "PTKA"
 ]
 
 
@@ -96,7 +96,7 @@ def classify_word(word, total, tag=None, denoising=False):
     elif ovv6_start.fullmatch(word) is not None:
         return "OVV6-START", tag
     elif ovv6.fullmatch(word) is not None:
-        return "OVV3", tag
+        return "OVV6", tag
 
     elif ovv9_capital.fullmatch(word) is not None:
         return "OVV9-CAPITAL", tag
@@ -105,7 +105,7 @@ def classify_word(word, total, tag=None, denoising=False):
     elif ovv9_start.fullmatch(word) is not None:
         return "OVV9-START", tag
     elif ovv9.fullmatch(word) is not None:
-        return "OVV3", tag
+        return "OVV9", tag
 
     elif ovv_huge_capital.fullmatch(word) is not None:
         return "OVV-HUGE-CAPITAL", tag
@@ -114,6 +114,6 @@ def classify_word(word, total, tag=None, denoising=False):
     elif ovv_huge_start.fullmatch(word) is not None:
         return "OVV-HUGE-START", tag
     elif ovv_huge.fullmatch(word) is not None:
-        return "OVV3", tag
+        return "OVV-HUGE", tag
 
     return None
