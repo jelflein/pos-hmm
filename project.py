@@ -65,6 +65,7 @@ def compute_trans_and_emission(train_fd, denoising: bool = False) -> tuple:
     word_and_tags = defaultdict(int)
     bi_grams = defaultdict(int)
     uni_gram_tags = defaultdict(int)
+    words = defaultdict(int)
 
     # einlesen des Korpus und ermittlung der Bi- und Uni-Gramme
     with train_fd:
@@ -79,6 +80,8 @@ def compute_trans_and_emission(train_fd, denoising: bool = False) -> tuple:
 
                 word = split[0]
                 tag = split[1]
+
+                words[word] += 1
 
                 uni_gram_tags[tag] += 1
 
@@ -105,8 +108,10 @@ def compute_trans_and_emission(train_fd, denoising: bool = False) -> tuple:
             word = classified_word_and_tag[0]
             tag = classified_word_and_tag[1]
 
-            word_and_tags[(word, tag)] += word_and_tags[word_and_tag] + 1
-            del word_and_tags[word_and_tag]
+            word_and_tags[(word, tag)] += word_and_tags[word_and_tag]
+
+            if words[word_and_tag[0]] == 1 or word == "NUMBER" or word == "TRUNC" or word == "LINK":
+                del word_and_tags[word_and_tag]
 
     return compute_trans(bi_grams, uni_gram_tags), compute_emission(word_and_tags)
 
