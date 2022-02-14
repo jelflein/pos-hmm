@@ -7,6 +7,7 @@ from hmm import HMM
 
 start_tag = "START"
 
+
 def validate_file_and_open(file_name: str, mode: str):
     """
     Diese Funktion öffnet einen File-Descriptor und fängt Fehler. Bei einem Fehler wird
@@ -51,6 +52,7 @@ def compute_trans_and_emission(train_fd) -> tuple:
     word_and_tags = defaultdict(int)
     bi_grams = defaultdict(int)
     uni_gram_tags = defaultdict(int)
+    words = defaultdict(int)
 
     # einlesen des Korpus und ermittlung der Bi- und Uni-Gramme
     with train_fd:
@@ -68,6 +70,8 @@ def compute_trans_and_emission(train_fd) -> tuple:
                 word = split[0]
                 tag = split[1]
 
+                words[word] += 1
+
                 uni_gram_tags[tag] += 1
 
                 bi_grams[(tag_before, tag)] += 1
@@ -79,7 +83,7 @@ def compute_trans_and_emission(train_fd) -> tuple:
 
     words_to_delete = []
     for word_and_tag in word_and_tags:
-        if word_and_tags[word_and_tag] == 1:
+        if words[word_and_tag[0]] == 1:
             words_to_delete.append(word_and_tag)
 
     for to_delete in words_to_delete:
