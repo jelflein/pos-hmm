@@ -102,14 +102,16 @@ def compute_trans_and_emission(train_fd, denoising: bool = False) -> tuple:
         word = word_and_tag[0]
         tag = word_and_tag[1]
 
-        classified_word_and_tag = classify_word(word, words[word_and_tag[0]], tag, denoising)
+        classified_word_and_tag = classify_word(word, word_and_tags[word_and_tag], tag, denoising)
 
         if classified_word_and_tag is not None:
             word = classified_word_and_tag[0]
             tag = classified_word_and_tag[1]
 
-            word_and_tags[(word, tag)] += word_and_tags[word_and_tag] + 1
-            del word_and_tags[word_and_tag]
+            word_and_tags[(word, tag)] += word_and_tags[word_and_tag]
+
+            if words[word_and_tag[0]] == 1 or word == "NUMBER" or word == "TRUNC" or word == "LINK":
+                del word_and_tags[word_and_tag]
 
     return compute_trans(bi_grams, uni_gram_tags), compute_emission(word_and_tags)
 
@@ -259,7 +261,7 @@ def smooth_emissions(emissions: dict):
         ovv = [0, 0, 0, 0]
         div = [0, 0, 0, 0]
 
-        #Zusammen zählen der Werte
+        # Zusammen zählen der Werte
         for i in range(0, len(classifyers)):
             classifyer = classifyers[i]
 
@@ -277,13 +279,16 @@ def smooth_emissions(emissions: dict):
                     ovv[3] += nested_dict[classifyer]
                     div[3] += 1
 
-        #durchschnitt berechen
+        if ovv == [0, 0, 0, 0]:
+            continue
+
+        # durchschnitt berechen
         for i in range(0, len(ovv)):
             if div[i] != 0:
                 ovv[i] = ovv[i] / div[i]
 
-        #Falls die Klasse OVV-N-* immer noch 0
-        #wird die nächst nähre gesucht
+        # Falls die Klasse OVV-N-* immer noch 0
+        # wird die nächst nähre gesucht
         for i in range(0, len(ovv)):
             j = i
             k = i
@@ -348,7 +353,7 @@ def tag_file(input_descriptor, output: str, trans: dict, emissions: dict):
     siehe auch hmm.py
     """
 
-    #einlesen der Datei
+    # einlesen der Datei
     with input_descriptor:
         sentence = []
         sentences = []
@@ -458,7 +463,7 @@ def tag(bi_gramm_file_name, emission_file_name, untagged_text, tagged_out_file_n
 
     bi_grams = read_nested_dict(bi_gramm_file_name)
     emissions = read_nested_dict(emission_file_name)
-    emissions = smooth_emissions(emissions)
+    #emissions = smooth_emissions(emissions)
 
     tag_file(validate_file_and_open(untagged_text, 'r'), tagged_out_file_name, bi_grams, emissions)
 

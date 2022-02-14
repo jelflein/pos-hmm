@@ -56,8 +56,8 @@ siebenmal	VVFIN
 
 Architektur	NN
 
-Würzburgs	NE
-Dombaumeister	NE
+Würzburgs	ADJA
+Dombaumeister	NN
 Hans	NE
 Schädel	NE
 gestorben	VVPP
@@ -127,7 +127,7 @@ Ausstattung	NN
 suchte	VVFIN
 .	$.
 
-Schädel	NN
+Schädel	NE
 fertigte	VVFIN
 als	APPR
 Würzburger	ADJA
@@ -436,7 +436,7 @@ nur	ADV
 72	CARD
 Prozent	NN
 dessen	PDS
-betragen	VVINF
+betragen	VVFIN
 ,	$,
 was	PRELS
 Männer	NN
@@ -477,7 +477,7 @@ Müttern	NN
 ausgeführt	VVPP
 .	$.
 
-Jüngste	NN
+Jüngste	ADJA
 Studien	NN
 erwiesen	VVPP
 ,	$,
@@ -928,7 +928,7 @@ seiner	PPOSAT
 reimfreudigen	ADJA
 Übersetzung	NN
 von	APPR
-Molières	NN
+Molières	ADJA
 Komödie	NN
 noch	ADV
 ein	ART
@@ -1058,7 +1058,7 @@ Raum	NN
 gebaut	VVPP
 .	$.
 
-Rechts	NN
+Rechts	NE
 führt	VVFIN
 eine	ART
 steile	ADJA
@@ -1149,7 +1149,7 @@ an	APPR
 Gefährlichkeit	NN
 ;	$.
 
-Rudolph	NN
+Rudolph	NE
 spreizt	VVFIN
 sich	PRF
 immer	ADV
@@ -1177,7 +1177,7 @@ komödiantischen	ADJA
 Treiben	NN
 ;	$.
 
-hysterisch	ADJD
+hysterisch	NN
 verzweifelt	ADJD
 gebärdet	VVFIN
 sich	PRF
@@ -1187,9 +1187,9 @@ als	APPR
 Töchterlein	NN
 ;	$.
 
-einzig	ADJD
-Ulli	ADJA
-Maier	NN
+einzig	NE
+Ulli	NE
+Maier	NE
 findet	VVFIN
 für	APPR
 die	ART
@@ -1247,12 +1247,12 @@ Gen-Raps	NE
 pid	NE
 .	$.
 
-EINBECK	NN
+EINBECK	NE
 .	$.
 
 Die	ART
 Kleinwanzlebener	NN
-Saatzucht	ADJA
+Saatzucht	NE
 AG	NN
 (	$(
 KWS	NE
@@ -1303,7 +1303,7 @@ Unternehmenssprecher	NN
 
 Der	ART
 Raps	NN
-weise	ADJA
+weise	VVFIN
 eine	ART
 veränderte	ADJA
 Zusammensetzung	NN
@@ -1455,7 +1455,7 @@ Markt	NN
 kommen	VVINF
 .	$.
 
-2.	ADJA
+2.	ADV
 Januar	NN
 1997	CARD
 ,	$,
@@ -1474,29 +1474,29 @@ und	KON
 Beleg	NN
 )	$(
 
-Liebe	NN
+Liebe	ADJA
 Leserinnen	NN
 ,	$,
 liebe	VVFIN
 Leser	NN
 ,	$,
 
-Eis-	START
-und	START
-Schneeglätte	START
-in	START
-weiten	START
-Teilen	START
-unseres	START
-Verbreitungsgebietes	START
-beeinträchtigen	START
-Vertrieb	START
-und	START
-Auslieferung	START
-der	START
-Frankfurter	START
-Rundschau	START
-.	START
+Eis-	NE
+und	KON
+Schneeglätte	NN
+in	APPR
+weiten	ADJA
+Teilen	NN
+unseres	PPOSAT
+Verbreitungsgebietes	NN
+beeinträchtigen	VVFIN
+Vertrieb	NN
+und	KON
+Auslieferung	NN
+der	ART
+Frankfurter	ADJA
+Rundschau	NN
+.	$.
 
 Wir	PPER
 bitten	VVFIN
@@ -1557,7 +1557,7 @@ Post	NN
 ausgeliefert	VVPP
 .	$.
 
-asdfghj	ADJA
+asdfghj	NE
 
 Vertriebsleitung	NN
 
@@ -2405,7 +2405,7 @@ ließen	VVFIN
 sich	PRF
 jedoch	ADV
 nicht	PTKNEG
-abschrecken	VVPP
+abschrecken	VVINF
 .	$.
 
 Auf	APPR
@@ -2533,7 +2533,7 @@ Bevölkerung	NN
 :	$.
 
 ``	$(
-Erstmals	ADV
+Erstmals	NN
 seit	APPR
 fünfzig	CARD
 Jahren	NN
@@ -2744,7 +2744,7 @@ Spital	NN
 in	APPR
 dem	PRELS
 der	ART
-42jährige	NN
+42jährige	ADJA
 Arzt	NN
 Kozlovacki	NN
 bisher	ADV
@@ -3017,7 +3017,7 @@ französischen	ADJA
 ,	$,
 aber	ADV
 tatsächlich	ADJD
-bewirkt	VVPP
+bewirkt	VVFIN
 sie	PPER
 überhaupt	ADV
 nichts	PIS
@@ -3026,7 +3026,7 @@ nichts	PIS
 
 Paris	NE
 wirft	VVFIN
-Den	ART
+Den	NE
 Haag	NE
 seit	APPR
 langem	ADJA
@@ -3069,7 +3069,7 @@ Drogenpolitik	NN
 habe	VAFIN
 .	$.
 
-Erbakan	NN
+Erbakan	NE
 will	VMFIN
 D8	NE
 aus	APPR
@@ -3077,7 +3077,7 @@ der	ART
 Taufe	NN
 heben	VVFIN
 
-Türkischer	NN
+Türkischer	ADJA
 Ministerpräsident	NN
 plant	VVFIN
 islamische	ADJA
@@ -3490,7 +3490,7 @@ von	APPR
 einer	ART
 militanten	ADJA
 Militärjunta	NN
-regierte	ADJA
+regierte	VVFIN
 Nigeria	NE
 ist	VAFIN
 ein	ART
@@ -3516,7 +3516,7 @@ erheblichen	ADJA
 Konfliktstoff	NN
 :	$.
 
-Erbakan	NN
+Erbakan	NE
 plant	VVFIN
 ,	$,
 im	APPRART
@@ -3732,7 +3732,7 @@ wertet	VVFIN
 man	PIS
 im	APPRART
 Generalstab	NN
-Öcalans	ADJA
+Öcalans	NE
 Angebot	NN
 als	APPR
 Beweis	NN
@@ -3798,7 +3798,7 @@ Soldaten	NN
 getötet	VVPP
 .	$.
 
-Irakische	NN
+Irakische	ADJA
 Kurden	NN
 fürchten	VVFIN
 ,	$,
@@ -4086,7 +4086,7 @@ Mitglieder	NN
 Von	APPR
 Ina	NE
 Hönicke	NE
-Egal	ADV
+Egal	NE
 
 Ob	KOUS
 der	ART
@@ -4122,7 +4122,7 @@ Art	NN
 öffentlich	ADJD
 .	$.
 
-Mahnende	NN
+Mahnende	ADJA
 Stimmen	NN
 zur	APPRART
 Entwicklung	NN
@@ -4212,8 +4212,8 @@ wir	PPER
 unsere	PPOSAT
 Befürchtungen	NN
 in	APPR
-puncto	FM
-Jobkiller	NN
+puncto	NN
+Jobkiller	NE
 Computer	NN
 ,	$,
 Datenschutzprobleme	NN
@@ -4427,7 +4427,7 @@ Studie	NN
 betreut	VVPP
 :	$.
 ``	$(
-Glücklicherweise	ADV
+Glücklicherweise	NN
 hat	VAFIN
 das	ART
 Europaparlament	NN
@@ -4830,7 +4830,7 @@ verschwunden	VVPP
 :	$.
 
 ``	$(
-Ursprünglich	ADJD
+Ursprünglich	NN
 schien	VVFIN
 vielen	PIAT
 Mitgliedern	NN
@@ -5182,7 +5182,7 @@ wurden	VAFIN
 verletzt	VVPP
 .	$.
 
-Anderen	NN
+Anderen	ADJA
 Quellen	NN
 zufolge	APPO
 liegt	VVFIN
@@ -5250,7 +5250,7 @@ als	APPR
 nur	ADV
 das	ART
 ``	$(
-Körnchen	ADJA
+Körnchen	NN
 Wahrheit	NN
 ''	$(
 .	$.
@@ -5258,7 +5258,7 @@ Wahrheit	NN
 Die	ART
 Frage	NN
 ``	$(
-Wem	PWS
+Wem	NE
 nützt	VVFIN
 es	PPER
 ?	$.
@@ -5461,7 +5461,7 @@ aus	APPR
 dem	ART
 libanesischer	ADJA
 Assad-Gegner	NN
-rekrutieren	VVPP
+rekrutieren	VVINF
 .	$.
 
 So	ADV
@@ -5551,7 +5551,7 @@ sein	VAINF
 sollte	VMFIN
 ;	$.
 
-denn	ADV
+denn	KON
 trotz	APPR
 der	ART
 gegenwärtigen	ADJA
@@ -5748,7 +5748,7 @@ Besatzung	NN
 gleichgestellt	VVPP
 .	$.
 
-Gentechnische	NN
+Gentechnische	ADJA
 Freilandversuche	NN
 im	APPRART
 Rheinland	NN
@@ -5763,7 +5763,7 @@ glücklich	ADJD
 über	APPR
 Entwicklungsschub	NN
 
-Grüne	NN
+Grüne	NE
 kündigen	VVFIN
 ihren	PPOSAT
 Widerstand	NN
@@ -6602,7 +6602,7 @@ Ehrenamtliche	NN
 hätten	VAFIN
 für	APPR
 die	ART
-freiheitlich-demokratische	NN
+freiheitlich-demokratische	ADJA
 Grundordnung	NN
 einzutreten	VVIZU
 ,	$,
@@ -7297,7 +7297,7 @@ Hoffnung	NN
 aus	PTKVZ
 ,	$,
 im	APPRART
-SPD-dominierten	NN
+SPD-dominierten	ADJA
 Bundesrat	NN
 doch	ADV
 eine	ART
@@ -7764,7 +7764,7 @@ noch	ADV
 nie	ADV
 .	$.
 
-55	CARD
+55	NE
 Prozent	NN
 befürworten	VVFIN
 einer	ART
@@ -7983,7 +7983,7 @@ militärischen	ADJA
 Abzug	NN
 aus	APPR
 dem	ART
-Westjordanland	NE
+Westjordanland	NN
 festlegen	VVINF
 .	$.
 
@@ -8130,7 +8130,7 @@ Gaza-Stadt	NN
 entsandte	VVFIN
 .	$.
 
-Israelische	NN
+Israelische	ADJA
 Zeitungen	NN
 sahen	VVFIN
 am	APPRART
@@ -8298,7 +8298,7 @@ Abkommensgegner	NN
 wechseln	VVINF
 .	$.
 
-Sieben	NN
+Sieben	CARD
 der	ART
 18	CARD
 Kabinettsmitglieder	NN
@@ -8933,7 +8933,7 @@ Mutter	NN
 ,	$,
 die	ART
 Zwillinge	NN
-erwartete	ADJA
+erwartete	VVFIN
 ,	$,
 heftige	ADJA
 Wehen	NN
@@ -9263,7 +9263,7 @@ Millimetern	NN
 auf	PTKVZ
 .	$.
 
-Sei	NE
+Sei	VAFIN
 diese	PDS
 überschritten	VVPP
 ,	$,
@@ -9313,19 +9313,19 @@ gemacht	VVPP
 sind	VAFIN
 .	$.
 
-Jede	START
-nicht	START
-funktionierende	START
-Weiche	START
-beeinflusse	START
-an	START
-Bahnhöfen	START
-ein	START
-ganzes	START
-System	START
-.	START
+Jede	PIS
+nicht	PTKNEG
+funktionierende	ADJA
+Weiche	NN
+beeinflusse	VVFIN
+an	APPR
+Bahnhöfen	NN
+ein	ART
+ganzes	ADJA
+System	NN
+.	$.
 
-Werde	NN
+Werde	VAFIN
 eine	ART
 Weiche	NN
 gestellt	VVPP
@@ -9353,7 +9353,7 @@ geraten	VVINF
 könne	VMFIN
 .	$.
 
-Passiere	NN
+Passiere	VVFIN
 dies	PDS
 nicht	PTKNEG
 ,	$,
@@ -9604,8 +9604,8 @@ Wartezeiten	NN
 bei	APPR
 der	ART
 Bahn	NN
-on	FM
-Ice	FM
+on	NE
+Ice	NE
 .	$.
 
 Schließlich	ADV
@@ -9615,7 +9615,7 @@ vom	APPRART
 Wetter	NN
 .	$.
 
-Schäubles	NN
+Schäubles	NE
 verspätete	ADJA
 Einsicht	NN
 
@@ -9662,7 +9662,7 @@ Seriosität	NN
 ''	$(
 .	$.
 
-Gut	NN
+Gut	ADJD
 gebrüllt	VVFIN
 ,	$,
 Löwe	NE
@@ -9793,7 +9793,7 @@ betriebswirtschaftlich	ADJA
 durchaus	ADV
 nachvollziehbaren	ADJA
 Motiven	NN
-versagen	VVFIN
+versagen	VVINF
 .	$.
 
 Ihre	PPOSAT
@@ -9825,7 +9825,7 @@ und	KON
 Haushalte	NN
 .	$.
 
-Nein	NN
+Nein	PTKANT
 ,	$,
 Steuergeschenke	NN
 sind	VAFIN
@@ -9872,7 +9872,7 @@ ein	ART
 Wiener	ADJA
 Koalitionsknatsch	NN
 
-Geplante	NN
+Geplante	ADJA
 Privatisierung	NN
 der	ART
 Creditanstalt	NN
@@ -10393,7 +10393,7 @@ Der	ART
 Standard	NN
 .	$.
 
-Anstatt	KOUI
+Anstatt	APPR
 sich	PRF
 dem	ART
 zu	PTKZU
@@ -10429,7 +10429,7 @@ Schritt	NN
 zur	APPRART
 Gerechtigkeit	NN
 
-Zweieinhalb	NN
+Zweieinhalb	ADJA
 Jahre	NN
 hat	VAFIN
 es	PPER
@@ -10687,7 +10687,7 @@ zu	PTKZU
 besinnen	VVINF
 .	$.
 
-kth	NE
+kth	XY
 
 Bosnien	NE
 
@@ -10707,7 +10707,7 @@ ap	NE
 )	$(
 .	$.
 
-Bosnien-Herzegowina	NE
+Bosnien-Herzegowina	NN
 hat	VAFIN
 nach	APPR
 fast	ADV
@@ -11220,7 +11220,7 @@ war	VAFIN
 unklar	ADJD
 .	$.
 
-Widersprüchliche	NN
+Widersprüchliche	ADJA
 Informationen	NN
 gab	VVFIN
 es	PPER
@@ -11684,7 +11684,7 @@ Könige	NN
 angeblich	ADJD
 .	$.
 
-Ja	NN
+Ja	PTKANT
 ,	$,
 dachte	VVFIN
 die	ART
@@ -11779,7 +11779,7 @@ geworden	VAPP
 ist	VAFIN
 .	$.
 
-Radfahrer	NN
+Radfahrer	NE
 gibt	VVFIN
 '	$(
 s	PPER
@@ -12020,7 +12020,7 @@ zu	PTKZU
 sagen	VVINF
 .	$.
 
-Sinfonische	NN
+Sinfonische	ADJA
 Zwischenspiele	NN
 gibt	VVFIN
 es	PPER
@@ -12318,7 +12318,7 @@ Bernstein	NE
 drehte	VVFIN
 das	ART
 ins	APPRART
-Positive	ADJA
+Positive	NN
 .	$.
 
 In	APPR
@@ -12361,7 +12361,7 @@ Termine	NN
 Mainzer	ADJA
 Staatstheater	NN
 ,	$,
-Großes	ADJA
+Großes	NN
 Haus	NN
 :	$(
 12.	ADJA
@@ -12389,7 +12389,7 @@ zur	APPRART
 Kaffeemaschine	NN
 
 ``	$(
-Mentale	ADJA
+Mentale	NN
 Karten	NN
 ''	$(
 im	APPRART
@@ -12401,7 +12401,7 @@ in	APPR
 der	ART
 Umwelt	NN
 
-Forschungsschwerpunkt	NN
+Forschungsschwerpunkt	ADJA
 Raum-Kognition	NN
 
 Von	APPR
@@ -12557,7 +12557,7 @@ verlieren	VVINF
 .	$.
 
 ``	$(
-Mentale	ADJA
+Mentale	NN
 Karten	NN
 ''	$(
 nennen	VVFIN
@@ -12650,7 +12650,7 @@ Deutsche	ADJA
 Forschungsgemeinschaft	NN
 richtete	VVFIN
 vor	APPR
-kurzem	ADJA
+kurzem	PIS
 ein	ART
 interdisziplinäres	ADJA
 Schwerpunktprogramm	NN
@@ -12790,7 +12790,7 @@ Würfelchen	NN
 degeneriert	VVPP
 ;	$.
 
-Fenster	NN
+Fenster	NE
 ,	$,
 Dächer	NN
 ,	$,
@@ -12937,7 +12937,7 @@ Fülle	NN
 von	APPR
 Details	NN
 hätten	VAFIN
-wiedererkennen	ADJD
+wiedererkennen	VVINF
 können	VMFIN
 .	$.
 
@@ -12981,7 +12981,7 @@ zu	PTKZU
 erkennen	VVINF
 .	$.
 
-Feldunabhängige	NN
+Feldunabhängige	ADJA
 Personen	NN
 schneiden	VVFIN
 bei	APPR
@@ -13011,7 +13011,7 @@ einem	ART
 Netz	NN
 .	$.
 
-Personen	NN
+Personen	NE
 ,	$,
 die	PRELS
 dies	PDS
@@ -13236,7 +13236,7 @@ kartieren	VVPP
 :	$.
 
 Männer	NN
-erstellen	VVINF
+erstellen	VVFIN
 im	APPRART
 Kopf	NN
 eine	ART
@@ -13266,7 +13266,7 @@ fest	PTKVZ
 Entgegen	APPR
 männlichen	ADJA
 Vorurteilen	NN
-schneiden	ADJA
+schneiden	VVFIN
 Frauen	NN
 mit	APPR
 dieser	PDAT
@@ -13799,7 +13799,7 @@ Treibhauseffekt	NN
 Skigebiete	NN
 bedroht	VVPP
 
-Urlauber	NN
+Urlauber	NE
 und	KON
 Tourismusplaner	NN
 müssen	VMFIN
@@ -13923,7 +13923,7 @@ werden	VAINF
 .	$.
 ''	$(
 
-Tritt	NN
+Tritt	VVFIN
 diese	PDAT
 Veränderung	NN
 -	$(
@@ -14092,7 +14092,7 @@ Tage	NN
 
 tdt	XY
 
-Bangkok	NE
+Bangkok	ADJA
 Strafe	NN
 für	APPR
 Müllsünder	NN
@@ -14141,7 +14141,7 @@ in	APPR
 Sachen	NN
 Sauberkeit	NN
 zum	APPRART
-mehrere	PIAT
+mehrere	ADJA
 hundert	CARD
 Kilometer	NN
 südlich	APPR
@@ -14223,7 +14223,7 @@ Aston	NE
 Martin	NE
 Vantage	NE
 ,	$,
-Jaguar	ADJA
+Jaguar	NE
 E	NN
 oder	KON
 Lotus	NE
@@ -14526,7 +14526,7 @@ Devisenquelle	NN
 ausbauen	VVINF
 .	$.
 
-Amtlichen	NN
+Amtlichen	ADJA
 Statistiken	NN
 zufolge	APPO
 besuchten	VVFIN
@@ -14671,7 +14671,7 @@ weitgehend	ADJD
 ,	$,
 werden	VAFIN
 in	APPR
-Vorarlberg	NE
+Vorarlberg	NN
 die	ART
 Rabattkarten	NN
 vorerst	ADV
@@ -14902,7 +14902,7 @@ Uffizien	NN
 ein	PTKVZ
 .	$.
 
-faf	NE
+faf	XY
 
 In	APPR
 Trance	NN
@@ -14967,7 +14967,7 @@ gepolsterten	ADJA
 Schultern	NN
 .	$.
 
-Wippende	NN
+Wippende	ADJA
 Arme	NN
 aus	APPR
 Blech	NE
@@ -15198,7 +15198,7 @@ zu	PTKZU
 sein	VAINF
 .	$.
 
-Thaipusam	NN
+Thaipusam	NE
 ist	VAFIN
 das	ART
 höchste	ADJA
@@ -15213,7 +15213,7 @@ Indien	NE
 Malaysia	NE
 und	KON
 Singapur	NE
-ehren	VVINF
+ehren	VVFIN
 die	ART
 Gläubigen	NN
 Gott	NN
@@ -15261,22 +15261,22 @@ Tank	NE
 Road	NE
 .	$.
 
-``	START
-Manche	START
-danken	START
-Gott	START
-,	START
-weil	START
-sie	START
-eine	START
-Operation	START
-überstanden	START
-haben	START
-''	START
-,	START
-sagt	START
-Chandyar	START
-.	START
+``	$(
+Manche	NE
+danken	VVFIN
+Gott	NN
+,	$,
+weil	KOUS
+sie	PPER
+eine	ART
+Operation	NN
+überstanden	VVPP
+haben	VAFIN
+''	$(
+,	$,
+sagt	VVFIN
+Chandyar	NN
+.	$.
 
 Andere	PIS
 feiern	VVFIN
@@ -15343,7 +15343,7 @@ Schmiere	NN
 getreten	VVPP
 .	$.
 
-Langsam	NN
+Langsam	ADJD
 zieht	VVFIN
 die	ART
 Prozession	NN
@@ -15391,7 +15391,7 @@ der	ART
 Zuschauer	NN
 .	$.
 
-9500	CARD
+9500	NE
 ``Kavadi''-Träger	NN
 nahmen	VVFIN
 im	APPRART
@@ -15428,8 +15428,8 @@ der	ART
 Haut	NN
 .	$.
 
-Kräftige	NE
-Burschen	NE
+Kräftige	ADJA
+Burschen	NN
 mit	APPR
 Käfigen	NN
 ,	$,
@@ -15583,7 +15583,7 @@ Chandyar	NN
 .	$.
 
 ``	$(
-Deshalb	PROAV
+Deshalb	NN
 haben	VAFIN
 sie	PPER
 alle	PIS
@@ -15773,7 +15773,7 @@ Böse	NN
 besiegt	VVFIN
 .	$.
 
-Thaipusam	NN
+Thaipusam	NE
 ist	VAFIN
 der	ART
 Tag	NN
@@ -16500,7 +16500,7 @@ Jaans	NE
 Generaldirektor	NN
 des	ART
 Institut	NN
-Monetaire	ADJA
+Monetaire	NE
 Luxembourgeois	NN
 (	$(
 IML	NE
@@ -16626,7 +16626,7 @@ Bank	NN
 )	$(
 .	$.
 
-Günstige	NN
+Günstige	ADJA
 Konditionen	NN
 
 Zu	APPR
@@ -16954,25 +16954,25 @@ Zweiten	ADJA
 Weltkrieg	NN
 .	$.
 
-1983	CARD
+1983	NE
 verabschiedete	VVFIN
 Luxemburg	NE
 ein	ART
 Investmentfondsgesetz	NN
 .	$.
 
-Daran	START
-orientierte	START
-sich	START
-1988	START
-wiederum	START
-die	START
-Europäische	START
-Kommission	START
-für	START
-ihre	START
-Investment-Richtlinie	START
-.	START
+Daran	PROAV
+orientierte	VVFIN
+sich	PRF
+1988	CARD
+wiederum	ADV
+die	ART
+Europäische	ADJA
+Kommission	NN
+für	APPR
+ihre	PPOSAT
+Investment-Richtlinie	NN
+.	$.
 
 Allein	ADV
 die	ART
@@ -17225,17 +17225,17 @@ niedrige	ADJA
 Steuereinnahme	NN
 ;	$.
 
-diese	PDS
-hat	VAFIN
-aber	ADV
-für	APPR
-den	ART
-kleinen	ADJA
-Staat	NN
-eine	ART
-große	ADJA
-Bedeutung	NN
-.	$.
+diese	START
+hat	START
+aber	START
+für	START
+den	START
+kleinen	START
+Staat	START
+eine	START
+große	START
+Bedeutung	START
+.	START
 
 Andererseits	ADV
 können	VMFIN
@@ -17409,7 +17409,7 @@ ein	ART
 Währungsinstitut	NN
 (	$(
 Institut	NN
-Monetaire	ADJA
+Monetaire	NE
 Luxembourgeois	NN
 ,	$,
 IML	NE
@@ -18306,7 +18306,7 @@ Abgabenordnung	NN
 )	$(
 darstellt	VVFIN
 ,	$,
-schweigen	VVINF
+schweigen	VVFIN
 die	ART
 deutsche	ADJA
 Bundesregierung	NN
@@ -18720,11 +18720,11 @@ drei	CARD
 Prozent	NN
 von	APPR
 364	CARD
-Mrd.	NN
+Mrd.	CARD
 DM	NN
 auf	APPR
 352	CARD
-Mrd.	NN
+Mrd.	CARD
 DM	NN
 .	$.
 
@@ -18857,7 +18857,7 @@ legale	ADJA
 Steuervermeidung	NN
 .	$.
 
-Mir	NE
+Mir	PPER
 scheint	VVFIN
 ,	$,
 daß	KOUS
@@ -19067,7 +19067,7 @@ der	ART
 Europäischen	ADJA
 Union	NN
 werden	VAFIN
-zahlreicher	ADJA
+zahlreicher	ADJD
 .	$.
 
 Keiner	PIS
@@ -19320,7 +19320,7 @@ entfallen	VVFIN
 Die	ART
 Sonderregelungen	NN
 würden	VAFIN
-entfallen	VVINF
+entfallen	VVPP
 oder	KON
 nicht	PTKNEG
 mehr	ADV
@@ -19372,7 +19372,7 @@ Art	NN
 .	$.
 
 ''	$(
-Wohin	PWAV
+Wohin	NN
 die	ART
 Reise	NN
 geht	VVFIN
@@ -19577,7 +19577,7 @@ Freude	NN
 auf	PTKVZ
 .	$.
 
-Londons	NE
+Londons	ADJA
 Finanzwelt	NN
 -	$(
 einschließlich	APPR
@@ -19855,7 +19855,7 @@ nicht	PTKNEG
 gespart	VVPP
 .	$.
 
-Jedesmal	ADV
+Jedesmal	NE
 ,	$,
 wenn	KOUS
 eine	ART
@@ -19925,7 +19925,7 @@ zu	PTKZU
 werden	VAINF
 .	$.
 
-KARL-HEINZ	NN
+KARL-HEINZ	NE
 KARISCH	NE
 
 Timmy	NE
@@ -20081,7 +20081,7 @@ Angebote	NN
 anders	ADV
 dar	PTKVZ
 und	KON
-benutzt	VVPP
+benutzt	VVFIN
 eigene	ADJA
 ,	$,
 nicht	PTKNEG
@@ -20148,7 +20148,7 @@ finden	VVINF
 Das	PDS
 begründet	VVFIN
 der	ART
-TUI-Umweltexperte	NN
+TUI-Umweltexperte	ADJA
 Dr.	NN
 Wolf	NE
 Michael	NE
@@ -20240,7 +20240,7 @@ Hotelführung	NN
 ''	$(
 .	$.
 
-Weniger	PIS
+Weniger	ADV
 ängstlich	ADJD
 bei	APPR
 der	ART
@@ -20251,7 +20251,7 @@ ist	VAFIN
 da	ADV
 schon	ADV
 die	ART
-ADAC-Reise	NN
+ADAC-Reise	ADJA
 GmbH	NN
 ,	$,
 der	ART
@@ -20353,7 +20353,7 @@ des	ART
 Unternehmens	NN
 .	$.
 
-Umweltorientiertes	NN
+Umweltorientiertes	ADJA
 Hotelangebot	NN
 ,	$,
 wie	KOKOM
@@ -20617,7 +20617,7 @@ es	PPER
 zum	APPRART
 Preis	NN
 von	APPR
-6,50	NE
+6,50	CARD
 Mark	NN
 sowohl	KON
 im	APPRART
@@ -20690,7 +20690,7 @@ bestellt	VVPP
 werden	VAINF
 .	$.
 
-Umweltorientierten	NN
+Umweltorientierten	ADJA
 Reiseangeboten	NN
 widmet	VVFIN
 sich	PRF
@@ -20790,7 +20790,7 @@ wird	VAFIN
 .	$.
 
 Vom	APPRART
-Bundesumweltministerium	NE
+Bundesumweltministerium	NN
 wird	VAFIN
 die	ART
 ÖTE-Initiative	NN
@@ -20843,7 +20843,7 @@ Natur	NN
 eingeführt	VVPP
 .	$.
 
-134	CARD
+134	NE
 Betriebe	NN
 tragen	VVFIN
 es	PPER
@@ -20858,7 +20858,7 @@ italienischen	ADJA
 Südtirol	NE
 .	$.
 
-Anfordern	NN
+Anfordern	NE
 kann	VMFIN
 man	PIS
 den	ART
@@ -20975,7 +20975,7 @@ harten	ADJA
 Prüfkriterien	NN
 .	$.
 
-55	CARD
+55	NE
 verschiedene	ADJA
 Umweltschutzauflagen	NN
 müssen	VMFIN
@@ -21253,9 +21253,9 @@ beginnen	VVINF
 
 xp	NE
 
-WISSENS-WERT	NN
+WISSENS-WERT	ADJD
 
-Brechts	NN
+Brechts	ADJA
 Zahnbürste	NN
 
 Bei	APPR
@@ -21460,8 +21460,8 @@ Millionen	NN
 Kilometer	NN
 entfernten	ADJA
 Zentralgestirns	NN
-bis	KON
-dato	VVFIN
+bis	APPR
+dato	ADV
 niemand	PIS
 aufgefallen	VVPP
 waren	VAFIN
@@ -21626,7 +21626,7 @@ denn	KON
 siehe	VVIMP
 da	ADV
 :	$.
-Diese	PDS
+Diese	PDAT
 im	APPRART
 Unsichtbaren	NN
 wirkenden	ADJA
@@ -21639,7 +21639,7 @@ ab	PTKVZ
 -	$(
 lichtscheues	ADJA
 Bakteriengelumpe	NN
-das	PDS
+das	NE
 .	$.
 
 In	APPR
@@ -21714,7 +21714,7 @@ KURZ	NE
 &	KON
 NEU	NE
 
-Recht	NN
+Recht	ADV
 im	APPRART
 Internet	NN
 
@@ -21973,7 +21973,7 @@ es	PPER
 reproduziert	ADJD
 wird	VAFIN
 ,	$,
-empören	VVINF
+empören	VVFIN
 sich	PRF
 die	ART
 Betrachter	NN
@@ -22065,7 +22065,7 @@ der	ART
 Welt	NN
 .	$.
 
-Zugegeben	NE
+Zugegeben	ADJD
 ,	$,
 die	ART
 Abbildung	NN
@@ -22261,7 +22261,7 @@ genügte	VVINF
 :	$.
 
 Er	PPER
-versteckte	ADJA
+versteckte	VVFIN
 Courbet	NE
 hinter	APPR
 Masson	NE
@@ -22296,7 +22296,7 @@ im	APPRART
 vergangenen	ADJA
 Jahr	NN
 dem	ART
-Musée	NN
+Musée	NE
 d	NE
 '	$(
 Orsay	NE
@@ -22350,7 +22350,7 @@ Kunstwerke	NN
 
 Wir	PPER
 suchen	VVFIN
-etwas	PIAT
+etwas	ADV
 Bekanntes	NN
 und	KON
 erwarten	VVFIN
@@ -22665,8 +22665,8 @@ Die	ART
 Liebe	NN
 ebensowenig	ADV
 wie	KOKOM
-Sandro	CARD
-Botticellis	NN
+Sandro	NE
+Botticellis	NE
 Venus	NE
 und	KON
 Mars	NE
@@ -23244,7 +23244,7 @@ es	PPER
 nie	ADV
 .	$.
 
-Proteus	NN
+Proteus	NE
 war	VAFIN
 gewiß	ADV
 seine	PPOSAT
@@ -23505,7 +23505,7 @@ drückenden	ADJA
 Firmament	NN
 .	$.
 
-Schematisierte	NN
+Schematisierte	ADJA
 Gesichter	NN
 und	KON
 klobige	VVFIN
@@ -23518,7 +23518,7 @@ Einfluß	NN
 der	ART
 Kubisten	NN
 und	KON
-primitiv-archaischer	NN
+primitiv-archaischer	ADJA
 Kunst	NN
 .	$.
 
@@ -23680,7 +23680,7 @@ konnte	VMFIN
 
 Thomas	NE
 Fechner-Smarsly	NN
-Wie	KOKOM
+Wie	NN
 in	APPR
 einer	ART
 Momentaufnahme	NN
@@ -23838,8 +23838,8 @@ beklagen	VVINF
 hatte	VAFIN
 .	$.
 
-Weniger	PIS
-hurrapatriotisch	VVFIN
+Weniger	ADV
+hurrapatriotisch	ADJD
 gegenüber	APPR
 den	ART
 Phänomenen	NN
@@ -24079,7 +24079,7 @@ DIE	ART
 NEUE	ADJA
 SAISON	NN
 
-airtours	ADJA
+airtours	NE
 
 Noch	ADV
 mehr	PIAT
@@ -24286,7 +24286,7 @@ mehr	ADV
 
 rhe	XY
 
-ameropa	ADJA
+ameropa	NE
 
 Im	APPRART
 Einheitsbrei	NN
@@ -24320,7 +24320,7 @@ auch	ADV
 einprägt	VVFIN
 .	$.
 
-Ameropa	NN
+Ameropa	NE
 hat	VAFIN
 wieder	ADV
 einmal	ADV
@@ -24460,9 +24460,9 @@ Orient-Express	NN
 ,	$,
 dem	ART
 ``	$(
-Palace	FM
-on	FM
-Wheels	FM
+Palace	NE
+on	NE
+Wheels	NE
 ''	$(
 in	APPR
 Indien	NE
@@ -24525,7 +24525,7 @@ ebenfalls	ADV
 dabei	PTKVZ
 .	$.
 
-Ameropa	NN
+Ameropa	NE
 mußte	VMFIN
 im	APPRART
 vergangenen	ADJA
@@ -24579,7 +24579,7 @@ Peter	NE
 B.	NE
 Schumann	NE
 
-HAVANNA	NN
+HAVANNA	NE
 .	$.
 
 Eine	ART
@@ -25230,7 +25230,7 @@ Erzählkinos	NN
 
 Am	APPRART
 erschreckendsten	ADJA
-scheitern	VVINF
+scheitern	VVFIN
 immer	ADV
 wieder	ADV
 Initiatoren	NN
@@ -25597,7 +25597,7 @@ aus	PTKVZ
 Doch	KON
 zusätzliche	ADJA
 Mittel	NN
-verbessern	VVINF
+verbessern	VVFIN
 nur	ADV
 bedingt	ADJD
 das	ART
@@ -25615,7 +25615,7 @@ ist	VAFIN
 ,	$,
 wenn	KOUS
 auch	ADV
-Arturo	CARD
+Arturo	ADJA
 Ripstein	NN
 mit	APPR
 Profundo	NE
@@ -25975,7 +25975,7 @@ weitergeführt	VVPP
 wird	VAFIN
 .	$.
 
-Rosalie	NN
+Rosalie	NE
 und	KON
 das	ART
 Geisterhaus	NN
@@ -26474,7 +26474,7 @@ in	APPR
 Ruanda	NE
 ;	$.
 
-ob	KOUS
+ob	NE
 nach	APPR
 dem	ART
 Völkermord	NN
@@ -26623,7 +26623,7 @@ Umzug	NN
 entziehen	VVINF
 .	$.
 
-Hutu	NN
+Hutu	NE
 und	KON
 Tutsi	NN
 müssen	VMFIN
@@ -26709,7 +26709,7 @@ der	ART
 Pflanzung	NN
 ;	$.
 
-Bananen	NN
+Bananen	NE
 ,	$,
 Mais	NE
 ,	$,
@@ -26758,7 +26758,7 @@ auf	APPR
 die	ART
 weiten	ADJA
 ,	$,
-grünen	ADJA
+grünen	VVFIN
 ,	$,
 dichtbebauten	VVFIN
 ,	$,
@@ -26882,7 +26882,7 @@ Arbeitsmarkt	NN
 zurückzuführen	VVIZU
 .	$.
 
-Rosalies	NN
+Rosalies	NE
 neues	ADJA
 Haus	NN
 nämlich	ADV
@@ -26908,8 +26908,8 @@ Welthungerhilfe	NN
 finanziert	VVPP
 ,	$,
 und	KON
-die	PDS
-bezahlt	VVFIN
+die	ART
+bezahlt	ADJD
 die	ART
 Arbeiter	NN
 bei	APPR
@@ -27103,7 +27103,7 @@ Hutus	NN
 weichen	VVINF
 ;	$.
 
-denn	ADV
+denn	KON
 die	ART
 Regierung	NN
 sichert	VVFIN
@@ -27161,8 +27161,8 @@ den	ART
 Tätern	NN
 !	$.
 
-Massenhafter	NN
-Hausbau	NE
+Massenhafter	ADJA
+Hausbau	NN
 ist	VAFIN
 sicher	ADJD
 geeignet	VVPP
@@ -27382,7 +27382,7 @@ wird	VAFIN
 andauern	VVINF
 .	$.
 
-Racheakte	NN
+Racheakte	NE
 werden	VAFIN
 die	ART
 Gesellschaft	NN
@@ -27508,7 +27508,7 @@ wurden	VAFIN
 .	$.
 
 ``	$(
-Manche	PIS
+Manche	NN
 von	APPR
 denen	PRELS
 ,	$,
@@ -27593,7 +27593,7 @@ sind	VAFIN
 .	$.
 ''	$(
 
-Rosalie	NN
+Rosalie	ADJA
 Mukakamali	NN
 jedenfalls	ADV
 hat	VAFIN
@@ -27681,7 +27681,7 @@ kaum	ADV
 ,	$,
 der	ART
 Bäuerin	NN
-Rosalie	ADJA
+Rosalie	NE
 Mukakamali	NN
 die	ART
 Frage	NN
@@ -27813,7 +27813,7 @@ Zugeständnisse	NN
 abzuringen	VVPP
 .	$.
 
-Simitis	NN
+Simitis	NE
 hat	VAFIN
 sich	PRF
 mit	APPR
@@ -27928,7 +27928,7 @@ entscheiden	VVINF
 können	VMFIN
 ;	$.
 
-wie	KON
+wie	PWAV
 schon	ADV
 beim	APPRART
 Kampf	NN
@@ -28165,7 +28165,7 @@ Kavaliersdelikt	NN
 verharmlost	VVPP
 .	$.
 
-Simitis	NN
+Simitis	NE
 gibt	VVFIN
 sich	PRF
 Mühe	NN
@@ -28225,7 +28225,7 @@ keineswegs	ADV
 sicher	ADJD
 .	$.
 
-Simitis	NN
+Simitis	NE
 beteuert	VVFIN
 zwar	ADV
 bei	APPR
@@ -28236,7 +28236,7 @@ guten	ADJA
 Absichten	NN
 .	$.
 
-Den	NE
+Den	ART
 nicht	PTKNEG
 finanzierbaren	ADJA
 Forderungen	NN
@@ -28654,7 +28654,7 @@ gehängt	VVFIN
 ``	$(
 What	FM
 is	FM
-he	FM
+he	NE
 thinking	VVFIN
 ?	$.
 ''	$(
@@ -28766,7 +28766,7 @@ daraus	PROAV
 ziehen	VVINF
 .	$.
 
-Leute	NN
+Leute	NE
 ,	$,
 die	PRELS
 sich	PRF
@@ -28995,7 +28995,7 @@ Klasse	NN
 
 What	NE
 is	FM
-he	FM
+he	NE
 thinking	VVFIN
 ?	$.
 
@@ -29015,8 +29015,8 @@ Land	NN
 der	ART
 Diktatoren	NN
 
-oder	KON
-:	$(
+oder	NE
+:	$.
 Warum	PWAV
 Touristen	NN
 ohne	APPR
@@ -29158,8 +29158,8 @@ hin	PTKVZ
 und	KON
 genießt	VVFIN
 das	ART
-post-koloniale	NN
-Flair	NE
+post-koloniale	ADJA
+Flair	NN
 .	$.
 
 Über	APPR
@@ -29454,7 +29454,7 @@ gerademal	ADV
 ein	ART
 paar	PIAT
 Dutzend	NN
-Burmesen	ADJA
+Burmesen	NE
 Arbeit	NN
 ,	$,
 von	APPR
@@ -29516,7 +29516,7 @@ ersparen	VVINF
 wollten	VMFIN
 .	$.
 
-Jeannette	NN
+Jeannette	NE
 und	KON
 Sylvie	NN
 sind	VAFIN
@@ -29735,7 +29735,7 @@ Entdeckerlust	NN
 der	ART
 Traveller	NN
 und	KON
-schildern	VVINF
+schildern	VVFIN
 auf	APPR
 700	CARD
 Seiten	NN
@@ -30264,7 +30264,7 @@ beiden	PIAT
 Straßenkinder	NN
 ,	$,
 die	ART
-wenige	PIAT
+wenige	ADJA
 Meter	NN
 entfernt	ADJD
 von	APPR
@@ -30318,7 +30318,7 @@ die	ART
 nächste	ADJA
 Seitenstraße	NN
 und	KON
-verstecken	VVINF
+verstecken	VVFIN
 sich	PRF
 in	APPR
 einer	ART
@@ -30395,7 +30395,7 @@ zu	PTKZU
 machen	VVINF
 .	$.
 
-Schlimme	NN
+Schlimme	ADJA
 Zustände	NN
 ,	$,
 resümieren	VVFIN
@@ -30779,7 +30779,7 @@ der	ART
 Skischule	NN
 .	$.
 
-Loipen	NN
+Loipen	NE
 ziehen	VVFIN
 sich	PRF
 durch	APPR
@@ -30805,7 +30805,7 @@ Anschluß	NN
 an	APPR
 Fernloipen	NN
 oder	KON
-enden	VVINF
+enden	VVFIN
 nach	APPR
 ein	ART
 paar	PIAT
@@ -31198,8 +31198,8 @@ als	APPR
 Kurverwaltung	NN
 haben	VAFIN
 nur	ADV
-einen	PIS
-beschränkten	VVFIN
+einen	ART
+beschränkten	ADJA
 Einfluß	NN
 auf	APPR
 das	ART
@@ -31575,12 +31575,12 @@ dem	ART
 Bernhardinerhund	NN
 gesprochen	VVPP
 (	$(
-Wie	PWAV
+Wie	NN
 geht	VVFIN
 's	PPER
 ,	$,
 mein	PPOSAT
-Guter	ADJA
+Guter	NN
 )	$(
 ;	$.
 
@@ -31627,7 +31627,7 @@ November	NN
 1996	CARD
 :	$(
 Wir	PPER
-beten	VVINF
+beten	VVFIN
 ,	$,
 daß	KOUS
 die	ART
@@ -31649,7 +31649,7 @@ hinweisen	VVINF
 .	$.
 ''	$(
 
-Gut	NN
+Gut	ADJD
 .	$.
 
 Über	APPR
@@ -31754,7 +31754,7 @@ spazieren	VVINF
 gegangen	VVPP
 .	$.
 
-Mühlrad	NN
+Mühlrad	NE
 fotografiert	VVFIN
 ,	$,
 Enten	NN
@@ -31775,7 +31775,7 @@ getestet	VVPP
 Artikel	NN
 aus	APPR
 der	ART
-Badischen	NN
+Badischen	ADJA
 Zeitung	NN
 studiert	VVPP
 ,	$,
@@ -32104,8 +32104,8 @@ Tann	NN
 .	$.
 
 ``	$(
-Diesen	PDAT
-Winter	NN
+Diesen	NE
+Winter	NE
 ''	$(
 ,	$,
 sagte	VVFIN
@@ -32214,7 +32214,7 @@ Er	PPER
 sollte	VMFIN
 .	$.
 
-Zumal	KOUS
+Zumal	ADV
 da	ADV
 das	ART
 ,	$,
@@ -32281,7 +32281,7 @@ dem	ART
 Riesaer	NN
 Facharzt	NN
 für	APPR
-Innere	NN
+Innere	ADJA
 Medizin	NN
 Karl-Heinz	NE
 Nitschke	NE
@@ -32773,7 +32773,7 @@ in	APPR
 der	ART
 Schweriner	ADJA
 Straße	NN
-Nitschkes	ADJA
+Nitschkes	NE
 Namen	NN
 schon	ADV
 gehört	VVPP
@@ -32852,7 +32852,7 @@ abtun	VVINF
 konnte	VMFIN
 ;	$.
 
-aufgemuckt	ADJD
+aufgemuckt	NN
 hatten	VAFIN
 Stahlkocher	NN
 ,	$,
@@ -33083,7 +33083,7 @@ Tür	NN
 zu	PTKVZ
 :	$.
 ``	$(
-Stell	VVFIN
+Stell	NE
 dir	PPER
 vor	PTKVZ
 ,	$,
@@ -33118,7 +33118,7 @@ Lage	NN
 war	VAFIN
 ,	$,
 heute	ADV
-lachen	VVINF
+lachen	VVFIN
 die	ART
 Zuhörer	NN
 bei	APPR
@@ -33235,7 +33235,7 @@ den	ART
 Bericht	NN
 untersagen	VVINF
 oder	KON
-Löwe	NE
+Löwe	NN
 überzeugen	VVINF
 ,	$,
 nichts	PIS
@@ -33383,7 +33383,7 @@ gewesen	VAPP
 .	$.
 
 ``	$(
-Schlimm	ADJD
+Schlimm	NE
 ,	$,
 daß	KOUS
 unter	APPR
@@ -33552,9 +33552,9 @@ er	PPER
 auch	ADV
 ;	$.
 
-seine	PPOSAT
+seine	NE
 Mutter	NN
-versteckte	ADJA
+versteckte	VVFIN
 alles	PIS
 .	$.
 
@@ -33946,7 +33946,7 @@ mitreden	VVINF
 wollten	VMFIN
 .	$.
 
-Sucht	NE
+Sucht	ADV
 man	PIS
 in	APPR
 der	ART
@@ -34059,7 +34059,7 @@ und	KON
 Anzeigen-Erfolge	NN
 an	APPR
 der	ART
-Elbe	NE
+Elbe	NN
 nachhaltig	ADJD
 für	APPR
 Unruhe	NN
@@ -34277,7 +34277,7 @@ gedrungen	VVPP
 wäre	VAFIN
 .	$.
 
-Augsteins	NN
+Augsteins	NE
 publizistischer	ADJA
 Bagger	NN
 zur	APPRART
@@ -34301,7 +34301,7 @@ oben	ADV
 gespült	VVPP
 .	$.
 
-Erinnert	NN
+Erinnert	NE
 sei	VAFIN
 nur	ADV
 an	APPR
@@ -34359,7 +34359,7 @@ solchen	PIAT
 und	KON
 ähnlichen	ADJA
 Enthüllungen	NN
-versteckten	ADJA
+versteckten	VVFIN
 journalistischen	ADJA
 Impuls	NN
 nicht	PTKNEG
@@ -34449,7 +34449,7 @@ hat	VAFIN
 
 An	APPR
 dem	ART
-73jährigen	NN
+73jährigen	ADJA
 Herausgeber	NN
 kommt	VVFIN
 übrigens	ADV
@@ -34688,7 +34688,7 @@ er	PPER
 will	VMFIN
 :	$.
 
-Mal	NN
+Mal	ADV
 klingt	VVFIN
 es	PPER
 progressiv	VVFIN
@@ -34926,7 +34926,7 @@ versprochen	VVPP
 Versprochen	NN
 ?	$.
 
-Optisches	NN
+Optisches	ADJA
 Übergewicht	NN
 auf	APPR
 den	ART
@@ -34951,7 +34951,7 @@ Politik	NN
 Telefonkarten	NN
 bleibt	VVFIN
 nichts	PIS
-erspart	VVPP
+erspart	VVFIN
 
 BONN	NE
 ,	$,
@@ -35457,7 +35457,7 @@ Hochschulabsolventen	NN
 geben	VVINF
 .	$.
 
-Imitation	NN
+Imitation	NE
 
 Rentnervisa	NN
 gegen	APPR
@@ -35708,7 +35708,7 @@ Geldgier	NN
 gehandelt	VVPP
 .	$.
 
-Koszics	NN
+Koszics	NE
 habe	VAFIN
 zusammen	ADV
 mit	APPR
@@ -36045,7 +36045,7 @@ verstärken	VVINF
 
 Scientology	NN
 
-US-Stars	NN
+US-Stars	NE
 machen	VVFIN
 Stimmung	NN
 
@@ -36058,7 +36058,7 @@ ap	NE
 )	$(
 .	$.
 
-Populäre	NN
+Populäre	ADJA
 US-Künstler	NN
 ,	$,
 die	PRELS
@@ -36102,7 +36102,7 @@ Die	ART
 Stimmung	NN
 sei	VAFIN
 dazu	PROAV
-angetan	VVFIN
+angetan	VVPP
 ,	$,
 das	ART
 ``	$(
@@ -36474,7 +36474,7 @@ verurteilt	VVPP
 Sein	PPOSAT
 Komplice	NN
 Peter	NE
-Richter	NN
+Richter	NE
 (	$(
 59	CARD
 )	$(
@@ -36514,7 +36514,7 @@ Jahres	NN
 eingeräumt	VVPP
 .	$.
 
-Reemtsma	NN
+Reemtsma	NE
 war	VAFIN
 nach	APPR
 fast	ADV
@@ -36563,7 +36563,7 @@ jede	PIAT
 Spur	NN
 .	$.
 
-Koszics	NN
+Koszics	NE
 hatte	VAFIN
 vor	APPR
 Gericht	NN
@@ -36620,7 +36620,7 @@ unbedingt	ADV
 von	APPR
 der	ART
 Würzknolle	NN
-selbst.	NE
+selbst.	NN
 
 Vielmehr	ADV
 regt	VVFIN
@@ -36868,7 +36868,7 @@ den	ART
 Hauptrollen	NN
 erhält	VVFIN
 als	APPR
-deutsch-schweizerische	NN
+deutsch-schweizerische	ADJA
 Koproduktion	NN
 mit	APPR
 dem	ART
@@ -36912,8 +36912,8 @@ Schweigers	NN
 neuestem	ADJA
 Film	NN
 ``	$(
-Knockin'	FM
-on	FM
+Knockin'	NE
+on	NE
 Heaven's	NE
 Door	NE
 ''	$(
@@ -36965,8 +36965,8 @@ Jahren	NN
 aufkam	VVFIN
 .	$.
 
-Geschäftstüchtige	NN
-Floristen	NE
+Geschäftstüchtige	ADJA
+Floristen	NN
 machten	VVFIN
 Valentin	NN
 zum	APPRART
@@ -37404,7 +37404,7 @@ KSZE	NE
 )	$(
 .	$.
 
-1972	CARD
+1972	NE
 kehrte	VVFIN
 Voslensky	NN
 von	APPR
@@ -37827,7 +37827,7 @@ dpa	NE
 )	$(
 .	$.
 
-Roboter	NN
+Roboter	NE
 können	VMFIN
 bald	ADV
 mit	APPR
@@ -37918,7 +37918,7 @@ flüssig	ADJD
 wechselt	VVFIN
 .	$.
 
-Natürliche	NN
+Natürliche	ADJA
 Muskeln	NN
 ziehen	VVFIN
 sich	PRF
@@ -37935,7 +37935,7 @@ elektrorheologischen	ADJA
 Öle	NN
 schon	ADV
 nach	APPR
-0,01	NE
+0,01	CARD
 Sekunden	NN
 .	$.
 
@@ -37946,7 +37946,7 @@ Steuern	NN
 aus	APPR
 Überschüssen	NN
 
-TÜBINGEN	NN
+TÜBINGEN	NE
 .	$.
 
 Die	ART
@@ -38277,7 +38277,7 @@ bei	APPR
 Brcko	NE
 .	$.
 
-Bergbau	NN
+Bergbau	NE
 
 Kette	NN
 durchs	APPRART
@@ -38581,7 +38581,7 @@ zu	PTKZU
 haben	VAINF
 .	$.
 
-Matysek	NN
+Matysek	NE
 wurde	VAFIN
 zudem	ADV
 zu	APPR
@@ -38607,7 +38607,7 @@ bekleiden	VVFIN
 .	$.
 
 Der	ART
-51jährige	ADJA
+51jährige	NN
 ,	$,
 seit	APPR
 1992	CARD
@@ -38828,7 +38828,7 @@ Baumgruppe	NN
 gerast	VVPP
 .	$.
 
-Apotheker	NN
+Apotheker	NE
 lehnen	VVFIN
 Haschisch	NN
 ab	APPR
@@ -39402,7 +39402,7 @@ geben	VVINF
 Die	ART
 Ecke	NN
 
-Mahlzeit	NN
+Mahlzeit	NE
 
 BONN	NE
 ,	$,
@@ -39554,7 +39554,7 @@ unbedingt	ADV
 inhaltlich	ADJD
 .	$.
 
-Helfer	NN
+Helfer	NE
 war	VAFIN
 betrunken	ADJD
 -	$(
@@ -39597,7 +39597,7 @@ Nach	APPR
 Polizeiangaben	NN
 fuhr	VVFIN
 der	ART
-38jährige	ADJA
+38jährige	NN
 in	APPR
 der	ART
 Innenstadt	NN
@@ -39842,7 +39842,7 @@ Tennessee	NE
 von	APPR
 einem	ART
 nicht	PTKNEG
-erkannten	VVFIN
+erkannten	ADJA
 Attentäter	NN
 erschossen	VVPP
 worden	VAPP
@@ -39891,7 +39891,7 @@ Gefängnis	NN
 verurteilt	VVPP
 .	$.
 
-Ausflug	NN
+Ausflug	NE
 im	APPRART
 All	NN
 zu	APPR
@@ -40266,7 +40266,7 @@ dpa	NE
 )	$(
 .	$.
 
-Körpereigene	NN
+Körpereigene	ADJA
 Substanzen	NN
 sind	VAFIN
 nach	APPR
@@ -40414,11 +40414,11 @@ dagegen	PROAV
 nicht	PTKNEG
 .	$.
 
-Fall	NN
+Fall	NE
 Passent	NE
 Yousif	NE
 
-13jährige	NN
+13jährige	NE
 kehrt	VVFIN
 nach	APPR
 Ägypten	NE
@@ -40476,7 +40476,7 @@ Freitag	NN
 mit	PTKVZ
 .	$.
 
-Passent	NN
+Passent	NE
 leidet	VVFIN
 an	APPR
 einer	ART
@@ -40544,15 +40544,15 @@ Berlin	NE
 operiert	VVPP
 ;	$.
 
-ihr	PPER
-blieb	VVFIN
-dadurch	PROAV
-ein	ART
-Leben	NN
-im	APPRART
-Rollstuhl	NN
-erspart	VVPP
-.	$.
+ihr	START
+blieb	START
+dadurch	START
+ein	START
+Leben	START
+im	START
+Rollstuhl	START
+erspart	START
+.	START
 
 Dank	APPR
 der	ART
@@ -40807,7 +40807,7 @@ gebracht	VVPP
 werden	VAINF
 .	$.
 
-Ignatenko	NN
+Ignatenko	NE
 hatte	VAFIN
 zuvor	ADV
 Berichte	NN
@@ -40882,7 +40882,7 @@ nach	APPR
 viertägiger	ADJA
 Debatte	NN
 der	ART
-deutsch-tschechischen	NN
+deutsch-tschechischen	ADJA
 Versöhnungserklärung	NN
 zugestimmt	VVPP
 .	$.
@@ -41141,15 +41141,15 @@ für	APPR
 Arzneiausgaben	NN
 fallen	VVFIN
 
-Experten	START
-der	START
-Koalition	START
-ändern	START
-Seehofers	START
-Gesetzesplan	START
-in	START
-wesentlichen	START
-Punkten	START
+Experten	NN
+der	ART
+Koalition	NN
+ändern	VVFIN
+Seehofers	NE
+Gesetzesplan	NN
+in	APPR
+wesentlichen	ADJA
+Punkten	NN
 
 Die	ART
 Gesundheitspolitiker	NN
@@ -41331,7 +41331,7 @@ Arbeitnehmern	NN
 getragen	VVPP
 .	$.
 
-Erwogen	NN
+Erwogen	VVPP
 wurde	VAFIN
 ferner	ADV
 ,	$,
@@ -42008,8 +42008,8 @@ beim	APPRART
 Mißbrauch	NN
 von	APPR
 Besuchsvisa	NN
-denjenigen	PDS
-haftbar	ADJD
+denjenigen	PDAT
+haftbar	NN
 zu	PTKZU
 machen	VVINF
 ,	$,
@@ -42412,13 +42412,13 @@ für	APPR
 Arzneiausgaben	NN
 fällt	VVFIN
 
-Koalitionsexperten	START
-ändern	START
-Seehofers	START
-Gesetzesplan	START
-in	START
-etlichen	START
-Punkten	START
+Koalitionsexperten	NN
+ändern	VVFIN
+Seehofers	NE
+Gesetzesplan	NN
+in	APPR
+etlichen	ADJA
+Punkten	NN
 
 Die	ART
 von	APPR
@@ -42537,7 +42537,7 @@ nicht	PTKNEG
 der	ART
 Zustimmung	NN
 des	ART
-SPD-dominierten	NN
+SPD-dominierten	ADJA
 Bundesrates	NN
 bedarf	VVFIN
 -	$(
@@ -42569,7 +42569,7 @@ Gesundheitsministerium	NN
 mit	PTKVZ
 .	$.
 
-Nächste	NN
+Nächste	ADJA
 Woche	NN
 sollen	VMFIN
 die	ART
@@ -43542,7 +43542,7 @@ Ergebnis	NN
 Salman	NE
 Rushdie	NE
 
-Bedrohter	NN
+Bedrohter	ADJA
 Schriftsteller	NN
 von	APPR
 EU	NE
@@ -43820,7 +43820,7 @@ afp	NE
 )	$(
 .	$.
 
-Ecuadors	NN
+Ecuadors	NE
 neuer	ADJA
 Präsident	NN
 Fabian	NE
@@ -43843,14 +43843,14 @@ gesenkt	VVPP
 Dies	PDS
 gab	VVFIN
 Innenminister	NN
-César	NE
-Verduga	NE
+César	CARD
+Verduga	NN
 in	APPR
 Quito	NE
 bekannt	VVPP
 .	$.
 
-Alarcón	NN
+Alarcón	NE
 war	VAFIN
 am	APPRART
 Dienstag	NN
@@ -43903,7 +43903,7 @@ Februar	NN
 beigetragen	VVPP
 .	$.
 
-Alarcón	NN
+Alarcón	NE
 entließ	VVFIN
 zudem	ADV
 rund	ADV
@@ -43942,7 +43942,7 @@ verloren	VVPP
 hatten	VAFIN
 .	$.
 
-Bucaram	NN
+Bucaram	NE
 traf	VVFIN
 in	APPR
 Argentinien	NE
@@ -44737,7 +44737,7 @@ seine	PPOSAT
 Debatte	NN
 über	APPR
 die	ART
-deutsch-tschechische	NN
+deutsch-tschechische	ADJA
 Versöhnungserklärung	NN
 fortgesetzt	VVPP
 .	$.
@@ -44837,7 +44837,7 @@ Zusatz	NN
 verabschieden	VVINF
 .	$.
 
-D	NN
+D	XY
 
 Gesundheit	NN
 
@@ -44860,9 +44860,9 @@ umstritten	ADJD
 mit	APPR
 SPD	NE
 ,	$,
-Bündnis90	NE
+Bündnis90	NN
 /	$(
-Grüne	NE
+Grüne	NN
 )	$(
 
 BONN	NE
@@ -45388,7 +45388,7 @@ bk	XY
 /	$(
 tom	NE
 AFP	NE
-LEUTE	NN
+LEUTE	NE
 Alain	NE
 Delon	NE
 
@@ -45705,7 +45705,7 @@ Slowakei	NE
 für	APPR
 Nato-Referendum	NN
 
-BRATISLAVA	NN
+BRATISLAVA	NE
 (	$(
 rtr	NE
 )	$(
@@ -45824,7 +45824,7 @@ worden	VAPP
 war	VAFIN
 .	$.
 
-Ruf	NN
+Ruf	NE
 nach	APPR
 Entschädigung	NN
 lauter	ADJD
@@ -45940,7 +45940,7 @@ ap	NE
 )	$(
 .	$.
 
-Weißrussische	NN
+Weißrussische	ADJA
 Polizisten	NN
 sind	VAFIN
 am	APPRART
@@ -46139,7 +46139,7 @@ zu	PTKZU
 treffen	VVINF
 .	$.
 
-Süd-	TRUNC
+Süd-	NE
 und	KON
 Nordkorea	NE
 sollten	VMFIN
@@ -46189,7 +46189,7 @@ Peking	NE
 auf	PTKVZ
 .	$.
 
-Südkoreanischen	NN
+Südkoreanischen	ADJA
 Angaben	NN
 zufolge	APPO
 hat	VAFIN
@@ -46489,7 +46489,7 @@ REUTER	NE
 
 KURZSTRECKE	NN
 
-Bauernhof-Urlaub	NN
+Bauernhof-Urlaub	ADJA
 Angebot	NN
 nicht	PTKNEG
 optimal	ADJD
@@ -46619,7 +46619,7 @@ vom	APPRART
 Massachusetts	NN
 Institute	NE
 of	NE
-Technology	NN
+Technology	NE
 (	$(
 MIT	NE
 )	$(
@@ -46826,7 +46826,7 @@ Werbegag	NN
 .	$.
 
 ``	$(
-Sondern	KON
+Sondern	NE
 ''	$(
 ,	$,
 wie	PWAV
@@ -46875,8 +46875,8 @@ Passagiere	NN
 
 tdt	XY
 
-Nationalpark	NN
-Harz	NE
+Nationalpark	ADJA
+Harz	NN
 Kein	PIAT
 Skigebiet	NN
 
@@ -47093,7 +47093,7 @@ Hause	NN
 gefühlt	VVPP
 .	$.
 
-Wirt	NN
+Wirt	NE
 Baratta	NE
 hat	VAFIN
 am	APPRART
@@ -47201,7 +47201,7 @@ Nudelbrett	NN
 zog	VVFIN
 .	$.
 
-Dörfliche	NN
+Dörfliche	ADJA
 Blaskapellen	NN
 zogen	VVFIN
 derweil	ADV
@@ -47369,7 +47369,7 @@ nach	APPR
 Paris	NE
 .	$.
 
-Busseto	NN
+Busseto	NE
 ist	VAFIN
 heute	ADV
 jene	PDS
@@ -47575,8 +47575,8 @@ Bassa	NN
 .	$.
 
 Allein	ADV
-Verdis	CARD
-Villa	NN
+Verdis	NE
+Villa	NE
 Sant'	NE
 Agata	NE
 ,	$,
@@ -47601,7 +47601,7 @@ Ebene	NN
 wert	ADJD
 .	$.
 
-Hierher	NN
+Hierher	NE
 hatte	VAFIN
 er	PPER
 sich	PRF
@@ -47910,21 +47910,21 @@ Denkmal	NN
 gesetzt	VVPP
 .	$.
 
-Sein	START
-Klavier	START
-ist	START
-versiegelt	START
-,	START
-weil	START
-es	START
-nach	START
-seinem	START
-Tod	START
-niemand	START
-mehr	START
-berühren	START
-sollte	START
-.	START
+Sein	PPOSAT
+Klavier	NN
+ist	VAFIN
+versiegelt	VVPP
+,	$,
+weil	KOUS
+es	PPER
+nach	APPR
+seinem	PPOSAT
+Tod	NN
+niemand	PIS
+mehr	ADV
+berühren	VVINF
+sollte	VMFIN
+.	$.
 
 Dafür	PROAV
 steht	VVFIN
@@ -47980,7 +47980,7 @@ erlegt	VVFIN
 natürlich	ADV
 trotzdem	PROAV
 gerne	ADV
-aß	VVPP
+aß	ADJD
 .	$.
 
 Eine	ART
@@ -47990,8 +47990,8 @@ hatte	VAFIN
 sich	PRF
 Verdi	NN
 in	APPR
-Sant'	NE
-Agata	NE
+Sant'	CARD
+Agata	NN
 geschaffen	VVPP
 :	$.
 die	ART
@@ -48131,8 +48131,8 @@ nur	ADV
 das	ART
 Heu	NN
 aus	APPR
-Sant'	NE
-Agata	NE
+Sant'	CARD
+Agata	NN
 fressen	VVINF
 .	$.
 
@@ -48262,11 +48262,11 @@ sein	VAINF
 .	$.
 
 AUSKUNFT	NN
-:	$.
-Ufficio	NN
-di	ADJA
+:	$(
+Ufficio	NE
+di	NE
 Informazione	NN
-e	ADJA
+e	APPR
 Assistenza	NN
 turistica	VVFIN
 ,	$,
@@ -48337,7 +48337,7 @@ erhobenem	ADJA
 Zeigefinger	NN
 schreitet	VVFIN
 Raymond	NE
-Fechter	NN
+Fechter	NE
 die	ART
 Reihen	NN
 seiner	PPOSAT
@@ -48345,7 +48345,7 @@ Zuhörer	NN
 ab	PTKVZ
 .	$.
 
-Mal	NN
+Mal	ADV
 auf	APPR
 deutsch	ADJD
 ,	$,
@@ -48418,7 +48418,7 @@ Art	NN
 ,	$,
 die	ART
 Variationen	NN
-deutsch-französischer	NN
+deutsch-französischer	ADJA
 Freundschaft	NN
 am	APPRART
 eigenen	ADJA
@@ -48796,7 +48796,7 @@ der	ART
 Schulunterricht	NN
 .	$.
 
-Mal	NN
+Mal	ADV
 war	VAFIN
 es	PPER
 nur	ADV
@@ -48960,7 +48960,7 @@ wieder	ADV
 aufzubauen	VVIZU
 .	$.
 
-Angekauft	NN
+Angekauft	NE
 wurde	VAFIN
 vor	APPR
 einiger	PIAT
@@ -49062,7 +49062,7 @@ B.	NN
 P.	NE
 71	CARD
 ,	$,
-F-681	NE
+F-681	CARD
 90	CARD
 Ungersheim	NN
 ,	$,
@@ -49078,9 +49078,9 @@ Tel.	NN
 geöffnet	VVPP
 täglich	ADJD
 von	APPR
-10.30	NN
+10.30	NE
 bis	APPR
-16.30	NE
+16.30	CARD
 Uhr	NN
 .	$.
 
@@ -49112,7 +49112,7 @@ TUI	NE
 
 Mit	APPR
 einem	ART
-50seitigen	NN
+50seitigen	ADJA
 Katalog	NN
 ,	$,
 der	PRELS
@@ -49295,7 +49295,7 @@ dürften	VMFIN
 .	$.
 
 Seit	APPR
-kurzem	ADJA
+kurzem	PIS
 können	VMFIN
 die	ART
 TUI-Events	NN
@@ -49364,7 +49364,7 @@ Polstermöbel	NN
 Tiere	NN
 .	$.
 
-Allergiegerechte	NN
+Allergiegerechte	ADJA
 Hotels	NN
 ,	$,
 Pensionen	NN
@@ -49529,7 +49529,7 @@ Ostsee	NE
 angeboten	VVPP
 .	$.
 
-Gesegelt	NN
+Gesegelt	NE
 wird	VAFIN
 auf	APPR
 einer	ART
@@ -49783,7 +49783,7 @@ bekannt	ADJD
 .	$.
 
 Etwa	ADV
-Südfranzösische	ADJA
+Südfranzösische	NN
 Wanderwochen	NN
 im	APPRART
 Departement	NN
@@ -49824,7 +49824,7 @@ moderat	VVPP
 
 FR	NE
 
-Kleinode	NN
+Kleinode	NE
 europäischer	ADJA
 Kultur	NN
 
@@ -49832,7 +49832,7 @@ Kultur	NN
 Träume	NN
 und	KON
 Leben	NN
-östlich	ADJD
+östlich	APPR
 der	ART
 Weichsel	NN
 ''	$(
@@ -49861,7 +49861,7 @@ Berliner	ADJA
 Deutsch-Polnische	NN
 Kulturverein	NN
 ,	$,
-Klausener	ADJA
+Klausener	NN
 Platz	NN
 3	CARD
 ,	$,
@@ -49891,7 +49891,7 @@ polnische	ADJA
 Kultur	NN
 sowie	KON
 die	ART
-deutsch-polnisch-jüdische	NN
+deutsch-polnisch-jüdische	ADJA
 Geschichte	NN
 vorzustellen	VVIZU
 .	$.
@@ -49917,7 +49917,7 @@ FR	NE
 
 Das	ART
 verhängnisvolle	ADJA
-Bad	NE
+Bad	NN
 der	ART
 Pharaonen	NN
 im	APPRART
@@ -49951,7 +49951,7 @@ eine	ART
 Augenweide	NN
 :	$.
 
-Mächtige	NN
+Mächtige	ADJA
 Phönixpalmen	NN
 stehen	VVFIN
 in	APPR
@@ -49960,8 +49960,8 @@ weißen	ADJA
 Säulensaal	NN
 .	$.
 
-Dunkelhäutige	NN
-Diener	NE
+Dunkelhäutige	ADJA
+Diener	NN
 mit	APPR
 elegant	ADJD
 drapierten	ADJA
@@ -50166,7 +50166,7 @@ Von	APPR
 Schnecken	NN
 übertragen	VVPP
 
-Übertragen	NN
+Übertragen	VVPP
 wird	VAFIN
 die	ART
 Erkrankung	NN
@@ -51060,7 +51060,7 @@ erkrankt	VVPP
 waren	VAFIN
 .	$.
 
-Genauer	NN
+Genauer	NE
 :	$.
 Sie	PPER
 müssen	VMFIN
@@ -51090,38 +51090,38 @@ Nildelta	NN
 leben	VVFIN
 .	$.
 
-Zieht	START
-man	START
-nun	START
-wieder	START
-archäologisches	START
-Wissen	START
-über	START
-die	START
-Lebensweisen	START
-der	START
-Menschen	START
-in	START
-Wadi	START
-Halfa	START
-im	START
-Jahre	START
-500	START
-zu	START
-Rate	START
-,	START
-so	START
-ergeben	START
-sich	START
-frappierende	START
-Parallelen	START
-zu	START
-den	START
-Lebensumständen	START
-der	START
-heutigen	START
-Fellachen	START
-.	START
+Zieht	VVFIN
+man	PIS
+nun	ADV
+wieder	ADV
+archäologisches	ADJA
+Wissen	NN
+über	APPR
+die	ART
+Lebensweisen	NN
+der	ART
+Menschen	NN
+in	APPR
+Wadi	NE
+Halfa	NE
+im	APPRART
+Jahre	NN
+500	CARD
+zu	APPR
+Rate	NN
+,	$,
+so	ADV
+ergeben	VVFIN
+sich	PRF
+frappierende	ADJA
+Parallelen	NN
+zu	APPR
+den	ART
+Lebensumständen	NN
+der	ART
+heutigen	ADJA
+Fellachen	NN
+.	$.
 
 Die	ART
 Besiedlung	NN
@@ -51170,7 +51170,7 @@ bringen	VVINF
 konnte	VMFIN
 .	$.
 
-Felder	NN
+Felder	NE
 wurden	VAFIN
 angelegt	VVPP
 und	KON
@@ -51314,7 +51314,7 @@ kleines	ADJA
 Computernetzwerk	NN
 aufgebaut	VVPP
 
-Szenario	NN
+Szenario	NE
 wie	KON
 aus	APPR
 einem	ART
@@ -51324,7 +51324,7 @@ Von	APPR
 Christoph	NE
 Deinbach	NE
 (	$(
-fwt	XY
+fwt	NE
 )	$(
 
 Das	ART
@@ -51339,7 +51339,7 @@ Network	NE
 PAN	NE
 )	$(
 des	ART
-IBM-Forschungszentrums	NN
+IBM-Forschungszentrums	ADJA
 Almaden	NN
 im	APPRART
 kalifornischen	ADJA
@@ -51357,7 +51357,7 @@ Science-ficton-Film	NN
 Wenn	KOUS
 Forscher	NN
 Thomas	NE
-Zimmerman	NN
+Zimmerman	NE
 einem	ART
 Kollegen	NN
 die	ART
@@ -51700,7 +51700,7 @@ Hautkontakt	NN
 mit	APPR
 einer	ART
 Türklinke	NN
-identifizieren	VVPP
+identifizieren	VVINF
 .	$.
 
 Der	ART
@@ -51901,7 +51901,7 @@ Daten	NN
 auszutauschen	VVPP
 .	$.
 
-Grundlegend	NN
+Grundlegend	ADJD
 ändern	VVINF
 könne	VMFIN
 das	ART
@@ -52201,7 +52201,7 @@ Seiten	NN
 Mark	NN
 .	$.
 
-Leipzig	NE
+Leipzig	NN
 zu	APPR
 Fuß	NN
 
@@ -52226,7 +52226,7 @@ von	APPR
 Kränen	NE
 .	$.
 
-Leipzig	NE
+Leipzig	NN
 in	APPR
 Arbeit	NN
 .	$.
@@ -52361,7 +52361,7 @@ wird	VAFIN
 erstaunt	ADJD
 sein	VAINF
 ,	$,
-wieviele	PWAT
+wieviele	PWS
 der	ART
 alten	ADJA
 Gebäude	NN
@@ -52587,8 +52587,8 @@ hellem	ADJA
 Karton	NN
 .	$.
 
-Flach	NE
-wie	KON
+Flach	ADJD
+wie	KOKOM
 ein	ART
 Schmucketui	NN
 .	$.
@@ -52827,7 +52827,7 @@ Patrizia	NE
 Cantini	NE
 .	$.
 
-Edition	NN
+Edition	ADJA
 Spangenberg	NN
 bei	APPR
 Droemer	NE
@@ -52837,13 +52837,13 @@ München	NE
 1996	CARD
 .	$.
 
-115	CARD
+115	NE
 Seiten	NN
 mit	APPR
 zahlreichen	ADJA
 Zeichnungen	NN
 ,	$,
-24,80	ADJA
+24,80	CARD
 Mark	NN
 .	$.
 
@@ -52966,7 +52966,7 @@ angezogen	VVPP
 habe	VAFIN
 .	$.
 
-Umsäumt	NN
+Umsäumt	NE
 ist	VAFIN
 dieses	PDAT
 relativ	ADJD
@@ -53051,7 +53051,7 @@ begründet	VVPP
 wurde	VAFIN
 .	$.
 
-Fünfmal	NN
+Fünfmal	NE
 waren	VAFIN
 in	APPR
 diesem	PDAT
@@ -53251,7 +53251,7 @@ Jahrhunderts	NN
 :	$.
 
 Im	APPRART
-Wilden	NN
+Wilden	ADJA
 Kaiser	NN
 wurde	VAFIN
 ein	ART
@@ -53498,7 +53498,7 @@ der	ART
 Völkerwanderung	NN
 auf	APPR
 eine	ART
-keltisch-römische	NN
+keltisch-römische	ADJA
 Urbevölkerung	NN
 gestoßenen	ADJA
 Bajuwaren	NN
@@ -53933,9 +53933,9 @@ mit	APPR
 Frühstück	NN
 :	$.
 
-Gastfreundliche	NN
+Gastfreundliche	ADJA
 Briten	NN
-vermieten	ADJA
+vermieten	VVFIN
 Privatzimmer	NN
 an	APPR
 Touristen	NN
@@ -53985,7 +53985,7 @@ dem	ART
 Holzregal	NN
 .	$.
 
-Dicke	NE
+Dicke	ADJA
 Blümchenkissen	NN
 türmen	VVFIN
 sich	PRF
@@ -54263,7 +54263,7 @@ Stadtkernen	NN
 
 Für	APPR
 den	ART
-60seitigen	NN
+60seitigen	ADJA
 Katalog	NN
 wird	VAFIN
 eine	ART
@@ -54338,7 +54338,7 @@ von	APPR
 privaten	ADJA
 Unterkünften	NN
 (	$(
-Irische	ADJA
+Irische	NN
 Fremdenverkehrszentrale	NN
 ,	$,
 Untermainanlage	NN
@@ -54402,7 +54402,7 @@ ab	APPR
 Mark	NN
 .	$.
 
-320	CARD
+320	NE
 Adressen	NN
 findet	VVFIN
 man	PIS
@@ -54438,7 +54438,7 @@ Fax	NN
 Über	APPR
 die	ART
 Agentur	NN
-Sonnenhol	ADJA
+Sonnenhol	NE
 Promotions	NN
 können	VMFIN
 Zimmer	NN
@@ -54456,7 +54456,7 @@ reserviert	VVPP
 werden	VAINF
 .	$.
 
-Minimum	NN
+Minimum	NE
 sind	VAFIN
 fünf	CARD
 Nächte	NN
@@ -54490,7 +54490,7 @@ Breakfast	NN
 South	NE
 Africa	NE
 ,	$,
-Brienner	ADJA
+Brienner	NN
 Straße	NN
 48	CARD
 ,	$,
@@ -54576,7 +54576,7 @@ ihrer	PPOSAT
 Jahre	NN
 alten	ADJA
 ``	$(
-Connaught	ADJA
+Connaught	NN
 Lodge	NN
 ''	$(
 ist	VAFIN
@@ -54596,7 +54596,7 @@ gerne	ADV
 kocht	VVFIN
 (	$(
 ``	$(
-Connaught	ADJA
+Connaught	NN
 Lodge	NN
 ''	$(
 ,	$,
@@ -54653,7 +54653,7 @@ Breakfast	NN
 Hotels	NN
 Incorporated	NN
 ,	$,
-c	NE
+c	FM
 /	$(
 o	NE
 52	CARD
@@ -54752,7 +54752,7 @@ mit	APPR
 Frühstück	NN
 .	$.
 
-Bedingung	NN
+Bedingung	NE
 :	$.
 Man	PIS
 muß	VMFIN
@@ -54791,7 +54791,7 @@ Einzelzimmer	NN
 18	CARD
 Dollar	NN
 (	$(
-Evergreen	ADJA
+Evergreen	NN
 Bed	NN
 &	KON
 Breakfast	NN
@@ -54841,10 +54841,10 @@ Ackerman	NE
 im	APPRART
 Plume	NN
 /	$(
-Pinguin	ADJA
+Pinguin	NN
 Verlag	NN
 für	APPR
-12,95	NE
+12,95	CARD
 Dollar	NN
 erschienen	VVPP
 .	$.
@@ -54868,29 +54868,29 @@ Adressen	NN
 auf	PTKVZ
 .	$.
 
-Wer	START
-Bed	START
-&	START
-Breakfast	START
-in	START
-seinem	START
-Ursprungsland	START
-kennenlernen	START
-möchte	START
-,	START
-kauft	START
-sich	START
-den	START
-``	START
-A	START
-&	START
-A	START
-Bed	START
-and	START
-Breakfast	START
-Guide	START
-''	START
-:	START
+Wer	PWS
+Bed	NN
+&	KON
+Breakfast	NN
+in	APPR
+seinem	PPOSAT
+Ursprungsland	NN
+kennenlernen	VVINF
+möchte	VMFIN
+,	$,
+kauft	VVFIN
+sich	PRF
+den	ART
+``	$(
+A	NE
+&	KON
+A	NN
+Bed	NN
+and	NE
+Breakfast	NE
+Guide	NE
+''	$(
+:	$.
 
 Der	ART
 umfangreichste	ADJA
@@ -55031,7 +55031,7 @@ die	ART
 Lahn	NE
 herauf	PTKVZ
 und	KON
-herunter	PTKVZ
+herunter	ADJD
 ,	$,
 drei	CARD
 Tage	NN
@@ -55073,7 +55073,7 @@ hier	ADV
 für	APPR
 eine	ART
 Öde	NN
-sein	PPOSAT
+sein	VAINF
 ''	$(
 ,	$,
 grinst	VVFIN
@@ -55101,7 +55101,7 @@ unangenehmen	ADJA
 Thema	NN
 .	$.
 
-Oder	NE
+Oder	KON
 ist	VAFIN
 es	PPER
 der	ART
@@ -55281,7 +55281,7 @@ fast	ADV
 im	APPRART
 Stil	NN
 eines	ART
-bürgerlich-liberalen	NN
+bürgerlich-liberalen	ADJA
 West-Intellektuellen	NN
 verkündet	VVPP
 :	$.
@@ -55630,7 +55630,7 @@ westlicher	ADJA
 Politiker	NN
 erinnert	VVFIN
 ,	$,
-Mielkes	ADJA
+Mielkes	NN
 Akten	NN
 im	APPRART
 Koblenzer	ADJA
@@ -55679,7 +55679,7 @@ käme	VVFIN
 heraus	PTKVZ
 ,	$,
 mit	APPR
-wem	PWS
+wem	PIS
 sie	PPER
 worüber	PWAV
 telefoniert	ADJD
@@ -55708,7 +55708,7 @@ Thema	NN
 wechselt	VVFIN
 .	$.
 
-Plötzlich	NN
+Plötzlich	ADJD
 hält	VVFIN
 er	PPER
 der	ART
@@ -55974,7 +55974,7 @@ Gemeindesaal	NN
 ``	$(
 daß	KOUS
 Sie	PPER
-begreifen	VVINF
+begreifen	VVFIN
 ,	$,
 daß	KOUS
 die	ART
@@ -56063,7 +56063,7 @@ oder	KON
 Bequemlichkeit	NN
 -	$(
 zu	APPR
-verbeugen	NN
+verbeugen	ADJD
 vor	APPR
 der	ART
 ``	$(
@@ -56536,7 +56536,7 @@ Gauck	NE
 ,	$,
 heißt	VVFIN
 nicht	PTKNEG
-Wessi	ADJD
+Wessi	NN
 werden	VAFIN
 um	APPR
 jeden	PIAT
@@ -56669,7 +56669,7 @@ trafen	VVFIN
 .	$.
 
 ``	$(
-Stimmt	VVFIN
+Stimmt	NE
 !	$.
 ''	$(
 brummte	VVFIN
@@ -56812,7 +56812,7 @@ Bremen	NE
 .	$.
 ''	$(
 
-Nein	NN
+Nein	PTKANT
 ,	$,
 ich	PPER
 hatte	VAFIN
@@ -56942,7 +56942,7 @@ wie	KOKOM
 ''	$(
 
 ``	$(
-Nicht	PTKNEG
+Nicht	NN
 ,	$,
 wenn	KOUS
 ich	PPER
@@ -57126,7 +57126,7 @@ TAS	NE
 ``	$(
 müssen	VMFIN
 kräftig	ADJD
-bluten	VVFIN
+bluten	VVINF
 .	$.
 ''	$(
 
@@ -57443,7 +57443,7 @@ zu	PTKZU
 finanzieren	VVINF
 .	$.
 
-Ergo	NE
+Ergo	ADV
 fürchten	VVFIN
 Branchenexperten	NN
 wie	KON
@@ -57492,7 +57492,7 @@ können	VMFIN
 sich	PRF
 allerdings	ADV
 weder	KON
-DRS-Chef	NN
+DRS-Chef	ADJA
 Richter	NN
 noch	ADV
 Tour-Vers-Geschäftsführer	NN
@@ -57501,7 +57501,7 @@ Minassian	NE
 vorstellen	VVINF
 .	$.
 
-Fest	NN
+Fest	ADJD
 steht	VVFIN
 jedoch	ADV
 auch	ADV
@@ -57652,7 +57652,7 @@ Versicherungsschein	NN
 ''	$(
 ,	$,
 klagt	VVFIN
-DRV-Präsident	NN
+DRV-Präsident	ADJA
 Hesselmann	NN
 .	$.
 
@@ -57912,7 +57912,7 @@ kann	VMFIN
 der	ART
 TAS-Chef	NN
 nur	ADV
-spekulieren	ADJD
+spekulieren	VVINF
 :	$.
 
 ``	$(
@@ -58019,9 +58019,9 @@ genau	ADJD
 zurückverfolgen	VVPP
 .	$.
 
-DIAGNOSE	NN
+DIAGNOSE	NE
 
-Pille	NN
+Pille	NE
 und	KON
 Risiko	NN
 
@@ -58277,8 +58277,8 @@ keinesfalls	ADV
 .	$.
 
 Viel	ADV
-dramatischer	ADJA
-als	KON
+dramatischer	ADJD
+als	KOKOM
 wegen	APPR
 der	ART
 minimalen	ADJA
@@ -58430,7 +58430,7 @@ Geld	NN
 PAUL	NE
 JANOSITZ	NE
 
-350	CARD
+350	NE
 Jahre	NN
 Konvent	NE
 und	KON
@@ -58636,7 +58636,7 @@ Sprünge	NN
 geholfen	VVPP
 .	$.
 
-Jedesmal	ADV
+Jedesmal	NE
 bleibt	VVFIN
 der	ART
 Mann	NN
@@ -58683,7 +58683,7 @@ Revolution	NN
 ?	$.
 
 Gegenwärtig	ADJD
-laden	VVINF
+laden	VVFIN
 die	ART
 Philippinen	NE
 zur	APPRART
@@ -58740,7 +58740,7 @@ Programm	NN
 Monate	NN
 .	$.
 
-Museen	NN
+Museen	NE
 ,	$,
 Gedenkstätten	NN
 ,	$,
@@ -58823,7 +58823,7 @@ den	ART
 spanischen	ADJA
 König	NN
 Philipp	NE
-II	CARD
+II	NE
 .	$.
 
 Die	ART
@@ -59080,7 +59080,7 @@ Im	APPRART
 weißen	ADJA
 Dreieck	NN
 auf	APPR
-blau-rotem	NN
+blau-rotem	ADJA
 Grund	NN
 prangt	VVFIN
 eine	ART
@@ -59103,7 +59103,7 @@ volkstümlicher	ADJA
 Symbolik	NN
 .	$.
 
-Blau	NN
+Blau	NE
 bedeutet	VVFIN
 Frieden	NN
 ,	$,
@@ -59141,7 +59141,7 @@ rebellierten	VVPP
 
 Die	ART
 Sterne	NN
-vertreten	VVPP
+vertreten	VVFIN
 die	ART
 Einheit	NN
 der	ART
@@ -59181,7 +59181,7 @@ Pilipinas	NE
 ''	$(
 .	$.
 
-Pathos	NN
+Pathos	NE
 drängt	VVFIN
 sich	PRF
 auf	APPR
@@ -59486,7 +59486,7 @@ Eden	NN
 !	$.
 /	$(
 
-Freudig	NN
+Freudig	NE
 will	VMFIN
 ich	PPER
 mein	PPOSAT
@@ -59502,7 +59502,7 @@ opfern	VVINF
 Auch	ADV
 wenn	KOUS
 es	PPER
-strahlender	ADJA
+strahlender	ADJD
 ,	$,
 frischer	ADJA
 oder	KON
@@ -59601,7 +59601,7 @@ am	APPRART
 Juni	NN
 1871	CARD
 als	APPR
-siebtes	NN
+siebtes	ADJD
 von	APPR
 elf	CARD
 Kindern	NN
@@ -59612,7 +59612,7 @@ Welt	NN
 kam	VVFIN
 .	$.
 
-1950	CARD
+1950	NE
 ist	VAFIN
 das	ART
 Anwesen	NN
@@ -59942,14 +59942,14 @@ schwingender	ADJA
 Held	NN
 .	$.
 
-Aguinaldo	NN
+Aguinaldo	NE
 war	VAFIN
 kein	PIAT
 gebildeter	ADJA
 Mann	NN
 ;	$.
 
-freimütig	ADJD
+freimütig	NE
 gab	VVFIN
 er	PPER
 zu	PTKVZ
@@ -59960,7 +59960,7 @@ Spanisch	NN
 nicht	PTKNEG
 ausreichte	VVPP
 ,	$,
-Rizals	ADJA
+Rizals	NE
 Bücher	NN
 zu	PTKZU
 verstehen	VVINF
@@ -60259,7 +60259,7 @@ der	ART
 Kopie	NN
 .	$.
 
-Aguinaldo	NN
+Aguinaldo	NE
 wurde	VAFIN
 zum	APPRART
 Präsidenten	NN
@@ -60748,8 +60748,8 @@ bei	APPR
 sich	PRF
 und	KON
 den	ART
-Seinen	PPOSAT
-anzukommen	ADJA
+Seinen	PPOSS
+anzukommen	VVFIN
 .	$.
 
 Spaniens	NE
@@ -60834,7 +60834,7 @@ bauen	VVINF
 ließen	VVFIN
 .	$.
 
-Chinesisch-stämmige	NN
+Chinesisch-stämmige	ADJA
 Händler	NN
 ,	$,
 seit	APPR
@@ -60893,7 +60893,7 @@ vorigen	ADJA
 Jahrhunderts	NN
 .	$.
 
-Dunkelpoliertes	NN
+Dunkelpoliertes	ADJA
 Holz	NN
 ,	$,
 irdenes	ADJA
@@ -60934,7 +60934,7 @@ sehen	VVINF
 kann	VMFIN
 .	$.
 
-1574	CARD
+1574	NE
 waren	VAFIN
 ihre	PPOSAT
 ersten	ADJA
@@ -60981,7 +60981,7 @@ von	APPR
 1800	CARD
 .	$.
 
-Nein	NN
+Nein	PTKANT
 ,	$,
 Pfarrer	NN
 José	NE
@@ -60995,7 +60995,7 @@ Haus	NN
 zurück	PTKVZ
 .	$.
 
-1872	CARD
+1872	NE
 ist	VAFIN
 der	ART
 Mann	NN
@@ -61193,7 +61193,7 @@ the	NE
 clock	VVFIN
 .	$.
 
-Treffpunkt	NN
+Treffpunkt	ADJA
 Jatzhütte	NN
 in	APPR
 fast	ADV
@@ -61793,8 +61793,8 @@ Snowboarder	NN
 im	APPRART
 einst	ADV
 nur	ADV
-vornehmen	VVINF
-Davos	VVFIN
+vornehmen	VVFIN
+Davos	NE
 nie	ADV
 und	KON
 nimmer	ADJD
@@ -62017,7 +62017,7 @@ Snow	NE
 Channels	NE
 und	KON
 Fun	NE
-Parks	NN
+Parks	NE
 for	NE
 the	NE
 young	VVFIN
@@ -62043,7 +62043,7 @@ Davoser	NN
 Bevölkerung	NN
 ,	$,
 Politikern	NN
-inklusive	ADV
+inklusive	ADJD
 ,	$,
 die	PRELS
 den	ART
@@ -62082,7 +62082,7 @@ ab	PTKVZ
 sind	VAFIN
 beide	PIAT
 Seiten	NN
-liberaler	ADJA
+liberaler	ADJD
 geworden	VAPP
 .	$.
 ''	$(
@@ -62275,7 +62275,7 @@ halten	VVFIN
 einmal	ADV
 älter	ADJD
 ,	$,
-ruhiger	VVFIN
+ruhiger	ADJA
 und	KON
 karrierebewußter	VVPP
 geworden	VAPP
@@ -62368,7 +62368,7 @@ im	APPRART
 Jahr	NN
 2015	CARD
 einen	ART
-45jährigen	NN
+45jährigen	ADJA
 Mann	NN
 in	APPR
 der	ART
@@ -62455,7 +62455,7 @@ erleben	VVINF
 möchte	VMFIN
 .	$.
 
-Ja	NN
+Ja	PTKANT
 ,	$,
 so	ADV
 könnte	VMFIN
@@ -62876,7 +62876,7 @@ Reiseziel	NN
 Ägyptens	NE
 .	$.
 
-Rot	NN
+Rot	NE
 lockt	VVFIN
 auch	ADV
 er	PPER
@@ -63050,7 +63050,7 @@ Stop	NE
 ''	$(
 .	$.
 
-Junge	NN
+Junge	ADJA
 ,	$,
 sympathische	ADJA
 Grenzerinnen	NN
@@ -63094,7 +63094,7 @@ Autos	NN
 
 Im	APPRART
 Jahresmittel	NN
-passieren	VVINF
+passieren	VVFIN
 gegenwärtig	ADJD
 nicht	PTKNEG
 mehr	ADV
@@ -63124,7 +63124,7 @@ Coming	NN
 out	ADJD
 .	$.
 
-Grün	NN
+Grün	NE
 illuminiert	VVPP
 sind	VAFIN
 die	ART
@@ -63186,13 +63186,13 @@ Halt	NN
 Security	NN
 .	$.
 
-Bleiben	NN
+Bleiben	NE
 Sie	PPER
 unverzüglich	ADJD
 stehen	VVFIN
 .	$.
 
-Bewegen	NN
+Bewegen	NE
 Sie	PPER
 sich	PRF
 keinen	PIAT
@@ -63241,7 +63241,7 @@ zischt	NE
 hernieder	VVFIN
 .	$.
 
-Nochmals	NN
+Nochmals	ADV
 werden	VAFIN
 die	ART
 Papiere	NN
@@ -63253,7 +63253,7 @@ dauert	VVFIN
 es	PPER
 .	$.
 
-Endlich	NE
+Endlich	ADV
 ,	$,
 nach	ADV
 bangen	VVFIN
@@ -63342,8 +63342,8 @@ is	FM
 Radio	NE
 Jordan	NE
 ,	$,
-broadcasting	ADJA
-from	FM
+broadcasting	VVFIN
+from	NE
 Amman	NE
 ...	$(
 ''	$(
@@ -63417,7 +63417,7 @@ Kilometer	NN
 Etwa	ADV
 anderthalb	CARD
 mal	ADV
-soviele	PIAT
+soviele	PIS
 liegen	VVFIN
 hinter	APPR
 uns	PPER
@@ -63432,7 +63432,7 @@ die	ART
 Wüste	NN
 .	$.
 
-Rechts	NN
+Rechts	NE
 ragen	VVFIN
 die	ART
 roten	ADJA
@@ -63445,7 +63445,7 @@ die	ART
 See	NN
 .	$.
 
-Gänzlich	NN
+Gänzlich	NE
 verschwommen	VVFIN
 in	APPR
 der	ART
@@ -63525,7 +63525,7 @@ alle	PIAT
 Neune	NN
 ?	$.
 
-Unsinn	NN
+Unsinn	NE
 !	$.
 
 Durchbrettern	NN
@@ -63553,7 +63553,7 @@ sind	VAFIN
 höflich	VVPP
 .	$.
 
-Tagsüber	NN
+Tagsüber	NE
 hocken	VVFIN
 sie	PPER
 auf	APPR
@@ -63666,8 +63666,8 @@ kristallenen	ADJA
 Gefunkel	NN
 .	$.
 
-Selbstbewußt	NN
-wie	KON
+Selbstbewußt	ADJD
+wie	KOKOM
 eine	ART
 echte	ADJA
 Großstadt	NN
@@ -63796,8 +63796,8 @@ an	APPR
 der	ART
 zum	APPRART
 Touristenzentrum	NN
-aufgetakelten	ADJA
-Na'ama	NN
+aufgetakelten	VVFIN
+Na'ama	NE
 Bay	NE
 ein	ART
 Hotel	NN
@@ -63810,7 +63810,7 @@ direkt	ADJD
 auf	APPR
 den	ART
 nackten	ADJA
-Fels	NE
+Fels	NN
 gepackt	VVPP
 wurde	VAFIN
 -	$(
@@ -63919,7 +63919,7 @@ starten	VVFIN
 zur	APPRART
 Safari	NN
 auf	APPR
-Moses'	NE
+Moses'	CARD
 Spuren	NN
 in	APPR
 paradiesische	ADJA
@@ -63938,7 +63938,7 @@ wenigste	NN
 bei	PTKVZ
 .	$.
 
-Dunkel	NN
+Dunkel	NE
 sind	VAFIN
 die	ART
 Zelte	NN
@@ -64086,11 +64086,11 @@ Rummelplatz	NN
 ,	$,
 sondern	KON
 ganz	ADV
-Wilder	CARD
+Wilder	ADJA
 Westen	NN
 .	$.
 
-Endlich	NN
+Endlich	ADV
 also	ADV
 mitten	ADV
 im	APPRART
@@ -64366,7 +64366,7 @@ geteilt	VVPP
 Aus	APPR
 dem	ART
 nackten	ADJA
-Fels	NE
+Fels	NN
 schlug	VVFIN
 er	PPER
 Trinkwasser	NN
@@ -64442,7 +64442,7 @@ heute	ADV
 durchstreift	ADJA
 und	KON
 des	ART
-Tags	ADV
+Tags	NN
 wie	KOKOM
 unterm	APPRART
 nächtlichen	ADJA
@@ -64528,7 +64528,7 @@ Dichterin	NN
 gerade	ADV
 wegen	APPR
 ihrer	PPOSAT
-unterschied-lichen	NN
+unterschied-lichen	ADJA
 Optionen	NN
 gefesselt	VVPP
 .	$.
@@ -64654,7 +64654,7 @@ Hölle	NN
 .	$.
 ''	$(
 
-Ja	NN
+Ja	PTKANT
 ,	$,
 vielleicht	ADV
 kann	VMFIN
@@ -64998,7 +64998,7 @@ Mensch	NN
 .	$.
 
 Das	ART
-Besondere	ADJA
+Besondere	NN
 am	APPRART
 Rinderwahnsinn	NN
 ist	VAFIN
@@ -65397,7 +65397,7 @@ nachhaltig	ADJD
 beeinflussen	VVINF
 :	$.
 
-Alternative	NN
+Alternative	ADJA
 Angebote	NN
 zum	APPRART
 Steak	NN
@@ -65594,7 +65594,7 @@ und	KON
 Tier	NN
 .	$.
 
-Lubowitzer	NN
+Lubowitzer	ADJA
 Jubelperioden	NN
 
 Eichendorffs	NN
@@ -65871,7 +65871,7 @@ entnehmen	VVINF
 :	$.
 
 ``	$(
-Dank	APPR
+Dank	NN
 der	ART
 Bemühungen	NN
 der	ART
@@ -66061,7 +66061,7 @@ davon	PROAV
 sprach	VVFIN
 .	$.
 
-Eichendorffs	NN
+Eichendorffs	ADJA
 Vater	NN
 besaß	VVFIN
 Güter	NN
@@ -66350,7 +66350,7 @@ kann	VMFIN
 ``	$(
 
 Denkst	NE
-Du	PPER
+Du	NE
 des	ART
 Schlosses	NN
 noch	ADV
@@ -66428,7 +66428,7 @@ Schuhsohlen	NN
 
 Den	ART
 Hasenweg	NN
-entlang	APPR
+entlang	APPO
 geht	VVFIN
 es	PPER
 aus	APPR
@@ -66458,7 +66458,7 @@ und	KON
 Sehnsuchtsland	NN
 .	$.
 
-Lubowitzer	NN
+Lubowitzer	ADJA
 Jubelperioden	NN
 nannte	VVFIN
 er	PPER
@@ -66737,7 +66737,7 @@ Schreibtafel	NN
 
 WISSEN	NN
 &	KON
-BUCH	NN
+BUCH	NE
 
 Keine	PIAT
 Lust	NN
@@ -66945,7 +66945,7 @@ menschlicher	ADJA
 Sexualität	NN
 .	$.
 
-Sigusch	NN
+Sigusch	NE
 und	KON
 zwölf	CARD
 weitere	ADJA
@@ -67153,8 +67153,8 @@ geschafft	VVPP
 und	KON
 selbst	ADV
 das	ART
-MacUser	NN
-Handbook	NE
+MacUser	ADJA
+Handbook	NN
 hat	VAFIN
 auf	APPR
 der	ART
@@ -67276,7 +67276,7 @@ profitiert	VVPP
 haben	VAFIN
 .	$.
 
-Kulturelles	NN
+Kulturelles	ADJA
 Pflichtgefühl	NN
 hat	VAFIN
 wohl	ADV
@@ -67339,7 +67339,7 @@ sind	VAFIN
 ,	$,
 am	APPRART
 besten	ADJA
-plaziert	VVPP
+plaziert	VVFIN
 an	APPR
 achter	ADJA
 Stelle	NN
@@ -67377,7 +67377,7 @@ und	KON
 Pasternak	NN
 .	$.
 
-Deutschsprachige	NN
+Deutschsprachige	ADJA
 Titel	NN
 sind	VAFIN
 relativ	ADJD
@@ -67460,7 +67460,7 @@ zu	PTKZU
 haben	VAINF
 ;	$.
 
-neben	APPR
+neben	NE
 Spitzenreiter	NN
 Tolkien	NE
 sind	VAFIN
@@ -67496,8 +67496,8 @@ von	APPR
 Frauen	NN
 ,	$,
 mit	APPR
-Harper	NE
-Lees	KON
+Harper	NN
+Lees	ADV
 Wer	PWS
 die	ART
 Nachtigall	NN
@@ -67564,7 +67564,7 @@ Jahrhunderthälfte	NN
 aus	PTKVZ
 ;	$.
 
-Autoren	NN
+Autoren	NE
 wie	KON
 E.	NE
 M.	NE
@@ -67696,7 +67696,7 @@ nicht	PTKNEG
 rühren	VVINF
 ...	$(
 
-Philipp	NE
+Philipp	ADJA
 Melanchthon	NN
 über	APPR
 das	ART
@@ -67713,7 +67713,7 @@ fast	ADV
 500	CARD
 Jahren	NN
 
-Philipp	NE
+Philipp	ADJA
 Melanchthon	NN
 ,	$,
 der	ART
@@ -67739,7 +67739,7 @@ vermittelte	VVFIN
 .	$.
 
 Zur	APPRART
-500.	NN
+500.	ADJA
 Wiederkehr	NN
 seines	PPOSAT
 Geburtstages	NN
@@ -67758,7 +67758,7 @@ Der	ART
 Lehrer	NN
 Deutschlands	NE
 ,	$,
-hrsg.	NN
+hrsg.	NE
 von	APPR
 Hans-Rüdiger	NN
 Schwab	NE
@@ -67854,7 +67854,7 @@ hochansehnliche	ADJA
 Professoren	NN
 .	$.
 
-Mich	NE
+Mich	PPER
 halten	VVFIN
 gewöhnlich	ADJD
 meine	PPOSAT
@@ -67876,7 +67876,7 @@ Gelehrtenversammlung	NN
 fern	PTKVZ
 ;	$.
 
-mich	PPER
+mich	NE
 hätte	VAFIN
 auch	ADV
 heute	ADV
@@ -68258,7 +68258,7 @@ mir	PPER
 teilt	VVFIN
 ;	$.
 
-denn	ADV
+denn	KON
 durch	APPR
 eure	ADJA
 Mühewaltung	NN
@@ -68456,7 +68456,7 @@ Zeiten	NN
 herzuleiten	VVPP
 :	$.
 
-doch	ADV
+doch	KON
 das	PDS
 soll	VMFIN
 einer	ART
@@ -68500,7 +68500,7 @@ versuchen	VVINF
 soll	VMFIN
 .	$.
 
-Schenkt	NN
+Schenkt	VVFIN
 also	ADV
 bitte	ADV
 meiner	PPOSAT
@@ -68747,7 +68747,7 @@ hohem	ADJA
 Ansehen	NN
 ;	$.
 
-neben	APPR
+neben	NE
 verschiedenen	ADJA
 anderen	ADJA
 war	VAFIN
@@ -68869,7 +68869,7 @@ zu	PTKVZ
 
 denn	KON
 er	PPER
-beherrschte	ADJA
+beherrschte	VVFIN
 auch	ADV
 selbst	ADV
 die	ART
@@ -69003,7 +69003,7 @@ Benediktinermönche	NN
 zeigen	VVINF
 ;	$.
 
-denn	ADV
+denn	KON
 alle	PIAT
 bedeutenden	ADJA
 Männer	NN
@@ -69127,7 +69127,7 @@ anstelle	APPR
 des	ART
 Guten	NN
 das	ART
-Schlechte	ADJA
+Schlechte	NN
 zu	PTKZU
 lehren	VVINF
 .	$.
@@ -69251,7 +69251,7 @@ verkommen	VVINF
 ließen	VVFIN
 .	$.
 
-Solchen	NN
+Solchen	ADJA
 Leuten	NN
 wurde	VAFIN
 nun	ADV
@@ -69273,7 +69273,7 @@ Dekreten	NN
 man	PIS
 die	ART
 Jugend	NN
-unterrichtete	VVPP
+unterrichtete	VVFIN
 .	$.
 
 Daraufhin	PROAV
@@ -69394,7 +69394,7 @@ Geltung	NN
 gewann	VVFIN
 ;	$.
 
-zugleich	ADV
+zugleich	NE
 blieb	VVFIN
 das	ART
 Griechische	NN
@@ -69503,7 +69503,7 @@ und	KON
 sie	PPER
 bringt	VVFIN
 bei	APPR
-weitem	ADJA
+weitem	NN
 den	ART
 größten	ADJA
 Nutzen	NN
@@ -69705,7 +69705,7 @@ bewahren	VVINF
 ...	$(
 )	$(
 
-Euch	PPER
+Euch	NE
 aber	ADV
 ,	$,
 ihr	PPOSAT
@@ -69742,62 +69742,62 @@ zu	PTKZU
 erhalten	VVINF
 ;	$.
 
-ihr	PPER
-schöpft	VVFIN
-die	ART
-Quellen	NN
-des	ART
-Wissens	NN
-aus	APPR
-den	ART
-besten	ADJA
-Autoren	NN
-.	$.
-Dieser	PDAT
-Mann	NN
-da	ADV
-lehrt	VVFIN
-euch	PPER
-den	ART
-echten	ADJA
-und	KON
-unverfälschten	ADJA
-Aristoteles	NN
-,	$,
-jener	PDS
-den	ART
-Rhetor	NN
-Quintilian	NN
-,	$,
-der	ART
-dritte	ADJA
-den	ART
-Plinius	NN
-,	$,
-beinahe	ADV
-den	ART
-wissensreichsten	ADJA
-und	KON
-gleichsam	ADJD
-eine	ART
-Art	NN
-Füllhorn	NN
-des	ART
-Wissens	NN
-,	$,
-ein	ART
-anderer	ADJA
-lehrt	VVFIN
-euch	PPER
-die	ART
-logischen	ADJA
-Schlüsse	NN
-,	$,
-aber	ADV
-in	APPR
-kluger	ADJA
-Beschränkung	NN
-.	$.
+ihr	START
+schöpft	START
+die	START
+Quellen	START
+des	START
+Wissens	START
+aus	START
+den	START
+besten	START
+Autoren	START
+.	START
+Dieser	START
+Mann	START
+da	START
+lehrt	START
+euch	START
+den	START
+echten	START
+und	START
+unverfälschten	START
+Aristoteles	START
+,	START
+jener	START
+den	START
+Rhetor	START
+Quintilian	START
+,	START
+der	START
+dritte	START
+den	START
+Plinius	START
+,	START
+beinahe	START
+den	START
+wissensreichsten	START
+und	START
+gleichsam	START
+eine	START
+Art	START
+Füllhorn	START
+des	START
+Wissens	START
+,	START
+ein	START
+anderer	START
+lehrt	START
+euch	START
+die	START
+logischen	START
+Schlüsse	START
+,	START
+aber	START
+in	START
+kluger	START
+Beschränkung	START
+.	START
 
 Es	PPER
 kommen	VVFIN
@@ -70036,7 +70036,7 @@ Unsinn	NN
 treibt	VVFIN
 ;	$.
 
-denn	ADV
+denn	KON
 dann	ADV
 kommt	VVFIN
 es	PPER
@@ -70249,7 +70249,7 @@ Dank	NN
 verpflichtet	VVPP
 .	$.
 
-Ja	NN
+Ja	PTKANT
 ,	$,
 ich	PPER
 weiß	VVFIN
@@ -70430,7 +70430,7 @@ daran	PROAV
 ''	$(
 ;	$.
 
-lest	ADV
+lest	NN
 das	ART
 weitere	ADJA
 selbst	ADV
@@ -70479,7 +70479,7 @@ hat	VAFIN
 ihn	PPER
 haben	VAFIN
 die	ART
-Römer	NE
+Römer	NN
 als	APPR
 Weisen	NN
 bezeichnet	VVPP
@@ -70553,7 +70553,7 @@ Hohel	NE
 )	$(
 .	$.
 
-Geleitet	NN
+Geleitet	NE
 vom	APPRART
 Heiligen	ADJA
 Geist	NN
@@ -70574,7 +70574,7 @@ Theologie	NN
 herangehen	VVPP
 ;	$.
 
-wie	KON
+wie	PWAV
 Synesius	NN
 von	APPR
 Cyrene	NN
@@ -70794,7 +70794,7 @@ lesen	VVINF
 dann	ADV
 wird	VAFIN
 der	ART
-Bräutigam	NE
+Bräutigam	NN
 kommen	VVFIN
 ``	$(
 und	KON
@@ -70880,7 +70880,7 @@ werden	VAFIN
 wir	PPER
 leben	VVFIN
 ,	$,
-atmen	VVINF
+atmen	VVFIN
 und	KON
 wirken	VVFIN
 und	KON
@@ -70894,7 +70894,7 @@ Schweigen	NN
 Jeru-Salem	NE
 anbeten	VVFIN
 (	$(
-Hebr.	NE
+Hebr.	CARD
 12	CARD
 ,	$,
 22	CARD
@@ -70954,7 +70954,7 @@ und	KON
 Lauterkeit	NN
 verlangt	VVFIN
 (	$(
-Tit.	NE
+Tit.	CARD
 2	CARD
 ,	$,
 7	CARD
@@ -71140,7 +71140,7 @@ Werken	NN
 anstelle	APPR
 von	APPR
 Himmelsbrot	NN
-lieber	ADJA
+lieber	ADV
 Götzenfleisch	NN
 aßen	VVFIN
 ,	$,
@@ -71335,7 +71335,7 @@ ihr	PPOSAT
 Jünglinge	NN
 !	$.
 
-Wiewohl	NN
+Wiewohl	KOUS
 das	ART
 Gute	NN
 und	KON
@@ -71369,10 +71369,10 @@ Gute	NN
 erreicht	VVFIN
 als	APPR
 das	ART
-Schlechte	ADJA
+Schlechte	NN
 .	$.
 
-Eure	PPOSAT
+Eure	NE
 Lehrer	NN
 werden	VAFIN
 euch	PPER
@@ -71391,7 +71391,7 @@ Wertlose	NN
 aussondern	VVPP
 ;	$.
 
-besonders	ADV
+besonders	NE
 werden	VAFIN
 sie	PPER
 das	ART
@@ -71538,7 +71538,7 @@ an	APPR
 Titus	NE
 .	$.
 
-Hieraus	NN
+Hieraus	NE
 werdet	VVFIN
 ihr	PPER
 ersehen	VVINF
@@ -71622,7 +71622,7 @@ halb	ADJD
 gewonnen	VVPP
 !	$.
 
-Wage	NE
+Wage	NN
 zu	PTKZU
 wissen	VVINF
 !	$.
@@ -71891,7 +71891,7 @@ in	APPR
 rauher	ADJA
 Zeit	NN
 
-Phantasievolle	NN
+Phantasievolle	ADJA
 Aneignung	NN
 von	APPR
 Welt	NN
@@ -71910,7 +71910,7 @@ wieder	ADV
 auf	APPR
 '	$(
 s	PPER
-Neue	ADJA
+Neue	NN
 ihr	PPOSAT
 Publikum	NN
 
@@ -72105,7 +72105,7 @@ des	ART
 Theaters	NN
 .	$.
 
-Nie	ADV
+Nie	NE
 in	APPR
 den	ART
 nun	ADV
@@ -72209,7 +72209,7 @@ des	ART
 Publikums	NN
 .	$.
 
-Stampfende	NN
+Stampfende	ADJA
 Techno-Musik	NN
 ,	$,
 die	ART
@@ -72258,7 +72258,7 @@ Erinnerungen	NN
 bewahrt	VVPP
 .	$.
 
-Partikel	NN
+Partikel	NE
 gelebten	ADJA
 Lebens	NN
 ,	$,
@@ -72410,7 +72410,7 @@ die	ART
 anderen	ADJA
 .	$.
 
-Sicherlich	NN
+Sicherlich	ADV
 zählt	VVFIN
 diese	PDAT
 Arbeit	NN
@@ -72709,7 +72709,7 @@ erkunden	VVINF
 .	$.
 
 ``	$(
-Wie	PWAV
+Wie	NN
 Seeräuber	NN
 auf	APPR
 einer	ART
@@ -73048,7 +73048,7 @@ ve	NE
 Gone	NE
 um	APPR
 das	ART
-ewig-aktuelle	NN
+ewig-aktuelle	ADJA
 Thema	NN
 des	ART
 individuellen	ADJA
@@ -73080,7 +73080,7 @@ und	KON
 Wirklichkeitsverlusts	NN
 .	$.
 
-Befragt	NN
+Befragt	VVPP
 nach	APPR
 dem	ART
 ,	$,
@@ -73268,8 +73268,8 @@ Anteilnahme	NN
 verdienen	VVINF
 .	$.
 
-ESA-Satellit	NN
-Hipparcos	NE
+ESA-Satellit	ADJA
+Hipparcos	NN
 
 Universum	NN
 größer	ADJD
@@ -73335,7 +73335,7 @@ elf	CARD
 Milliarden	NN
 .	$.
 
-Hipparcos	NN
+Hipparcos	NE
 arbeitete	VVFIN
 bereits	ADV
 in	APPR
@@ -73688,7 +73688,7 @@ Bahn	NN
 AG	NN
 hatte	VAFIN
 ``	$(
-Wilden	NN
+Wilden	ADJA
 Mann	NN
 ''	$(
 falsch	ADJD
@@ -73883,7 +73883,7 @@ weltoffen	ADJD
 daherkommende	ADJA
 Stadt	NN
 am	APPRART
-deutsch-französisch-schweizerischen	NN
+deutsch-französisch-schweizerischen	ADJA
 Dreiländereck	NN
 nicht	PTKNEG
 etwa	ADV
@@ -73958,7 +73958,7 @@ in	APPR
 Basel	NE
 .	$.
 
-Rechtzeitig	NN
+Rechtzeitig	ADJD
 zum	APPRART
 ``	$(
 Morgestraich	NN
@@ -73969,7 +73969,7 @@ Zugkomposition	NN
 mit	APPR
 Barwagen	NN
 um	APPR
-2.50	NE
+2.50	CARD
 Uhr	NN
 dort	ADV
 ein	PTKVZ
@@ -73988,7 +73988,7 @@ nicht	PTKNEG
 teilen	VVINF
 .	$.
 
-451	CARD
+451	NE
 Reisende	NN
 waren	VAFIN
 im	APPRART
@@ -74000,7 +74000,7 @@ Leute	NN
 seien	VAFIN
 jeweils	ADV
 sehr	ADV
-angetan	VVFIN
+angetan	ADJD
 von	APPR
 der	ART
 Atmosphäre	NN
@@ -74078,7 +74078,7 @@ dem	ART
 Rhein	NE
 der	ART
 ,	$,
-Wilde	ADJA
+Wilde	NE
 Mann	NN
 '	$(
 an	PTKVZ
@@ -74337,7 +74337,7 @@ peinlich	ADJD
 Immerhin	ADV
 ist	VAFIN
 Basel	NE
-Endpunkt	NN
+Endpunkt	NE
 einer	ART
 deutschen	ADJA
 Intercity-Linie	NN
@@ -74853,7 +74853,7 @@ Engagements	NN
 .	$.
 
 ``	$(
-Beide	PIAT
+Beide	PIS
 Seiten	NN
 sind	VAFIN
 über	APPR
@@ -74871,7 +74871,7 @@ im	APPRART
 thailändischen	ADJA
 Außenministerium	NN
 ,	$,
-Saroj	ADJA
+Saroj	NE
 Chavanaviraj	NN
 ,	$,
 ``	$(
@@ -75801,9 +75801,9 @@ und	KON
 Friesz	NN
 .	$.
 
-1908	CARD
-malt	ADJA
-Braque	NN
+1908	NE
+malt	NE
+Braque	NE
 ,	$,
 noch	ADV
 ganz	ADV
@@ -76092,7 +76092,7 @@ vertrauten	ADJA
 Welt	NN
 nicht	PTKNEG
 mehr	ADV
-isoliert	VVPP
+isoliert	VVFIN
 voneinander	ADV
 lagern	VVFIN
 ,	$,
@@ -76123,7 +76123,7 @@ malte	VVFIN
 
 Das	ART
 Bild	NN
-Großes	ADJA
+Großes	NN
 Interieur	NN
 mit	APPR
 Palette	NN
@@ -76354,7 +76354,7 @@ verwandeln	VVINF
 scheinen	VVFIN
 .	$.
 
-Vögel	NN
+Vögel	NE
 begleiten	VVFIN
 auch	ADV
 die	ART
@@ -76702,11 +76702,11 @@ Royal	NE
 Academy	NE
 London	NE
 ,	$,
-tägl.	NN
+tägl.	NE
 von	APPR
-10.00	NN
+10.00	NE
 bis	APPR
-18.00	NE
+18.00	CARD
 Uhr	NN
 .	$.
 
@@ -77453,7 +77453,7 @@ waren	VAFIN
 Blätter	NN
 .	$.
 
-Hinterlassen	NN
+Hinterlassen	VVPP
 hat	VAFIN
 er	PPER
 388	CARD
@@ -77557,12 +77557,12 @@ der	ART
 Einsamkeit	NN
 .	$.
 
-Verzweifelt	NN
+Verzweifelt	ADJD
 sich	PRF
 Paarende	NN
 .	$.
 
-Monster	NN
+Monster	NE
 schießen	VVFIN
 aus	APPR
 ihren	PPOSAT
@@ -77586,7 +77586,7 @@ kriechen	VVFIN
 ,	$,
 hocken	VVFIN
 ,	$,
-balancieren	ADJA
+balancieren	VVFIN
 und	KON
 schwimmen	VVFIN
 vergebens	ADV
@@ -77897,7 +77897,7 @@ glänzende	ADJA
 Antennen	NN
 und	KON
 Kreuze	NN
-bedrohen	VVINF
+bedrohen	VVFIN
 immer	ADV
 wieder	ADV
 die	ART
@@ -78046,7 +78046,7 @@ eines	ART
 Spitzensportlers	NN
 ausführte	VVFIN
 ,	$,
-überzeugte	ADJA
+überzeugte	VVFIN
 schon	ADV
 in	APPR
 den	ART
@@ -78350,7 +78350,7 @@ hatte	VAFIN
 den	ART
 Brand	NN
 gegen	APPR
-8.30	NE
+8.30	CARD
 Uhr	NN
 gelöscht	VVPP
 .	$.
@@ -78573,7 +78573,7 @@ dieser	PDAT
 Methode	NN
 .	$.
 
-Brisant	NN
+Brisant	NE
 wird	VAFIN
 der	ART
 Vorgang	NN
@@ -79284,7 +79284,7 @@ selbst	ADV
 beschuldigte	VVFIN
 .	$.
 
-Materielle	NN
+Materielle	ADJA
 Beweise	NN
 ,	$,
 die	ART
@@ -79294,7 +79294,7 @@ hätten	VAFIN
 bestätigen	VVINF
 (	$(
 oder	KON
-widerlegen	VVINF
+widerlegen	VVFIN
 )	$(
 können	VMFIN
 ,	$,
@@ -79316,7 +79316,7 @@ die	PRELS
 sie	PPER
 mit	APPR
 Marino	NE
-veranstalteten	ADJA
+veranstalteten	VVFIN
 ,	$,
 ehe	KOUS
 der	ART
@@ -80049,7 +80049,7 @@ zu	PTKZU
 lassen	VVINF
 .	$.
 
-Wagenbach	NN
+Wagenbach	NE
 hatte	VAFIN
 einen	ART
 von	APPR
@@ -80118,7 +80118,7 @@ Ohren	NN
 
 HS	NE
 
-Entführer	NN
+Entführer	ADJA
 Reemtsmas	NN
 zu	APPR
 hohen	ADJA
@@ -80163,7 +80163,7 @@ Koszics	NE
 )	$(
 und	KON
 Peter	NE
-Richter	NN
+Richter	NE
 (	$(
 59	CARD
 )	$(
@@ -80179,7 +80179,7 @@ verurteilt	VVPP
 worden	VAPP
 .	$.
 
-Koszics	NN
+Koszics	NE
 erhielt	VVFIN
 wegen	APPR
 gemeinschaftlich	ADJA
@@ -80221,7 +80221,7 @@ hatte	VAFIN
 .	$.
 
 Der	ART
-Hamburger	NN
+Hamburger	ADJA
 Jan	NE
 Philipp	NE
 Reemtsma	NE
@@ -80272,8 +80272,8 @@ ablegten	VVFIN
 ,	$,
 hätten	VAFIN
 früher	ADJD
-als	KOKOM
-zugegeben	VVPP
+als	APPR
+zugegeben	ADJD
 von	APPR
 dem	ART
 geplanten	ADJA
@@ -80281,7 +80281,7 @@ Verbrechen	NN
 gewußt	VVPP
 .	$.
 
-Koszics	NN
+Koszics	NE
 habe	VAFIN
 frühzeitig	ADJD
 bei	APPR
@@ -80389,7 +80389,7 @@ befürchten	VVINF
 mußte	VMFIN
 .	$.
 
-Richters	NN
+Richters	ADJA
 Verteidiger	NN
 ,	$,
 der	PRELS
@@ -80450,7 +80450,7 @@ im	APPRART
 Zuschauerraum	NN
 .	$.
 
-Reemtsmas	NN
+Reemtsmas	ADJA
 Anwalt	NN
 Johann	NE
 Schwenn	NE
@@ -80485,7 +80485,7 @@ als	APPR
 Tatbeteiligten	NN
 .	$.
 
-Reemtsma	NN
+Reemtsma	NE
 hatte	VAFIN
 am	APPRART
 vergangenen	ADJA
@@ -80504,7 +80504,7 @@ Signalwirkung	NN
 ''	$(
 ausgehen	VVINF
 :	$.
-Einerseits	ADV
+Einerseits	NN
 Abschreckung	NN
 ,	$,
 zugleich	ADV
@@ -80611,7 +80611,7 @@ angerechnet	VVPP
 .	$.
 
 Die	ART
-33tägige	NN
+33tägige	ADJA
 Entführung	NN
 ist	VAFIN
 damit	PROAV
@@ -80638,7 +80638,7 @@ vor	APPR
 unauffindbar	ADJD
 .	$.
 
-Ungeklärt	NN
+Ungeklärt	NE
 blieb	VVFIN
 auch	ADV
 ,	$,
@@ -81198,7 +81198,7 @@ möchte	VMFIN
 ich	PPER
 mich	PRF
 gleich	ADV
-entschuldigen	VVINF
+entschuldigen	VVFIN
 ,	$,
 denn	KON
 der	ART
@@ -81375,8 +81375,8 @@ die	ART
 Welt	NN
 der	ART
 Menschen	NN
-verirrter	VVFIN
-Bär	NE
+verirrter	ADJA
+Bär	NN
 ist	VAFIN
 oder	KON
 ein	ART
@@ -81574,7 +81574,7 @@ ist	VAFIN
 der	ART
 Geschlechtsapparat	NN
 ,	$,
-na	NE
+na	VVFIN
 ja	ADV
 ,	$,
 nicht	PTKNEG
@@ -81897,7 +81897,7 @@ offenbarte	VVFIN
 was	PRELS
 Atomkraftgegner	NN
 bis	APPR
-dato	NE
+dato	ADV
 nur	ADV
 vermuteten	VVFIN
 :	$.
@@ -82000,13 +82000,13 @@ Hannover	NE
 vor	PTKVZ
 .	$.
 
-Die	START
-Lage	START
-spitze	START
-sich	START
-spürbar	START
-zu	START
-.	START
+Die	ART
+Lage	NN
+spitze	ADJD
+sich	PRF
+spürbar	ADJD
+zu	PTKVZ
+.	$.
 
 Seit	APPR
 Januar	NN
@@ -82113,7 +82113,7 @@ Mal	NN
 im	APPRART
 Mai	NN
 1996	CARD
-unverhältnismäßig	VVFIN
+unverhältnismäßig	ADV
 viel	PIAT
 Gewalt	NN
 ''	$(
@@ -82344,7 +82344,7 @@ Umweltschützer	NN
 :	$.
 ``	$(
 
-Bleiben	NN
+Bleiben	NE
 Sie	PPER
 dem	ART
 Transport	NN
@@ -82404,7 +82404,7 @@ Seite	NN
 und	KON
 Hessen	NN
 
-Parteien	NN
+Parteien	NE
 denken	VVFIN
 über	APPR
 sich	PRF
@@ -82726,7 +82726,7 @@ alte	ADJA
 Parteiversammlung	NN
 ''	$(
 wieder	ADV
-beliebter	ADJA
+beliebter	ADJD
 .	$.
 
 Die	ART
@@ -82739,7 +82739,7 @@ gemeinsam	ADJD
 erleben	VVINF
 .	$.
 
-Kritisch	NN
+Kritisch	ADJD
 äußerte	VVFIN
 sich	PRF
 Hintze	NE
@@ -82797,7 +82797,7 @@ Demokratie	NN
 .	$.
 
 Kohl	NE
-vereinbart	VVPP
+vereinbart	VVFIN
 Termin	NN
 mit	APPR
 SPD	NE
@@ -83299,8 +83299,8 @@ Adressenverzeichnis	NN
 Er	PPER
 rief	VVFIN
 Dagmar	NE
-K.	NE
-an	PTKVZ
+K.	XY
+an	NE
 ,	$,
 bat	VVFIN
 um	APPR
@@ -83350,7 +83350,7 @@ Essener	ADJA
 Schwurgericht	NN
 hatte	VAFIN
 der	ART
-28jährige	NN
+28jährige	ADJA
 Hauptangeklagte	NN
 sein	PPOSAT
 Gesicht	NN
@@ -83370,35 +83370,35 @@ dem	ART
 Mord	NN
 an	APPR
 Dagmar	NE
-K.	NE
+K.	XY
 mutmaßlich	ADJD
 beteiligte	ADJA
 Bianca	NN
 W	XY
 .	$.
 
-Der	START
-dritte	START
-Angeklagte	START
-,	START
-der	START
-26jährige	START
-Marcel	START
-M.	START
-,	START
-versteckte	START
-sich	START
-während	START
-des	START
-Blitzlichtrummels	START
-hinter	START
-den	START
-von	START
-seinen	START
-Verteidigern	START
-aufgebauten	START
-Aktentaschen	START
-.	START
+Der	ART
+dritte	ADJA
+Angeklagte	NN
+,	$,
+der	ART
+26jährige	NN
+Marcel	NE
+M.	NE
+,	$,
+versteckte	VVFIN
+sich	PRF
+während	APPR
+des	ART
+Blitzlichtrummels	NN
+hinter	APPR
+den	ART
+von	APPR
+seinen	PPOSAT
+Verteidigern	NN
+aufgebauten	ADJA
+Aktentaschen	NN
+.	$.
 
 Alle	PIAT
 drei	CARD
@@ -83580,7 +83580,7 @@ ehemalige	ADJA
 Freundin	NN
 .	$.
 
-Wörtlich	NN
+Wörtlich	NE
 sagte	VVFIN
 sie	PPER
 :	$.
@@ -83841,7 +83841,7 @@ Gebäude	NN
 
 Nordrhein-Westfalen	NE
 
-Zeitung	NN
+Zeitung	NE
 ``	$(
 Junge	ADJA
 Freiheit	NN
@@ -84331,7 +84331,7 @@ beeinflussen	VVINF
 
 Für	APPR
 den	ART
-39jährigen	NN
+39jährigen	ADJA
 Iraner	NN
 Kazem	NE
 Dharabi	NE
@@ -84379,7 +84379,7 @@ zu	PTKZU
 wissen	VVINF
 .	$.
 
-Dharabis	NN
+Dharabis	ADJA
 Anwalt	NN
 Detlef	NE
 Kolloge	NE
@@ -84455,7 +84455,7 @@ das	ART
 Urteil	NN
 werde	VAFIN
 die	ART
-deutsch-iranischen	NN
+deutsch-iranischen	ADJA
 Beziehungen	NN
 belasten	VVFIN
 ,	$,
@@ -84468,7 +84468,7 @@ schließe	VVFIN
 sich	PRF
 .	$.
 
-Postler	NN
+Postler	NE
 legen	VVFIN
 Arbeit	NN
 nieder	PTKVZ
@@ -84492,7 +84492,7 @@ ap	NE
 /	$(
 dpa	NE
 /	$(
-ulf	XY
+ulf	NE
 )	$(
 .	$.
 
@@ -84832,7 +84832,7 @@ Nachteilsausgleich	NN
 in	APPR
 Form	NN
 einer	ART
-25prozentigen	NN
+25prozentigen	ADJA
 Beteiligung	NN
 an	APPR
 der	ART
@@ -84952,7 +84952,7 @@ Februar	NN
 .	$.
 
 Das	ART
-Bundesumweltministerium	NE
+Bundesumweltministerium	NN
 hat	VAFIN
 bestätigt	VVPP
 ,	$,
@@ -85081,7 +85081,7 @@ vermeiden	VVINF
 Den	ART
 Verdacht	NN
 des	ART
-sachsen-anhaltinischen	NN
+sachsen-anhaltinischen	ADJA
 Umweltministeriums	NN
 ,	$,
 Bonn	NE
@@ -85123,7 +85123,7 @@ geschlossen	VVPP
 Sachsen-Anhalts	NE
 Umwelt-Staatssekretär	NE
 Wolfram	NE
-König	NE
+König	NN
 zweifelte	VVFIN
 das	PDS
 an	PTKVZ
@@ -85237,7 +85237,7 @@ Heidecke	NE
 Bündnis	NN
 90	CARD
 /	$(
-Grüne	NE
+Grüne	NN
 )	$(
 hatte	VAFIN
 Niedersachsens	NE
@@ -85490,7 +85490,7 @@ des	ART
 Opfers	NN
 .	$.
 
-Reemtsma	NN
+Reemtsma	NE
 stand	VVFIN
 im	APPRART
 Mittelpunkt	NN
@@ -85836,7 +85836,7 @@ Schmerzen	NN
 
 vs	XY
 
-Bosnien-Herzegowina	NE
+Bosnien-Herzegowina	NN
 
 Votum	NN
 über	APPR
@@ -85992,7 +85992,7 @@ Srpska	NE
 ,	$,
 noch	ADV
 die	ART
-moslemisch-kroatische	NN
+moslemisch-kroatische	ADJA
 Föderation	NN
 oder	KON
 die	ART
@@ -86561,7 +86561,7 @@ nach	APPR
 weiterem	ADJA
 Hin	NN
 und	KON
-Her	NE
+Her	NN
 im	APPRART
 März	NN
 1996	CARD
@@ -86700,8 +86700,8 @@ Klageschrift	NN
 argumentierten	VVFIN
 .	$.
 
-Schröders	NE
-Prozeßvertreter	NE
+Schröders	ADJA
+Prozeßvertreter	NN
 Götz	NE
 von	APPR
 Fromberg	NN
@@ -86779,7 +86779,7 @@ bleibt	VVFIN
 
 Er	PPER
 muß	VMFIN
-78,26	NE
+78,26	CARD
 Prozent	NN
 zahlen	VVINF
 .	$.
@@ -87050,8 +87050,8 @@ die	ART
 aktuellen	ADJA
 Schlagzeilen	NN
 noch	ADV
-schriller	ADJA
-klingen	NN
+schriller	ADJD
+klingen	VVINF
 läßt	VVFIN
 .	$.
 
@@ -87141,7 +87141,7 @@ vorstehen	VVPP
 würde	VAFIN
 .	$.
 
-Kündigte	NN
+Kündigte	NE
 er	PPER
 also	ADV
 demnächst	ADV
@@ -87327,7 +87327,7 @@ mehrfach	ADJD
 zuvor	ADV
 während	APPR
 Kohls	NE
-14jähriger	NN
+14jähriger	ADJA
 Amtszeit	NN
 hat	VAFIN
 es	PPER
@@ -87627,7 +87627,7 @@ Gesprächspartner	NN
 ein	PTKVZ
 .	$.
 
-Wachsende	NN
+Wachsende	ADJA
 Erwerbslosenzahlen	NN
 und	KON
 Haushaltslöcher	NN
@@ -87853,7 +87853,7 @@ jedenfalls	ADV
 -	$(
 auch	ADV
 der	ART
-CDU-interne	NN
+CDU-interne	ADJA
 Unmut	NN
 über	APPR
 Kohls	NE
@@ -88098,7 +88098,7 @@ hinauslaufe	VVPP
 ?	$.
 
 ``	$(
-Nennen	VVFIN
+Nennen	NE
 Sie	PPER
 es	PPER
 doch	ADV
@@ -88114,7 +88114,7 @@ einen	ART
 sanften	ADJA
 Druck	NN
 ,	$,
-berechtigt	ADJD
+berechtigt	VVFIN
 in	APPR
 der	ART
 Sache	NN
@@ -88151,7 +88151,7 @@ dpa	NE
 
 Wegen	APPR
 einer	ART
-70tägigen	NN
+70tägigen	ADJA
 Unterbrechung	NN
 seines	PPOSAT
 Fernsehempfangs	NN
@@ -88211,7 +88211,7 @@ mit	APPR
 der	ART
 Nutzungsgebühr	NN
 um	APPR
-7,42	NE
+7,42	CARD
 Mark	NN
 im	APPRART
 Rückstand	NN
@@ -88373,7 +88373,7 @@ vermutlich	ADV
 der	ART
 Tod	NN
 des	ART
-17jährigen	NN
+17jährigen	ADJA
 Punkers	NN
 .	$.
 
@@ -88674,7 +88674,7 @@ zitiert	VVFIN
 die	ART
 International	NE
 Herald	NE
-Tribune	NN
+Tribune	NE
 einen	ART
 US-Unterhändler	NN
 ,	$,
@@ -88817,7 +88817,7 @@ diesen	PDAT
 Zahlen	NN
 begründet	VVFIN
 die	ART
-moslemisch-kroatische	NN
+moslemisch-kroatische	ADJA
 Föderation	NN
 ihren	PPOSAT
 Anspruch	NN
@@ -88935,7 +88935,7 @@ Häuser	NN
 Sie	PPER
 wagten	VVFIN
 und	KON
-wagen	VVINF
+wagen	VVFIN
 kaum	ADV
 ,	$,
 die	ART
@@ -88954,7 +88954,7 @@ doppelte	ADJA
 Überraschung	NN
 .	$.
 
-Monatelang	NN
+Monatelang	ADJD
 hatten	VAFIN
 die	ART
 Schiedsrichter	NN
@@ -89097,7 +89097,7 @@ Februar	NN
 (	$(
 afp	NE
 /	$(
-geg	XY
+geg	NE
 )	$(
 .	$.
 
@@ -89420,7 +89420,7 @@ einem	ART
 baldigen	ADJA
 Neubeginn	NN
 der	ART
-syrisch-israelischen	NN
+syrisch-israelischen	ADJA
 Verhandlungen	NN
 nicht	PTKNEG
 zu	PTKZU
@@ -89510,7 +89510,7 @@ Sicherheit	NN
 garantiere	VVFIN
 .	$.
 
-Praktische	NN
+Praktische	ADJA
 Vernunft	NN
 
 Wieder	ADV
@@ -90138,7 +90138,7 @@ stimmt	VVFIN
 Versöhnung	NN
 zu	APPR
 
-ug	NE
+ug	XY
 WIEN	NE
 /	$(
 PRAG	NE
@@ -90162,7 +90162,7 @@ Abgeordnetenhaus	NN
 in	APPR
 Prag	NE
 die	ART
-deutsch-tschechische	NN
+deutsch-tschechische	ADJA
 Versöhnungserklärung	NN
 verabschiedet	VVPP
 .	$.
@@ -90361,7 +90361,7 @@ Seite	NN
 
 Parlamentsentscheid	NN
 
-ug	NE
+ug	XY
 WIEN	NE
 /	$(
 PRAG	NE
@@ -90385,14 +90385,14 @@ Abgeordnetenhaus	NN
 in	APPR
 Prag	NE
 die	ART
-deutsch-tschechische	NN
+deutsch-tschechische	ADJA
 Deklaration	NN
 zur	APPRART
 Vergangenheitsbewältigung	NN
 angenommen	VVPP
 .	$.
 
-59	CARD
+59	NE
 Abgeordnete	NN
 votierten	VVFIN
 gegen	APPR
@@ -90552,7 +90552,7 @@ die	ART
 Passage	NN
 in	APPR
 der	ART
-deutsch-tschechischen	NN
+deutsch-tschechischen	ADJA
 Deklaration	NN
 besonders	ADV
 betont	VVFIN
@@ -90777,7 +90777,7 @@ verurteilt	VVPP
 .	$.
 
 Der	ART
-50jährige	ADJA
+50jährige	NN
 gilt	VVFIN
 als	APPR
 einer	ART
@@ -90887,7 +90887,7 @@ Todesurteile	NN
 gesprochen	VVPP
 .	$.
 
-Prager	ADJA
+Prager	NE
 Votum	NN
 in	APPR
 Bonn	NE
@@ -90926,7 +90926,7 @@ auf	APPR
 die	ART
 Verabschiedung	NN
 der	ART
-deutsch-tschechischen	NN
+deutsch-tschechischen	ADJA
 Versöhnungserklärung	NN
 durch	APPR
 das	ART
@@ -90938,7 +90938,7 @@ abend	ADV
 reagiert	VVPP
 .	$.
 
-Tschechiens	NE
+Tschechiens	ADJA
 Präsident	NN
 Vaclav	NE
 Havel	NE
@@ -91025,14 +91025,14 @@ Bundestagsvizepräsidentin	NN
 Antje	NE
 Vollmer	NE
 (	$(
-Grüne	NE
+Grüne	NN
 )	$(
 räumte	VVFIN
 ein	PTKVZ
 ,	$,
 daß	KOUS
 das	ART
-deutsch-tschechische	NN
+deutsch-tschechische	ADJA
 Verhältnis	NN
 durch	APPR
 die	ART
@@ -91061,7 +91061,7 @@ der	ART
 Erklärung	NN
 .	$.
 
-CSU-Chef	NN
+CSU-Chef	NE
 und	KON
 Bundesfinanzminister	NN
 Theo	NE
@@ -91439,7 +91439,7 @@ ap	NE
 /	$(
 jw	NE
 
-Fisch	NN
+Fisch	NE
 nicht	PTKNEG
 immer	ADV
 frisch	ADJD
@@ -91629,7 +91629,7 @@ Berlin	NE
 gekommen	VVPP
 .	$.
 
-Fisch	NN
+Fisch	NE
 ist	VAFIN
 noch	ADV
 frisch	ADJD
@@ -92092,7 +92092,7 @@ eingedrungen	VVPP
 seien	VAFIN
 .	$.
 
-Zweite	ADJA
+Zweite	NE
 Streikwoche	NN
 
 Zivilangestellte	NN
@@ -92134,7 +92134,7 @@ Woche	NN
 gegangen	VVPP
 .	$.
 
-Ausstände	NN
+Ausstände	NE
 gab	VVFIN
 es	PPER
 an	APPR
@@ -92238,7 +92238,7 @@ bei	APPR
 Kohle	NN
 hart	ADJD
 
-Bergleute	NN
+Bergleute	NE
 weiten	ADJA
 Protest	NN
 gegen	APPR
@@ -93164,7 +93164,7 @@ Massenkarambolage	NN
 ereignete	VVFIN
 sich	PRF
 gegen	APPR
-7.45	NE
+7.45	CARD
 Uhr	NN
 in	APPR
 Richtung	NN
@@ -93374,7 +93374,7 @@ Warnschüssen	NN
 gezielt	ADJD
 auf	APPR
 den	ART
-49jährigen	NN
+49jährigen	ADJA
 Journalisten	NN
 geschossen	VVPP
 haben	VAFIN
@@ -94074,7 +94074,7 @@ in	APPR
 ein	ART
 Gestell	NN
 oder	KON
-verabreicht	VVPP
+verabreicht	VVFIN
 ihm	PPER
 ein	ART
 Betäubungsmittel	NN
@@ -94178,7 +94178,7 @@ bieten	VVINF
 
 Kratzer	NN
 in	APPR
-deutsch-dänischer	NN
+deutsch-dänischer	ADJA
 Euro-Harmonie	NN
 
 Von	APPR
@@ -94324,13 +94324,13 @@ historisch	ADJD
 vorbelastet	VVPP
 .	$.
 
-Jeweils	NN
+Jeweils	ADV
 starke	ADJA
 nationale	ADJA
 Einflüsse	NN
 erzeugten	ADJA
 die	ART
-deutsch-dänischen	NN
+deutsch-dänischen	ADJA
 Kriege	NN
 im	APPRART
 19.	ADJA
@@ -94472,7 +94472,7 @@ sich	PRF
 die	ART
 Dänen	NN
 nicht	PTKNEG
-identifizieren	VVPP
+identifizieren	VVINF
 .	$.
 
 Wirkt	NE
@@ -94501,7 +94501,7 @@ angesehen	VVPP
 wird	VAFIN
 .	$.
 
-Neutrale	NN
+Neutrale	ADJA
 Grenzlandkenner	NN
 ,	$,
 die	PRELS
@@ -94559,7 +94559,7 @@ Gerade	ADV
 jetzt	ADV
 gerät	VVFIN
 im	APPRART
-deutsch-dänischen	NN
+deutsch-dänischen	ADJA
 Grenzland	NN
 viel	ADV
 in	APPR
@@ -94613,7 +94613,7 @@ Grenze	NN
 übernachtet	VVPP
 .	$.
 
-Berisha	NN
+Berisha	NE
 verspricht	VVFIN
 Amnestie	NN
 
@@ -94830,7 +94830,7 @@ S.	NN
 3	CARD
 
 Korruptionsskandal	NN
-ruiniert	VVPP
+ruiniert	VVFIN
 Bank	NN
 in	APPR
 China	NE
@@ -94964,7 +94964,7 @@ Kredite	NN
 in	APPR
 Höhe	NN
 von	APPR
-1,532	NE
+1,532	CARD
 Milliarden	NN
 Yuan	NN
 (	$(
@@ -95073,7 +95073,7 @@ dpa	NE
 .	$.
 
 Der	ART
-rumänisch-orthodoxe	NN
+rumänisch-orthodoxe	ADJA
 Metropolit	NN
 des	ART
 Banats	NN
@@ -95134,7 +95134,7 @@ zu	PTKZU
 kontrollieren	VVINF
 .	$.
 
-Corneanu	NN
+Corneanu	NE
 nennt	VVFIN
 erstmals	ADV
 Fakten	NN
@@ -95534,7 +95534,7 @@ Anlage	NN
 durchsetzen	VVINF
 .	$.
 
-Bassajew	NN
+Bassajew	NE
 entgeht	ADJA
 Attentat	NN
 
@@ -95842,7 +95842,7 @@ in	APPR
 Albanien	NE
 erzielt	VVPP
 
-Parteien	NN
+Parteien	NE
 legen	VVFIN
 Grundstruktur	NN
 der	ART
@@ -95860,7 +95860,7 @@ ap	NE
 /	$(
 afp	NE
 /	$(
-öhl	XY
+öhl	NE
 )	$(
 .	$.
 
@@ -96110,7 +96110,7 @@ Montag	NN
 mitteilte	VVFIN
 .	$.
 
-Sakajewa	NN
+Sakajewa	NE
 hatte	VAFIN
 in	APPR
 Nachrichtensendungen	NN
@@ -96263,7 +96263,7 @@ Albanien	NE
 Lübecker	ADJA
 Prozeß	NN
 
-Gutachter	NN
+Gutachter	NE
 Achilles	NE
 stützt	VVFIN
 These	NN
@@ -96473,7 +96473,7 @@ haben	VAINF
 
 Agrarpolitik	NN
 
-Grüne	NN
+Grüne	NE
 fordern	VVFIN
 Verbot	NN
 von	APPR
@@ -96771,7 +96771,7 @@ damit	PROAV
 für	APPR
 die	ART
 Gesundheit	NN
-Tausender	ADJA
+Tausender	NE
 Menschen	NN
 verantwortlich	ADJD
 ,	$,
@@ -96813,7 +96813,7 @@ Meinungen	NN
 auseinander	PTKVZ
 .	$.
 
-Beinhofer	NN
+Beinhofer	NE
 sagte	VVFIN
 ,	$,
 das	ART
@@ -96851,7 +96851,7 @@ von	APPR
 Asylbewerbern	NN
 .	$.
 
-Formel	NN
+Formel	NE
 1	CARD
 geht	VVFIN
 an	APPR
@@ -96956,8 +96956,8 @@ allem	PIS
 in	APPR
 den	ART
 USA	NE
-aktiver	VVPP
-werden	VAINF
+aktiver	ADJD
+werden	VAFIN
 ,	$,
 wo	PWAV
 die	ART
@@ -97005,7 +97005,7 @@ Geschäft	NN
 aus	PTKVZ
 ;	$.
 
-jedes	PIAT
+jedes	NE
 Rennen	NN
 wird	VAFIN
 von	APPR
@@ -97070,7 +97070,7 @@ in	APPR
 Melbourne	NE
 der	ART
 erste	ADJA
-Grand	NN
+Grand	NE
 Prix	NE
 des	ART
 Jahres	NN
@@ -97115,8 +97115,8 @@ ap	NE
 .	$.
 
 Die	ART
-22jährige	NN
-Saima	NE
+22jährige	ADJA
+Saima	NN
 aus	APPR
 Pakistan	NE
 hat	VAFIN
@@ -97142,7 +97142,7 @@ ihre	PPOSAT
 Ehe	NN
 mit	APPR
 dem	ART
-33jährigen	NN
+33jährigen	ADJA
 Englischlehrer	NN
 Arshad	NE
 Ahmed	NE
@@ -97233,7 +97233,7 @@ vorliegen	VVINF
 
 Bundestagsabgeordnete	NN
 
-Kontakte	NN
+Kontakte	NE
 zum	APPRART
 libyschen	ADJA
 Parlament	NN
@@ -97390,7 +97390,7 @@ Die	ART
 Nato	NE
 und	KON
 Rußland	NE
-nähern	VVINF
+nähern	VVFIN
 sich	PRF
 im	APPRART
 Konflikt	NN
@@ -97552,7 +97552,7 @@ zu	PTKZU
 bringen	VVINF
 .	$.
 
-Gestützt	NN
+Gestützt	VVPP
 auf	APPR
 eine	ART
 Umfrage	NN
@@ -97692,8 +97692,8 @@ mal	ADV
 in	APPR
 den	ART
 ,	$,
-Golden	FM
-Cadillac	FM
+Golden	NE
+Cadillac	NE
 '	$(
 ?	$.
 ''	$(
@@ -97757,8 +97757,8 @@ Barkeeper-Schule	NN
 in	APPR
 Frankfurt	NE
 ein	ART
-feucht-fröhliches	NN
-Gelage	NE
+feucht-fröhliches	ADJA
+Gelage	NN
 vorgestellt	VVPP
 hat	VAFIN
 ,	$,
@@ -98053,7 +98053,7 @@ alles	PIS
 festgelegt	VVPP
 :	$.
 
-Trinken	NN
+Trinken	NE
 oder	KON
 Rauchen	NN
 ist	VAFIN
@@ -98156,11 +98156,11 @@ brauchte	VVFIN
 Jean-Jacques	NE
 Rousseau	NE
 
-Unbekannter	NN
+Unbekannter	ADJA
 Text	NN
 gefunden	VVPP
 
-VITORIA	NN
+VITORIA	NE
 .	$.
 
 Im	APPRART
@@ -98306,7 +98306,7 @@ sein	VAINF
 ,	$,
 sagte	VVFIN
 Philippe	NE
-Morillon	NN
+Morillon	NE
 der	ART
 Katholischen	NN
 Nachrichten-Agentur	NN
@@ -98333,7 +98333,7 @@ Hauptstadt	NN
 zusammenkommen	VVPP
 .	$.
 
-Morillon	NN
+Morillon	NE
 ist	VAFIN
 der	ART
 staatliche	ADJA
@@ -98609,7 +98609,7 @@ Heidelberg	NE
 stattfinden	VVINF
 .	$.
 
-Silvias	NN
+Silvias	ADJA
 Mutter	NN
 entstammte	VVFIN
 einem	ART
@@ -98766,7 +98766,7 @@ Bambusrohren	NN
 
 Stasi	NE
 
-Berufliche	NN
+Berufliche	ADJA
 Rehabilitierung	NN
 für	APPR
 SED-Gegner	NN
@@ -98997,7 +98997,7 @@ Polizei	NN
 aber	ADV
 nicht	PTKNEG
 bestätigen	VVINF
-mochte	VVFIN
+mochte	VMFIN
 .	$.
 
 Die	ART
@@ -99220,7 +99220,7 @@ Zentralwerkstatt	NN
 in	APPR
 Lünen	NN
 gegen	APPR
-6.30	NE
+6.30	CARD
 Uhr	NN
 zu	APPR
 den	ART
@@ -99418,7 +99418,7 @@ erfüllbar	VVINF
 Boeing	NE
 entführt	VVPP
 
-Hijacker	NN
+Hijacker	NE
 ergab	VVFIN
 sich	PRF
 in	APPR
@@ -99730,7 +99730,7 @@ Prozent	NN
 der	ART
 16-	TRUNC
 bis	KON
-45jährigen	NN
+45jährigen	ADJA
 Alleinlebenden	NN
 angegeben	VVPP
 ,	$,
@@ -100384,8 +100384,8 @@ vorher	ADV
 vereinzelt	ADJD
 Filmreporter	NN
 ,	$,
-einige	PIS
-wenige	PIAT
+einige	PIAT
+wenige	ADJA
 Veterinäre	NN
 und	KON
 Vertreter	NN
@@ -100556,7 +100556,7 @@ bei	APPR
 manchen	PIAT
 Teilnehmern	NN
 ein	ART
-religiös-spiritueller	NN
+religiös-spiritueller	ADJA
 Aspekt	NN
 :	$.
 Begleitung	NN
@@ -100753,10 +100753,10 @@ zu	APPR
 Polen	NE
 ,	$,
 dem	ART
-polnisch-deutschen	NN
+polnisch-deutschen	ADJA
 Zollterminal	NN
-Swiecko	NN
-II	CARD
+Swiecko	NE
+II	NE
 auf	APPR
 polnischer	ADJA
 Seite	NN
@@ -100853,8 +100853,8 @@ den	ART
 deutschen	ADJA
 Grenztierarzt	NN
 in	APPR
-Swiecko	NN
-II	CARD
+Swiecko	NE
+II	NE
 erfolgt	VVFIN
 durch	APPR
 die	ART
@@ -100883,7 +100883,7 @@ den	ART
 über	APPR
 Frankfurt	NE
 /	$(
-Oder	KON
+Oder	NE
 transportierten	ADJA
 Tieren	NN
 ist	VAFIN
@@ -100942,7 +100942,7 @@ zu	APPR
 geringe	ADJA
 Fahrzeugbreite	NN
 oder	KON
--höhe	NN
+-höhe	NE
 ,	$,
 unzureichende	ADJA
 Lüftung	NN
@@ -100973,7 +100973,7 @@ Tiere	NN
 (	$(
 kranke	ADJA
 oder	KON
-verletzte	VVFIN
+verletzte	ADJA
 Tiere	NN
 ,	$,
 Nichtbeachtung	NN
@@ -101042,7 +101042,7 @@ Rcepin	NE
 Januar	NN
 1996	CARD
 ,	$,
-8.00	ADJA
+8.00	CARD
 Uhr	NN
 morgens	ADV
 :	$.
@@ -101284,7 +101284,7 @@ Blindheit	NN
 ausgesondert	VVPP
 .	$.
 
-Ausgesonderte	NN
+Ausgesonderte	ADJA
 Pferde	NN
 bleiben	VVINF
 -	$(
@@ -101368,7 +101368,7 @@ Lkw	NN
 ,	$,
 wo	PWAV
 inzwischen	ADV
-Heu	ADV
+Heu	NN
 bereit	ADJD
 liegt	VVFIN
 .	$.
@@ -101410,7 +101410,7 @@ Lauterbourg	NN
 Elsaß	NE
 .	$.
 
-Schlechter	NN
+Schlechter	ADJD
 Zustand	NN
 
 Lauterbourg	NN
@@ -101419,7 +101419,7 @@ Lauterbourg	NN
 August	NN
 1996	CARD
 ,	$,
-1.00	ADJA
+1.00	CARD
 Uhr	NN
 nachts	ADV
 :	$.
@@ -101463,7 +101463,7 @@ Futterraufen	NN
 und	KON
 Tränken	NN
 bereits	ADV
-Heu	NE
+Heu	NN
 und	KON
 Wasser	NN
 befindet	VVFIN
@@ -101495,7 +101495,7 @@ versorgt	VVPP
 .	$.
 
 Um	APPR
-13.00	NE
+13.00	CARD
 Uhr	NN
 kommen	VVFIN
 sie	PPER
@@ -101591,7 +101591,7 @@ den	ART
 Zug	NN
 .	$.
 
-Ungewiß	NN
+Ungewiß	ADJD
 ist	VAFIN
 auch	ADV
 die	ART
@@ -101716,16 +101716,16 @@ nach	APPR
 Italien	NE
 über	APPR
 den	ART
-italienisch-slowenischen	NN
+italienisch-slowenischen	ADJA
 Grenzübergang	NN
 Gurizia	NN
 ;	$.
 
-7.	ADJA
+7.	ADV
 August	NN
 1996	CARD
 :	$(
-Mehrere	PIAT
+Mehrere	NN
 italienische	ADJA
 Transporter	NN
 mit	APPR
@@ -101887,7 +101887,7 @@ Gutes	NN
 ahnen	VVINF
 .	$.
 
-12.	ADJA
+12.	ADV
 August	NN
 1996	CARD
 :	$(
@@ -101994,7 +101994,7 @@ Die	ART
 Bullen	NN
 sind	VAFIN
 sehr	ADV
-erregt	VVFIN
+erregt	VVPP
 und	KON
 besteigen	VVINF
 sich	PRF
@@ -102145,7 +102145,7 @@ Salzburg	NE
 September	NN
 :	$.
 Der	ART
-deutsch-österreichische	NN
+deutsch-österreichische	ADJA
 Grenzübergang	NN
 Salzburg	NE
 /	$(
@@ -102338,8 +102338,8 @@ Tiere	NN
 bleiben	VVFIN
 auf	APPR
 dem	ART
-Lkw.	NN
-Angeblich	ADJD
+Lkw.	ADJA
+Angeblich	NN
 werden	VAFIN
 sie	PPER
 im	APPRART
@@ -102362,7 +102362,7 @@ nach	APPR
 Triest	NE
 .	$.
 
-Blutige	NN
+Blutige	ADJA
 Verletzungen	NN
 
 Ankunft	NN
@@ -102386,7 +102386,7 @@ den	ART
 Ställen	NN
 liegt	VVFIN
 etwas	ADV
-Heu	ADV
+Heu	NN
 bereit	ADJD
 .	$.
 
@@ -102541,9 +102541,9 @@ führt	VVFIN
 eine	ART
 enge	ADJA
 ,	$,
-steile	VVFIN
-Rampe	NE
-hinab	VVFIN
+steile	ADJA
+Rampe	NN
+hinab	PTKVZ
 .	$.
 
 Horizontal	NN
@@ -102591,7 +102591,7 @@ auch	ADV
 wie	KON
 geschwächte	ADJA
 oder	KON
-verletzte	VVFIN
+verletzte	ADJA
 Tiere	NN
 die	ART
 Rampe	NN
@@ -102621,13 +102621,13 @@ kaum	ADV
 möglich	ADJD
 .	$.
 
-14.	ADJA
+14.	ADV
 August	NN
 1996	CARD
 :	$(
 Über	APPR
 den	ART
-deutsch-holländischen	NN
+deutsch-holländischen	ADJA
 Grenzübergang	NN
 Venlo	NE
 fahren	VVFIN
@@ -102658,7 +102658,7 @@ Schlachthof	NN
 Sachsen-Anhalt	NE
 .	$.
 
-Fahrzeit	NN
+Fahrzeit	NE
 :	$.
 acht	CARD
 bis	APPR
@@ -102906,7 +102906,7 @@ Thüringen	NE
 anfuhr	VVFIN
 .	$.
 
-13.	ADJA
+13.	ADV
 August	NN
 1996	CARD
 :	$(
@@ -103063,7 +103063,7 @@ Förderband	NN
 eingehängt	VVPP
 .	$.
 
-12.	ADJA
+12.	ADV
 August	NN
 1996	CARD
 :	$(
@@ -103678,7 +103678,7 @@ Diese	PDAT
 Vorlesungen	NN
 liegen	VVFIN
 jetzt	ADV
-gedruckt	VVPP
+gedruckt	ADJD
 vor	APPR
 (	$(
 ça	NE
@@ -103725,7 +103725,7 @@ dem	ART
 im	APPRART
 übrigen	ADJA
 Peter	NE
-Brückner	NN
+Brückner	NE
 eine	ART
 Hälfte	NN
 beisteuerte	ADJA
@@ -104006,7 +104006,7 @@ deutschen	ADJA
 Bürokratie	NN
 urteilen	VVFIN
 
-Reutlinger	NN
+Reutlinger	ADJA
 Jurist	NN
 streitet	VVFIN
 vor	APPR
@@ -104243,7 +104243,7 @@ oder	KON
 ``	$(
 Frau	NN
 ''	$(
-überredet	VVFIN
+überredet	VVPP
 .	$.
 
 Das	PDS
@@ -104552,7 +104552,7 @@ die	ART
 Umgangsformen	NN
 als	APPR
 solche	PIS
-schweigen	VVINF
+schweigen	VVFIN
 sich	PRF
 die	ART
 Paragraphen	NN
@@ -104656,7 +104656,7 @@ Baden-Württemberg	NE
 )	$(
 und	KON
 Ottmar	NE
-Schrei-ner	NN
+Schrei-ner	NE
 (	$(
 Saarland	NE
 )	$(
@@ -104779,7 +104779,7 @@ rechten	ADJA
 Flügels	NN
 (	$(
 ``	$(
-Seeheimer	ADJA
+Seeheimer	NN
 Kreis	NN
 ''	$(
 )	$(
@@ -104953,7 +104953,7 @@ Unterholz	NN
 stattfinden	VVINF
 .	$.
 
-Geringere	NN
+Geringere	ADJA
 Chancen	NN
 werden	VAFIN
 Scheer	NN
@@ -105090,7 +105090,7 @@ anfing	VVFIN
 sich	PRF
 im	APPRART
 Tauwetter	NN
-ost-westlicher	NN
+ost-westlicher	ADJA
 Entspannung	NN
 aufzulösen	VVIZU
 .	$.
@@ -105438,7 +105438,7 @@ soll	VMFIN
 Wer	PWS
 sich	PRF
 mit	APPR
-wem	PWS
+wem	PIS
 verbündet	VVPP
 und	KON
 also	ADV
@@ -105495,7 +105495,7 @@ militärischen	ADJA
 Konflikt	NN
 ''	$(
 nutzt	VVFIN
-Nato-Generalsekretär	NN
+Nato-Generalsekretär	NE
 Javier	NE
 Solana	NE
 ,	$,
@@ -105527,7 +105527,7 @@ aufzufüllen	ADJD
 gelte	VVFIN
 .	$.
 
-Real	FM
+Real	NE
 aber	ADV
 ist	VAFIN
 keine	PIAT
@@ -105720,7 +105720,7 @@ haben	VAFIN
 Madrid	NE
 wird	VAFIN
 nicht	PTKNEG
-Jalta	ADJD
+Jalta	NN
 werden	VAFIN
 ,	$,
 aber	ADV

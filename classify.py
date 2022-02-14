@@ -77,7 +77,7 @@ def classify_word(word, total, tag=None, denoising=False):
         else:
             return "LINK", tag
 
-    if total != 0:
+    if total > 1:
         return None
 
     if ovv3_capital.fullmatch(word) is not None:
